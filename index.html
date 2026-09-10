@@ -317,12 +317,13 @@
     <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 22ch;">Grouped by what you're doing.</h2>
     <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #6E6E78; max-width: 60ch;">The split is just the starting point. Suonable is where your music lives: lyrics, chord charts that transpose with the song, audio files, reference takes, tracks and setlists — all of it next to the song, ready to play.</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(32px, 4.5vw, 64px);">
-      <div>
-        <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
+      <div class="accordion">
+        <div class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
           <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; color: #FD6106;">01</span>
           <h3 style="margin: 0; font-size: clamp(21px, 2vw, 27px); font-weight: 800; letter-spacing: -0.03em; color: #17171B;">Learn your part</h3>
+          <span class="accordion-caret">▾</span>
         </div>
-        <div style="border-top: 1px solid #E8E8E4; display: flex; flex-direction: column;">
+        <div class="accordion-panel feature-list" style="border-top: 1px solid #E8E8E4;">
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Solo one track</h4>
             <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Isolate the guitar, the harmony, the keys. Hear only what you have to play.</p>
@@ -349,12 +350,13 @@
           </div>
         </div>
       </div>
-      <div>
-        <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
+      <div class="accordion">
+        <div class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
           <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; color: #2DC128;">02</span>
           <h3 style="margin: 0; font-size: clamp(21px, 2vw, 27px); font-weight: 800; letter-spacing: -0.03em; color: #17171B;">Rehearse with the band</h3>
+          <span class="accordion-caret">▾</span>
         </div>
-        <div style="border-top: 1px solid #E8E8E4; display: flex; flex-direction: column;">
+        <div class="accordion-panel feature-list" style="border-top: 1px solid #E8E8E4;">
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">The click</h4>
             <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Built from the tempo map detected in the song itself, so it follows the real tempo of the recording even when it breathes. It sounds from the first to the last second of the audio.</p>
@@ -377,12 +379,13 @@
           </div>
         </div>
       </div>
-      <div>
-        <div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
+      <div class="accordion">
+        <div class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
           <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; color: #1055AD;">03</span>
           <h3 style="margin: 0; font-size: clamp(21px, 2vw, 27px); font-weight: 800; letter-spacing: -0.03em; color: #17171B;">Play live</h3>
+          <span class="accordion-caret">▾</span>
         </div>
-        <div style="border-top: 1px solid #E8E8E4; display: flex; flex-direction: column;">
+        <div class="accordion-panel feature-list" style="border-top: 1px solid #E8E8E4;">
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Separate outputs</h4>
             <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Each track can leave through a different physical output of your audio interface. Desktop app only.</p>
@@ -416,20 +419,20 @@
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 4.5vw, 64px); align-items: start;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0 clamp(32px, 4vw, 72px);">
-          <div data-reveal="1" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
+          <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
             <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #FDA51B; margin-bottom: 18px;"></span>
-            <h3 style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA;">Placed on the beat</h3>
-            <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Each chord is anchored to a bar and a beat, not to a stopwatch — so it stays right even when the tempo breathes.</p>
+            <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Placed on the beat<span class="accordion-caret light">▾</span></h3>
+            <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Each chord is anchored to a bar and a beat, not to a stopwatch — so it stays right even when the tempo breathes.</p>
           </div>
-          <div data-reveal="1" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
+          <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
             <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #6098DB; margin-bottom: 18px;"></span>
-            <h3 style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA;">Transposes with the song</h3>
-            <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Move the key and the whole sheet follows — the chords you read are the chords you're hearing.</p>
+            <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Transposes with the song<span class="accordion-caret light">▾</span></h3>
+            <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Move the key and the whole sheet follows — the chords you read are the chords you're hearing.</p>
           </div>
-          <div data-reveal="1" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
+          <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
             <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #FF6B85; margin-bottom: 18px;"></span>
-            <h3 style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA;">Yours to fix</h3>
-            <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Edit any chord by hand and it stays edited. Key and BPM are detected too, and editable everywhere they appear.</p>
+            <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Yours to fix<span class="accordion-caret light">▾</span></h3>
+            <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Edit any chord by hand and it stays edited. Key and BPM are detected too, and editable everywhere they appear.</p>
           </div>
         </div>
 
@@ -642,21 +645,21 @@
       </div>
       <h2 data-reveal="1" style="margin: 0 0 56px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03;">What it doesn't do</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1px; background: #2A333F; border: 1px solid #2A333F; border-radius: 16px; overflow: hidden;">
-        <div data-reveal="1" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">It isn't studio quality</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">The separation is very good, but it's automatic. One instrument bleeds a little into another, especially in dense mixes.</p>
+        <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">It isn't studio quality<span class="accordion-caret light">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">The separation is very good, but it's automatic. One instrument bleeds a little into another, especially in dense mixes.</p>
         </div>
-        <div data-reveal="1" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">It isn't tuned for every kind of music</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">It's tested with modern band music. On orchestra, very dense electronic music or poor recordings the results are worse.</p>
+        <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">It isn't tuned for every kind of music<span class="accordion-caret light">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">It's tested with modern band music. On orchestra, very dense electronic music or poor recordings the results are worse.</p>
         </div>
-        <div data-reveal="1" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">It isn't instant</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">About three minutes per song — and then it's yours forever.</p>
+        <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">It isn't instant<span class="accordion-caret light">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">About three minutes per song — and then it's yours forever.</p>
         </div>
-        <div data-reveal="1" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">There's no catalogue</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">You bring your own music, and you're responsible for having the right to use it. ZIP only for imports — RAR isn't supported.</p>
+        <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">There's no catalogue<span class="accordion-caret light">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">You bring your own music, and you're responsible for having the right to use it. ZIP only for imports — RAR isn't supported.</p>
         </div>
       </div>
     </div>

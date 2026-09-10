@@ -35,6 +35,27 @@
     });
   }
 
+  /* ---------- mobile accordions (long text sections) ---------- */
+  function setupAccordions() {
+    var groups = document.querySelectorAll(".accordion");
+    groups.forEach(function (group) {
+      var trigger = group.querySelector(".accordion-trigger");
+      var panel = group.querySelector(".accordion-panel");
+      if (!trigger || !panel) return;
+
+      function toggle() {
+        if (window.innerWidth > 759) return;
+        var isOpen = group.classList.toggle("open");
+        trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      }
+
+      trigger.addEventListener("click", toggle);
+      trigger.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+      });
+    });
+  }
+
   /* ---------- Mac download dropdown ---------- */
   function setupMacDropdown() {
     var wrap = document.querySelector(".mac-dropdown");
@@ -187,6 +208,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     setupMenu();
+    setupAccordions();
     setupMacDropdown();
     setupLang();
     setupPlayer();
