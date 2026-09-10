@@ -157,13 +157,14 @@ img { max-width: 100%; }
 .master-value { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 14px; color: var(--mid); }
 
 /* ---------- beta buttons ---------- */
-.beta-btn { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; border-radius: 12px; }
-.beta-btn.gold { padding: 22px 20px; background: #FFCB02; color: #17171B; }
-.beta-btn.gold:hover { background: #DBAE03; color: #17171B; }
-.beta-btn.blue { padding: 17px 18px; background: #1055AD; color: #fff; }
+.beta-btn { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; border-radius: 12px; padding: 17px 18px; }
+.beta-btn.navy { background: #0B2545; color: #fff; }
+.beta-btn.navy:hover { background: #071831; color: #fff; }
+.beta-btn.blue { background: #1055AD; color: #fff; }
 .beta-btn.blue:hover { background: #0D3D7C; color: #fff; }
-.beta-btn.lightblue { padding: 17px 18px; background: #418CEB; color: #0B2545; }
-.beta-btn.lightblue:hover { background: #6FAAF2; color: #0B2545; }
+.beta-btn.lightblue { background: #418CEB; color: #fff; }
+.beta-btn.lightblue:hover { background: #6FAAF2; color: #fff; }
+.beta-btn span { color: inherit; }
 
 /* ---------- how-it-works steps grid ---------- */
 .steps-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
