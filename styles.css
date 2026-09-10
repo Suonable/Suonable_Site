@@ -181,7 +181,7 @@ img { max-width: 100%; }
 .master-value { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 14px; color: var(--mid); }
 
 /* ---------- beta buttons ---------- */
-.beta-btn { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; border-radius: 12px; padding: 17px 18px; }
+.beta-btn { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; border-radius: 12px; padding: 17px 18px; width: 100%; border: none; font: inherit; text-align: left; cursor: pointer; }
 .beta-btn.navy { background: #0B2545; color: #fff; }
 .beta-btn.navy:hover { background: #071831; color: #fff; }
 .beta-btn.blue { background: #1055AD; color: #fff; }
@@ -190,11 +190,14 @@ img { max-width: 100%; }
 .beta-btn.lightblue:hover { background: #6FAAF2; color: #fff; }
 .beta-btn span { color: inherit; }
 
-.beta-mac-row { display: flex; gap: 10px; }
-.beta-mac-row .mac-opt { flex: 1 1 0; min-width: 0; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; }
-.mac-opt-label { font-size: 14.5px; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
-.mac-opt-caption { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; color: #fff; }
-@media (max-width: 380px) { .beta-mac-row { flex-direction: column; } }
+.mac-caret { display: inline-block; margin-left: 8px; font-size: 12px; transition: transform 0.2s ease; }
+#macToggle[aria-expanded="true"] .mac-caret { transform: rotate(180deg); }
+
+.mac-options { display: none; flex-direction: column; gap: 4px; margin-top: 8px; padding: 8px; background: #F6F5F2; border: 1px solid #E8E8E4; border-radius: 12px; }
+.mac-options.open { display: flex; }
+.mac-option-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 13px 14px; border-radius: 8px; font-size: 14.5px; font-weight: 600; color: #17171B; }
+.mac-option-link:hover { background: #FFFFFF; color: #1055AD; }
+.mac-option-caption { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: #6E6E78; }
 
 /* ---------- how-it-works steps grid ---------- */
 .steps-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }

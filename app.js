@@ -35,6 +35,34 @@
     });
   }
 
+  /* ---------- Mac download dropdown ---------- */
+  function setupMacDropdown() {
+    var wrap = document.querySelector(".mac-dropdown");
+    var toggle = document.getElementById("macToggle");
+    var options = document.getElementById("macOptions");
+    if (!wrap || !toggle || !options) return;
+
+    function close() {
+      options.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+    function open() {
+      options.classList.add("open");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (options.classList.contains("open")) close(); else open();
+    });
+    document.addEventListener("click", function (e) {
+      if (options.classList.contains("open") && !wrap.contains(e.target)) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+  }
+
   /* ---------- language switch ---------- */
   function setupLang() {
     var buttons = document.querySelectorAll(".lang-btn");
@@ -159,6 +187,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     setupMenu();
+    setupMacDropdown();
     setupLang();
     setupPlayer();
     setupReveal();
