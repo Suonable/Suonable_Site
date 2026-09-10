@@ -1,6 +1,40 @@
 (function () {
   "use strict";
 
+  /* ---------- mobile hamburger menu ---------- */
+  function setupMenu() {
+    var nav = document.querySelector(".site-nav");
+    var toggle = document.getElementById("menuToggle");
+    var menu = document.getElementById("mobileMenu");
+    if (!nav || !toggle || !menu) return;
+
+    function close() {
+      nav.classList.remove("menu-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+    function open() {
+      nav.classList.add("menu-open");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (nav.classList.contains("menu-open")) close(); else open();
+    });
+    menu.addEventListener("click", function (e) {
+      if (e.target.closest("a")) close();
+    });
+    document.addEventListener("click", function (e) {
+      if (nav.classList.contains("menu-open") && !nav.contains(e.target)) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 759) close();
+    });
+  }
+
   /* ---------- language switch ---------- */
   function setupLang() {
     var buttons = document.querySelectorAll(".lang-btn");
@@ -124,6 +158,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    setupMenu();
     setupLang();
     setupPlayer();
     setupReveal();

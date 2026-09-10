@@ -35,6 +35,30 @@ img { max-width: 100%; }
 .nav-links { flex: 1 1 0%; min-width: 0; display: flex; flex-wrap: nowrap; align-items: center; justify-content: safe center; gap: clamp(6px, 1.2vw, 26px); font-size: 13px; font-weight: 500; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
 @media (max-width: 759px) { .nav-links { display: none; } }
 
+/* ---------- mobile hamburger menu ---------- */
+.hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 34px; height: 34px; padding: 0; border: none; border-radius: 8px; background: transparent; cursor: pointer; flex: 0 0 auto; }
+.hamburger:hover { background: rgba(23,23,27,0.06); }
+.hamburger span { display: block; width: 18px; height: 2px; border-radius: 2px; background: #17171B; transition: transform 0.2s ease, opacity 0.2s ease; }
+.hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu { display: none; }
+
+@media (max-width: 759px) {
+  .hamburger { display: flex; }
+  .site-nav { position: sticky; }
+  .mobile-menu {
+    position: absolute; top: calc(100% + 8px); left: 0; right: 0;
+    flex-direction: column; gap: 2px;
+    background: #FFFFFF; border: 1px solid #E8E8E4; border-radius: 16px; padding: 10px;
+    box-shadow: 0 24px 48px -24px rgba(12,15,20,0.35);
+  }
+  .site-nav.menu-open .mobile-menu { display: flex; }
+  .mobile-menu a { padding: 14px 16px; border-radius: 10px; font-size: 15px; font-weight: 600; color: #17171B; }
+  .mobile-menu a:hover { background: #F6F5F2; color: #1055AD; }
+}
+
 .lang-btn { padding: 4px 8px; border-radius: 6px; border: none; cursor: pointer; font: inherit; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; background: transparent; color: #6E6E78; }
 .lang-btn[aria-pressed="true"] { background: #17171B; color: #FFFFFF; }
 .lang-btn:hover { opacity: 0.75; }
