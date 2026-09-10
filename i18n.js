@@ -612,7 +612,46 @@ const dict = {
   ],
   "Read the copyright policy": ["Leer la política de copyright", "Leggi la politica sul copyright"],
   "05 · Getting in touch": ["06 · Cómo contactar", "06 · Come contattarci"],
-  "Version beta-1, 3 September 2026.": ["Versión beta-1, 3 de septiembre de 2026.", "Versione beta-1, 3 settembre 2026."]
+  "Version beta-1, 3 September 2026.": ["Versión beta-1, 3 de septiembre de 2026.", "Versione beta-1, 3 settembre 2026."],
+
+  // ——— fixes for current live-site copy (marketing site rewrite, not covered by the entries above)
+  "An MP3, a WAV, last night's rehearsal recording. No official stems needed — or add your own stems for practice.": [
+    "Un MP3, un WAV, la grabación del ensayo de anoche. No hacen falta stems oficiales — o añade tus propios stems para practicar.",
+    "Un MP3, un WAV, la registrazione delle prove di ieri sera. Non servono stem ufficiali — oppure aggiungi i tuoi stem per esercitarti."
+  ],
+  "It comes back in seven tracks": ["Vuelve en siete pistas", "Torna in sette tracce"],
+  "Drums, bass, guitar, piano, other, vocals and backing vocals — each with its own volume, mute and solo.": [
+    "Batería, bajo, guitarra, piano, otros, voz y coros — cada una con su propio volumen, mute y solo.",
+    "Batteria, basso, chitarra, piano, altro, voce e cori — ognuna con il proprio volume, mute e solo."
+  ],
+  "Tempo, key, bar lines and chords arrive already found, with a click and a chord sheet built from them. Correct anything by hand, or add your own resources — it's a starting point, not a verdict.": [
+    "Tempo, tonalidad, compases y acordes llegan ya detectados, con un clic y una hoja de acordes hecha con ellos. Corrige lo que quieras a mano, o añade tus propios recursos — es un punto de partida, no un veredicto.",
+    "Tempo, tonalità, battute e accordi arrivano già rilevati, con un click e un foglio accordi costruito su di essi. Correggi ciò che vuoi a mano, oppure aggiungi le tue risorse — è un punto di partenza, non un verdetto."
+  ],
+  "Automatic song structure": ["Estructura automática de la canción", "Struttura automatica del brano"],
+  "Intro, verse, chorus, bridge — detected for you and fully editable, so the song arrives already mapped.": [
+    "Intro, estrofa, estribillo, puente — detectados para ti y totalmente editables, así la canción llega ya mapeada.",
+    "Intro, strofa, ritornello, bridge — rilevati per te e completamente modificabili, così il brano arriva già mappato."
+  ],
+  "Loop by section": ["Bucle por sección", "Loop per sezione"],
+  "Pick a section — intro, verse, that one chorus — and repeat it with sample accuracy until it comes out.": [
+    "Elige una sección — la intro, una estrofa, ese estribillo — y repítela con precisión de sample hasta que salga.",
+    "Scegli una sezione — l'intro, una strofa, quel ritornello — e ripetila con precisione al sample finché non viene."
+  ],
+  "Every track leaves on its own stereo pair — drums on 1–2, bass to the stage amp on 3–4, the vocals to the PA. Only the click goes out mono, straight to the drummer's in-ear, and you choose which outputs pair up.": [
+    "Cada pista sale por su propio par estéreo — la batería por 1–2, el bajo al ampli del escenario por 3–4, la voz a la PA. Solo el clic sale en mono, directo al in-ear del baterista, y tú eliges qué salidas se emparejan.",
+    "Ogni traccia esce dalla propria coppia stereo — la batteria su 1–2, il basso all'ampli sul palco su 3–4, la voce al PA. Solo il click esce in mono, dritto nell'in-ear del batterista, e scegli tu quali uscite si accoppiano."
+  ],
+  "AUDIO TRACK": ["PISTA DE AUDIO", "TRACCIA AUDIO"],
+  "PHYSICAL OUTPUT · STEREO": ["SALIDA FÍSICA · ESTÉREO", "USCITA FISICA · STEREO"],
+  "Drums": ["Batería", "Batteria"],
+  "Bass": ["Bajo", "Basso"],
+  "Guitar": ["Guitarra", "Chitarra"],
+  "Piano": ["Piano", "Piano"],
+  "Other": ["Otros", "Altro"],
+  "Vocals": ["Voz", "Voce"],
+  "Backing vocals": ["Coros", "Cori"],
+  "Click": ["Clic", "Click"]
 };
 
 const origin = new WeakMap();
