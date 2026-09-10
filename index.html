@@ -671,11 +671,17 @@
             <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; letter-spacing: -0.02em; color: #fff;">Install from the browser</span>
             <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">IOS · ANDROID · NO STORE</span>
           </a>
-          <a href="https://app.suonable.com/" class="beta-btn blue">
-            <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; color: #fff;">Download for Mac</span>
-            <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">.DMG · APPLE + INTEL</span>
-          </a>
-          <a href="https://app.suonable.com/" class="beta-btn lightblue">
+          <div class="beta-mac-row">
+            <a href="https://app.suonable.com/" class="beta-btn blue mac-opt" data-download="mac-arm64">
+              <span class="mac-opt-label">Mac — Apple Silicon</span>
+              <span class="mac-opt-caption">.DMG · M1/M2/M3</span>
+            </a>
+            <a href="https://app.suonable.com/" class="beta-btn blue mac-opt" data-download="mac-x64">
+              <span class="mac-opt-label">Mac — Intel</span>
+              <span class="mac-opt-caption">.DMG · INTEL</span>
+            </a>
+          </div>
+          <a href="https://app.suonable.com/" class="beta-btn lightblue" data-download="windows">
             <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; color: #fff;">Download for Windows</span>
             <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">.EXE · WIN 10 +</span>
           </a>

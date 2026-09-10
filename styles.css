@@ -166,6 +166,12 @@ img { max-width: 100%; }
 .beta-btn.lightblue:hover { background: #6FAAF2; color: #fff; }
 .beta-btn span { color: inherit; }
 
+.beta-mac-row { display: flex; gap: 10px; }
+.beta-mac-row .mac-opt { flex: 1 1 0; min-width: 0; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; }
+.mac-opt-label { font-size: 14.5px; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+.mac-opt-caption { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; color: #fff; }
+@media (max-width: 380px) { .beta-mac-row { flex-direction: column; } }
+
 /* ---------- how-it-works steps grid ---------- */
 .steps-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 @media (max-width: 1179px) { .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
