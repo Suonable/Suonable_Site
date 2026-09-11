@@ -151,15 +151,20 @@ img { max-width: 100%; }
   .bar-readout { grid-area: bar; }
   .transport-controls { grid-area: controls; }
 
-  /* toolbar: clean 2-column grid instead of horizontal scroll */
-  .toolbar { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; overflow-x: visible; }
-  .toolbar > .pill, .toolbar > .solo-pill { width: 100%; min-width: 0; }
-  .toolbar > .solo-pill { justify-content: center; }
-  .toolbar > .pill { justify-content: flex-start; }
-  .toolbar > .pill span { min-width: 0; padding: 9px 8px; }
-  .toolbar-combo { display: flex; align-items: center; gap: 6px; width: 100%; }
-  .toolbar-combo .solo-pill { flex: 1 1 0; min-width: 0; justify-content: center; }
-  .toolbar-combo .check-pill { flex: 0 0 auto; }
+  /* toolbar: clean 2-column grid, simplified to text-only compact pills */
+  .toolbar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; overflow-x: visible; }
+  .toolbar > .pill, .toolbar > .solo-pill { width: 100%; min-width: 0; justify-content: center; }
+  .toolbar > .pill span { min-width: 0; }
+  .toolbar-combo { display: flex; align-items: center; width: 100%; }
+  .toolbar-combo .solo-pill { flex: 1 1 auto; min-width: 0; justify-content: center; }
+  .toolbar-combo .check-pill { display: none; }
+
+  /* hide icons and drop segmented values, keep only the label */
+  .pill .dim, .pill .ink { display: none; }
+  .solo-pill .arrow, .solo-pill .gear-glyph { display: none; }
+
+  .pill .lbl, .solo-pill { padding: 6px 10px; font-size: 11px; }
+  .pill .lbl { border-left: none; }
 }
 
 .pill { flex: 0 0 auto; display: flex; align-items: center; border: 1px solid var(--line); border-radius: 99px; overflow: hidden; color: var(--ink); }
