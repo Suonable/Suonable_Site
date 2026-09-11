@@ -195,15 +195,15 @@ img { max-width: 100%; }
 .fader-track { position: relative; width: 3px; border-radius: 99px; background: var(--c); height: 100%; }
 .fader-thumb { position: absolute; top: -3px; left: 50%; width: 24px; height: 12px; margin-left: -12px; border-radius: 4px; background: var(--c); }
 .meter { position: relative; width: 8px; border-radius: 99px; background: var(--meterBg); height: 100%; }
-.meter-cap { position: absolute; top: -3px; left: 0; right: 0; height: 12px; border-radius: 4px; background: var(--meterCap); animation: meterLevel 1.6s ease-in-out infinite; }
-.stem-card:nth-child(1) .meter-cap { animation-duration: 1.4s; animation-delay: 0s; }
-.stem-card:nth-child(2) .meter-cap { animation-duration: 1.7s; animation-delay: -0.5s; }
-.stem-card:nth-child(3) .meter-cap { animation-duration: 1.5s; animation-delay: -1.1s; }
-.stem-card:nth-child(4) .meter-cap { animation-duration: 1.8s; animation-delay: -0.2s; }
-.stem-card:nth-child(5) .meter-cap { animation-duration: 1.3s; animation-delay: -0.8s; }
-.stem-card:nth-child(6) .meter-cap { animation-duration: 1.6s; animation-delay: -1.3s; }
-.stem-card:nth-child(7) .meter-cap { animation-duration: 1.9s; animation-delay: -0.4s; }
-.stem-card:nth-child(8) .meter-cap { animation-duration: 1.5s; animation-delay: -0.9s; }
+.meter-cap { position: absolute; top: -3px; left: 0; right: 0; height: 12px; border-radius: 4px; background: var(--c); animation: meterLevel 2.8s ease-in-out infinite; }
+.stem-card:nth-child(1) .meter-cap { animation-duration: 2.6s; animation-delay: 0s; }
+.stem-card:nth-child(2) .meter-cap { animation-duration: 3.1s; animation-delay: -0.9s; }
+.stem-card:nth-child(3) .meter-cap { animation-duration: 2.7s; animation-delay: -1.9s; }
+.stem-card:nth-child(4) .meter-cap { animation-duration: 3.3s; animation-delay: -0.4s; }
+.stem-card:nth-child(5) .meter-cap { animation-duration: 2.3s; animation-delay: -1.4s; }
+.stem-card:nth-child(6) .meter-cap { animation-duration: 2.9s; animation-delay: -2.3s; }
+.stem-card:nth-child(7) .meter-cap { animation-duration: 3.4s; animation-delay: -0.7s; }
+.stem-card:nth-child(8) .meter-cap { animation-duration: 2.7s; animation-delay: -1.6s; }
 .stem-value { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 14px; color: var(--ink); padding: 14px 0 12px; }
 .pan-row { display: flex; align-items: center; gap: 7px; font-size: 10px; font-weight: 600; color: var(--dim); }
 .pan-track { position: relative; flex: 1; height: 2px; border-radius: 99px; background: var(--panTrack); display: block; }
