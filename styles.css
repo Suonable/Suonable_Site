@@ -127,6 +127,30 @@ img { max-width: 100%; }
 .bar-readout .of { font-size: 1em; font-weight: 400; color: var(--dim); letter-spacing: normal; }
 
 .toolbar { display: flex; flex-wrap: nowrap; gap: 10px; justify-content: safe center; overflow-x: auto; border-top: 1px solid var(--hair); padding-top: clamp(14px, 2vw, 22px); scrollbar-width: none; }
+.toolbar-combo { display: contents; }
+
+@media (max-width: 759px) {
+  /* structure strip: full labels, no ellipsis, scroll instead of squeeze */
+  .section-strip { overflow-x: auto; scrollbar-width: none; }
+  .section-chip { flex: 0 0 auto; min-width: max-content; overflow: visible; text-overflow: clip; padding: 6px 12px; }
+
+  /* transport row: time + bar share a row, controls centered on their own row below */
+  .transport-row { grid-template-columns: 1fr 1fr; grid-template-areas: "time bar" "controls controls"; row-gap: 16px; }
+  .time-readout { grid-area: time; text-align: left; }
+  .bar-readout { grid-area: bar; }
+  .transport-controls { grid-area: controls; }
+
+  /* toolbar: clean 2-column grid instead of horizontal scroll */
+  .toolbar { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; overflow-x: visible; }
+  .toolbar > .pill, .toolbar > .solo-pill { width: 100%; min-width: 0; }
+  .toolbar > .solo-pill { justify-content: center; }
+  .toolbar > .pill { justify-content: flex-start; }
+  .toolbar > .pill span { min-width: 0; padding: 9px 8px; }
+  .toolbar-combo { display: flex; align-items: center; gap: 6px; width: 100%; }
+  .toolbar-combo .solo-pill { flex: 1 1 0; min-width: 0; justify-content: center; }
+  .toolbar-combo .check-pill { flex: 0 0 auto; }
+}
+
 .pill { flex: 0 0 auto; display: flex; align-items: center; border: 1px solid var(--line); border-radius: 99px; overflow: hidden; color: var(--ink); }
 .pill span { padding: 9px 13px; font-size: 13px; font-weight: 500; }
 .pill .lbl { font-family: 'JetBrains Mono', monospace; letter-spacing: 0.06em; color: var(--mid); }
