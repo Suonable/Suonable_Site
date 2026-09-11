@@ -651,7 +651,8 @@ const dict = {
   "Other": ["Otros", "Altro"],
   "Vocals": ["Voz", "Voce"],
   "Backing vocals": ["Coros", "Cori"],
-  "Click": ["Clic", "Click"]
+  "Click": ["Clic", "Click"],
+  "10 songs free to upload, no card required": ["10 canciones gratis para subir, sin tarjeta", "10 canzoni gratis da caricare, senza carta"]
 };
 
 const origin = new WeakMap();
