@@ -281,8 +281,11 @@ img { max-width: 100%; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
 .footer-mail { line-height: 1.8; text-align: right; }
 @media (max-width: 759px) {
+  /* logo alone on top, then the three links stacked with equal spacing */
   .footer-bar { flex-direction: column; align-items: center; gap: 14px; }
-  .footer-mail { text-align: center; }
+  .footer-brand { display: contents; }
+  .footer-brand img { margin-bottom: 6px; }
+  .footer-mail { text-align: center; line-height: normal; }
 }
 
 /* ---------- beta buttons ---------- */
