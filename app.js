@@ -132,13 +132,25 @@
     boot0();
   }
 
-  /* ---------- player theme toggle ---------- */
-  function setupPlayer() {
+  /* ---------- hero device mockup ---------- */
+  function setupDevices() {
+    var stage = document.getElementById("devicesStage");
+    var scaleEl = document.getElementById("devicesScale");
+    var ovLaptop = document.getElementById("ovLaptop");
+    var shellScale = document.getElementById("shellScale");
     var player = document.getElementById("player");
-    if (!player) return;
-    var lightBtn = player.querySelector('[data-mode="light"]');
-    var darkBtn = player.querySelector('[data-mode="dark"]');
+    if (!stage || !scaleEl || !ovLaptop || !shellScale || !player) return;
+    var sidebar = document.getElementById("sidebar");
+    var appShell = document.getElementById("appShell");
+    var phone = document.getElementById("ovPhone");
     var canvas = player.querySelector(".wave-canvas");
+
+    // the photo is 2400px wide and the app UI inside the laptop is laid out at 1500px;
+    // both are scaled, so the laptop screen always shows the desktop layout
+    function fit() {
+      scaleEl.style.transform = "scale(" + Math.min(1, stage.clientWidth / 2400) + ")";
+      shellScale.style.transform = "scale(" + ovLaptop.clientWidth / 1500 + ")";
+    }
 
     function drawWave() {
       if (!canvas) return;
@@ -170,18 +182,26 @@
       ctx.fillRect(0, mid - 0.5, w, 1);
     }
 
-    function setMode(mode) {
+    // one controller flips laptop and phone together, so the two screens never drift apart
+    function applyTheme(isDark) {
+      var mode = isDark ? "dark" : "light";
       player.setAttribute("data-theme", mode);
-      if (lightBtn) lightBtn.setAttribute("aria-pressed", mode === "light" ? "true" : "false");
-      if (darkBtn) darkBtn.setAttribute("aria-pressed", mode === "dark" ? "true" : "false");
+      if (sidebar) sidebar.setAttribute("data-theme", mode);
+      if (appShell) appShell.setAttribute("data-theme", mode);
+      ovLaptop.setAttribute("data-theme", mode);
+      if (phone) phone.classList.toggle("is-dark", isDark);
       drawWave();
     }
 
-    if (lightBtn) lightBtn.addEventListener("click", function () { setMode("light"); });
-    if (darkBtn) darkBtn.addEventListener("click", function () { setMode("dark"); });
-
-    window.addEventListener("resize", drawWave);
+    fit();
     drawWave();
+    window.addEventListener("resize", fit);
+
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduceMotion) {
+      var dark = false;
+      setInterval(function () { dark = !dark; applyTheme(dark); }, 4500);
+    }
   }
 
   /* ---------- scroll reveal ---------- */
@@ -226,7 +246,7 @@
     setupAccordions();
     setupDownloadDropdowns();
     setupLang();
-    setupPlayer();
+    setupDevices();
     setupReveal();
     jumpToHash();
   });

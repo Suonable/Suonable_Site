@@ -700,6 +700,7 @@ function textNodes() {
       if (!p) return NodeFilter.FILTER_REJECT;
       const tag = p.tagName;
       if (tag === "SCRIPT" || tag === "STYLE" || tag === "TEMPLATE" || tag === "CANVAS") return NodeFilter.FILTER_REJECT;
+      if (p.closest('[translate="no"]')) return NodeFilter.FILTER_REJECT;
       if (!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
       return NodeFilter.FILTER_ACCEPT;
     }
