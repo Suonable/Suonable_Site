@@ -653,9 +653,9 @@ const dict = {
   "Backing vocals": ["Coros", "Cori"],
   "Click": ["Clic", "Click"],
   "Open beta. Your first 10 songs, free.": ["Beta abierta. Tus primeras 10 canciones, gratis.", "Beta aperta. Le tue prime 10 canzoni, gratis."],
-  "No card, nothing to cancel, every feature unlocked. Upload and split up to 10 songs at no cost — and when prices exist we'll say so before they do.": [
-    "Sin tarjeta, nada que cancelar, todas las funciones abiertas. Sube y separa hasta 10 canciones sin costo — y cuando haya precios lo diremos antes.",
-    "Senza carta, niente da disdire, tutte le funzioni aperte. Carica e separa fino a 10 canzoni senza costo — e quando ci saranno prezzi lo diremo prima."
+  "No card, nothing to cancel, every feature unlocked. Upload and split up to 10 songs at no cost — we'll never charge you for those.": [
+    "Sin tarjeta, nada que cancelar, todas las funciones abiertas. Sube y separa hasta 10 canciones sin costo — nunca te cobraremos por esas.",
+    "Senza carta, niente da disdire, tutte le funzioni aperte. Carica e separa fino a 10 canzoni senza costo — non te le faremo mai pagare."
   ],
   "10 songs free, every feature unlocked": ["10 canciones gratis, todas las funciones abiertas", "10 canzoni gratis, tutte le funzioni aperte"]
 };
