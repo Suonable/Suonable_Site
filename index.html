@@ -23,9 +23,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=12">
-<script src="i18n.js?v=12" defer></script>
-<script src="app.js?v=12" defer></script>
+<link rel="stylesheet" href="styles.css?v=13">
+<script src="i18n.js?v=13" defer></script>
+<script src="app.js?v=13" defer></script>
 </head>
 <body>
 
@@ -34,7 +34,7 @@
   <nav class="site-nav" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; background: #F6F5F2; border-radius: 16px; padding: 8px 10px 8px 6px; position: sticky; top: 5px; z-index: 20;">
     <a href="index.html" style="display: flex; align-items: center; gap: 7px; color: #17171B;">
       <img src="suonable-mark.svg" alt="Suonable" width="30" height="34" style="display: block; width: 30px; height: 34px;">
-      <div style="display: flex; align-items: baseline; gap: 8px;">
+      <div class="logo-text" style="display: flex; align-items: baseline; gap: 8px;">
         <span style="font-size: 19px; font-weight: 700; letter-spacing: -0.04em;">suonable</span>
         <span style="font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #1055AD;">BETA</span>
       </div>
@@ -94,7 +94,6 @@
           <div class="meta-pill"><span class="meta-label">BPM</span><span class="meta-value">102</span></div>
           <div class="meta-pill"><span class="meta-label">KEY</span><span class="meta-value">D#</span></div>
           <div class="meta-pill"><span class="meta-label">TEMPO</span><span class="meta-value">4/4</span></div>
-          <div class="edit-pill">Edit</div>
         </div>
         <div class="theme-toggle">
           <button type="button" class="theme-btn" data-mode="light" aria-pressed="true">LIGHT</button>
@@ -663,7 +662,7 @@
         </div>
         <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
           <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">There's no catalogue<span class="accordion-caret light">▾</span></h3>
-          <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">You bring your own music, and you're responsible for having the right to use it. ZIP only for imports — RAR isn't supported.</p>
+          <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">You bring your own music: upload an MP3 to have it split into tracks, or a ZIP of your own multitrack stems to play them as they are. You're responsible for having the right to use it — ZIP only for imports, RAR isn't supported.</p>
         </div>
       </div>
     </div>

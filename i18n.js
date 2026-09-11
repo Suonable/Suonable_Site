@@ -657,7 +657,11 @@ const dict = {
     "Sin tarjeta, nada que cancelar, todas las funciones abiertas. Sube y separa hasta 10 canciones sin costo — nunca te cobraremos por esas.",
     "Senza carta, niente da disdire, tutte le funzioni aperte. Carica e separa fino a 10 canzoni senza costo — non te le faremo mai pagare."
   ],
-  "10 songs free, every feature unlocked": ["10 canciones gratis, todas las funciones abiertas", "10 canzoni gratis, tutte le funzioni aperte"]
+  "10 songs free, every feature unlocked": ["10 canciones gratis, todas las funciones abiertas", "10 canzoni gratis, tutte le funzioni aperte"],
+  "You bring your own music: upload an MP3 to have it split into tracks, or a ZIP of your own multitrack stems to play them as they are. You're responsible for having the right to use it — ZIP only for imports, RAR isn't supported.": [
+    "Traés tu propia música: subí un MP3 para que se separe en pistas, o un ZIP con tus propios stems multipista para reproducirlos tal cual. Sos responsable de tener los derechos para usarla — solo ZIP para importar, RAR no está soportado.",
+    "Porti la tua musica: carica un MP3 per farlo separare in tracce, oppure uno ZIP con i tuoi stem multitraccia per riprodurli così come sono. Sei responsabile di avere i diritti per usarla — solo ZIP per l'importazione, RAR non è supportato."
+  ]
 };
 
 const origin = new WeakMap();
