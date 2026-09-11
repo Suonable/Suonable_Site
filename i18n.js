@@ -663,12 +663,23 @@ const dict = {
 const origin = new WeakMap();
 const KEY = "suonable.lang";
 
+function detectLang() {
+  try {
+    const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (let i = 0; i < langs.length; i++) {
+      const code = String(langs[i] || "").slice(0, 2).toUpperCase();
+      if (code === "ES" || code === "IT" || code === "EN") return code;
+    }
+  } catch (e) {}
+  return "EN";
+}
+
 function readLang() {
   try {
     const v = localStorage.getItem(KEY);
     if (v === "EN" || v === "ES" || v === "IT") return v;
   } catch (e) {}
-  return "EN";
+  return detectLang();
 }
 
 function saveLang(lang) {
