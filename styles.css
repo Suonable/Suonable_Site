@@ -199,6 +199,7 @@ img { max-width: 100%; }
    fixed desktop size and the whole rig is scaled as one picture (app.js). */
 .devices { padding-top: 24px; }
 .devices-stage { position: relative; width: 100%; max-width: 1360px; margin: 0 auto; aspect-ratio: 2400 / 1498; overflow: hidden; }
+@media (min-width: 760px) { .devices-stage { width: 90%; max-width: 1224px; } }
 .devices-scale { position: absolute; top: 0; left: 0; transform-origin: top left; }
 .photo-rig { position: relative; width: 2400px; height: 1498px; }
 .photo-bg { position: absolute; inset: 0; z-index: 2; display: block; width: 100%; height: 100%; max-width: none; pointer-events: none; user-select: none; -webkit-user-drag: none; }
