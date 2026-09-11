@@ -152,7 +152,7 @@ img { max-width: 100%; }
   .transport-controls { grid-area: controls; }
 
   /* toolbar: clean 2-column grid, simplified to text-only compact pills */
-  .toolbar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; overflow-x: visible; }
+  .toolbar { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; overflow-x: visible; }
   .toolbar > .pill, .toolbar > .solo-pill { width: 100%; min-width: 0; justify-content: center; }
   .toolbar > .pill span { min-width: 0; }
   .toolbar-combo { display: flex; align-items: center; width: 100%; }
