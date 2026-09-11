@@ -56,31 +56,46 @@
     });
   }
 
-  /* ---------- Mac download dropdown ---------- */
-  function setupMacDropdown() {
-    var wrap = document.querySelector(".mac-dropdown");
-    var toggle = document.getElementById("macToggle");
-    var options = document.getElementById("macOptions");
-    if (!wrap || !toggle || !options) return;
+  /* ---------- download dropdowns (Mac / Windows) ---------- */
+  function setupDownloadDropdowns() {
+    var wraps = document.querySelectorAll(".dl-dropdown");
+    if (!wraps.length) return;
 
-    function close() {
-      options.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-    }
-    function open() {
-      options.classList.add("open");
-      toggle.setAttribute("aria-expanded", "true");
+    function closeAll(except) {
+      wraps.forEach(function (w) {
+        if (w === except) return;
+        var o = w.querySelector(".dl-options");
+        var t = w.querySelector("button");
+        if (o) o.classList.remove("open");
+        if (t) t.setAttribute("aria-expanded", "false");
+      });
     }
 
-    toggle.addEventListener("click", function (e) {
-      e.stopPropagation();
-      if (options.classList.contains("open")) close(); else open();
-    });
-    document.addEventListener("click", function (e) {
-      if (options.classList.contains("open") && !wrap.contains(e.target)) close();
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") close();
+    wraps.forEach(function (wrap) {
+      var toggle = wrap.querySelector("button");
+      var options = wrap.querySelector(".dl-options");
+      if (!toggle || !options) return;
+
+      function close() {
+        options.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+      function open() {
+        closeAll(wrap);
+        options.classList.add("open");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+
+      toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (options.classList.contains("open")) close(); else open();
+      });
+      document.addEventListener("click", function (e) {
+        if (options.classList.contains("open") && !wrap.contains(e.target)) close();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") close();
+      });
     });
   }
 
@@ -209,7 +224,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     setupMenu();
     setupAccordions();
-    setupMacDropdown();
+    setupDownloadDropdowns();
     setupLang();
     setupPlayer();
     setupReveal();

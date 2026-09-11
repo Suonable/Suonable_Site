@@ -239,14 +239,14 @@ img { max-width: 100%; }
 .beta-btn.lightblue:hover { background: #6FAAF2; color: #fff; }
 .beta-btn span { color: inherit; }
 
-.mac-caret { display: inline-block; margin-left: 8px; font-size: 12px; transition: transform 0.2s ease; }
-#macToggle[aria-expanded="true"] .mac-caret { transform: rotate(180deg); }
+.dl-caret { display: inline-block; margin-left: 8px; font-size: 12px; transition: transform 0.2s ease; }
+.dl-dropdown button[aria-expanded="true"] .dl-caret { transform: rotate(180deg); }
 
-.mac-options { display: none; flex-direction: column; gap: 4px; margin-top: 8px; padding: 8px; background: #F6F5F2; border: 1px solid #E8E8E4; border-radius: 12px; }
-.mac-options.open { display: flex; }
-.mac-option-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 13px 14px; border-radius: 8px; font-size: 14.5px; font-weight: 600; color: #17171B; }
-.mac-option-link:hover { background: #FFFFFF; color: #1055AD; }
-.mac-option-caption { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: #6E6E78; }
+.dl-options { display: none; flex-direction: column; gap: 4px; margin-top: 8px; padding: 8px; background: #F6F5F2; border: 1px solid #E8E8E4; border-radius: 12px; }
+.dl-options.open { display: flex; }
+.dl-option-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 13px 14px; border-radius: 8px; font-size: 14.5px; font-weight: 600; color: #17171B; }
+.dl-option-link:hover { background: #FFFFFF; color: #1055AD; }
+.dl-option-caption { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: #6E6E78; }
 
 /* ---------- mobile accordions (long text sections) ---------- */
 .feature-list { display: flex; flex-direction: column; }

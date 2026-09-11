@@ -23,9 +23,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=11">
-<script src="i18n.js?v=11" defer></script>
-<script src="app.js?v=11" defer></script>
+<link rel="stylesheet" href="styles.css?v=12">
+<script src="i18n.js?v=12" defer></script>
+<script src="app.js?v=12" defer></script>
 </head>
 <body>
 
@@ -688,26 +688,38 @@
             <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; letter-spacing: -0.02em; color: #fff;">Install from the browser</span>
             <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">IOS · ANDROID · NO STORE</span>
           </a>
-          <div class="mac-dropdown">
+          <div class="dl-dropdown">
             <button type="button" class="beta-btn blue" id="macToggle" aria-expanded="false" aria-controls="macOptions">
-              <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; color: #fff;">Download for Mac<span class="mac-caret">▾</span></span>
+              <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; color: #fff;">Download for Mac<span class="dl-caret">▾</span></span>
               <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">.DMG · APPLE + INTEL</span>
             </button>
-            <div class="mac-options" id="macOptions">
-              <a href="https://app.suonable.com/" class="mac-option-link" data-download="mac-arm64">
+            <div class="dl-options" id="macOptions">
+              <a href="https://github.com/Suonable/Suonable_Site/releases/download/installers-v0.1.0/Suonable-0.1.0-mac-AppleSilicon.dmg" class="dl-option-link" data-download="mac-arm64">
                 <span>Apple Silicon (M1/M2/M3)</span>
-                <span class="mac-option-caption">.DMG</span>
+                <span class="dl-option-caption">.DMG</span>
               </a>
-              <a href="https://app.suonable.com/" class="mac-option-link" data-download="mac-x64">
+              <a href="https://github.com/Suonable/Suonable_Site/releases/download/installers-v0.1.0/Suonable-0.1.0-mac-Intel.dmg" class="dl-option-link" data-download="mac-x64">
                 <span>Intel</span>
-                <span class="mac-option-caption">.DMG</span>
+                <span class="dl-option-caption">.DMG</span>
               </a>
             </div>
           </div>
-          <a href="https://app.suonable.com/" class="beta-btn lightblue" data-download="windows">
-            <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; color: #fff;">Download for Windows</span>
-            <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">.EXE · WIN 10 +</span>
-          </a>
+          <div class="dl-dropdown">
+            <button type="button" class="beta-btn lightblue" id="winToggle" aria-expanded="false" aria-controls="winOptions">
+              <span style="flex: 0 1 auto; min-width: 0; font-size: 16px; font-weight: 700; color: #fff;">Download for Windows<span class="dl-caret">▾</span></span>
+              <span style="flex: 0 1 auto; min-width: 0; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.4; color: #fff;">.EXE · WIN 10 +</span>
+            </button>
+            <div class="dl-options" id="winOptions">
+              <a href="downloads/Suonable-Windows-Install-Guide.pdf" class="dl-option-link" data-download="windows-guide" download>
+                <span>Download instructions</span>
+                <span class="dl-option-caption">.PDF</span>
+              </a>
+              <a href="https://github.com/Suonable/Suonable_Site/releases/download/installers-v0.1.0/Suonable-0.1.0-windows.exe" class="dl-option-link" data-download="windows">
+                <span>Download installer</span>
+                <span class="dl-option-caption">.EXE</span>
+              </a>
+            </div>
+          </div>
         </div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #6E6E78; line-height: 1.7; padding-top: 16px;">MULTICHANNEL OUTPUT IS DESKTOP ONLY. EVERYTHING ELSE RUNS EVERYWHERE.</div>
       </div>
