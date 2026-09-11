@@ -661,7 +661,8 @@ const dict = {
   "You bring your own music: upload an MP3 to have it split into tracks, or a ZIP of your own multitrack stems to play them as they are. You're responsible for having the right to use it — ZIP only for imports, RAR isn't supported.": [
     "Traés tu propia música: subí un MP3 para que se separe en pistas, o un ZIP con tus propios stems multipista para reproducirlos tal cual. Sos responsable de tener los derechos para usarla — solo ZIP para importar, RAR no está soportado.",
     "Porti la tua musica: carica un MP3 per farlo separare in tracce, oppure uno ZIP con i tuoi stem multitraccia per riprodurli così come sono. Sei responsabile di avere i diritti per usarla — solo ZIP per l'importazione, RAR non è supportato."
-  ]
+  ],
+  "Beta version": ["Versión beta", "Versione beta"]
 };
 
 const origin = new WeakMap();
