@@ -1,0 +1,1450 @@
+{
+  "page metadata (<title>, description, social cards)": {
+    "Suonable — Make Your Songs Playable": {
+      "es": "Suonable — Tus canciones, listas para tocar",
+      "it": "Suonable — Le tue canzoni, pronte da suonare"
+    },
+    "Split any recording of your own into tracks by instrument and rehearse with them: isolate your part, play over it, and repeat until it comes out. Free open beta for web, Mac and Windows.": {
+      "es": "Divide cualquier grabación tuya en pistas por instrumento y ensaya con ellas: aísla tu parte, toca encima y repite hasta que salga. Beta abierta y gratuita para web, Mac y Windows.",
+      "it": "Dividi una tua registrazione qualsiasi in tracce per strumento e provaci: isola la tua parte, suonaci sopra e ripeti finché non viene. Beta aperta e gratuita per web, Mac e Windows."
+    },
+    "Split any recording of your own into tracks by instrument and rehearse with them.": {
+      "es": "Divide cualquier grabación tuya en pistas por instrumento y ensaya con ellas.",
+      "it": "Dividi una tua registrazione qualsiasi in tracce per strumento e provaci."
+    }
+  },
+  "nav / chrome": {
+    "OTHER": {
+      "es": "OTROS",
+      "it": "ALTRO"
+    },
+    "VOCALS": {
+      "es": "VOZ",
+      "it": "VOCE"
+    },
+    "BACKING VOCALS": {
+      "es": "COROS",
+      "it": "CORI"
+    },
+    "Master Song": {
+      "es": "Master canción",
+      "it": "Master canzone"
+    },
+    "auto pan": {
+      "es": "auto pan",
+      "it": "auto pan"
+    },
+    "STOP": {
+      "es": "PARAR",
+      "it": "STOP"
+    },
+    "Show less": {
+      "es": "Ver menos",
+      "it": "Mostra meno"
+    },
+    "Show all sixteen": {
+      "es": "Ver las dieciséis",
+      "it": "Mostra tutte e sedici"
+    },
+    "Show all six": {
+      "es": "Ver las seis",
+      "it": "Mostra tutte e sei"
+    },
+    "How it works": {
+      "es": "Cómo funciona",
+      "it": "Come funziona"
+    },
+    "Features": {
+      "es": "Funciones",
+      "it": "Funzioni"
+    },
+    "Chords": {
+      "es": "Acordes",
+      "it": "Accordi"
+    },
+    "Tools": {
+      "es": "Herramientas",
+      "it": "Strumenti"
+    },
+    "Play live": {
+      "es": "En vivo",
+      "it": "Dal vivo"
+    },
+    "Privacy": {
+      "es": "Legal",
+      "it": "Privacy"
+    },
+    "Get the beta": {
+      "es": "Probar la beta",
+      "it": "Prova la beta"
+    },
+    "Home": {
+      "es": "Inicio",
+      "it": "Home"
+    }
+  },
+  "hero": {
+    "Open beta · free while it lasts": {
+      "es": "Beta abierta · gratis mientras dure",
+      "it": "Beta aperta · gratis finché dura"
+    },
+    "Make Your": {
+      "es": "Tus canciones,",
+      "it": "Le tue canzoni,"
+    },
+    "Songs": {
+      "es": "listas para",
+      "it": "pronte da"
+    },
+    "Playable": {
+      "es": "tocar",
+      "it": "suonare"
+    },
+    "Listen": {
+      "es": "Escucha",
+      "it": "Ascolta"
+    },
+    "Learn": {
+      "es": "Aprende",
+      "it": "Impara"
+    },
+    "Play": {
+      "es": "Toca",
+      "it": "Suona"
+    },
+    "Split any recording of your own into tracks by instrument and rehearse with them: isolate your part, play over it, and repeat until it comes out.": {
+      "es": "Divide cualquier grabación tuya en pistas por instrumento y ensaya con ellas: aísla tu parte, toca encima y repite hasta que salga.",
+      "it": "Dividi una tua registrazione qualsiasi in tracce per strumento e provaci: isola la tua parte, suonaci sopra e ripeti finché non viene."
+    }
+  },
+  "player": {
+    "LIGHT": {
+      "es": "CLARO",
+      "it": "CHIARO"
+    },
+    "DARK": {
+      "es": "OSCURO",
+      "it": "SCURO"
+    },
+    "FROM THE TOP": {
+      "es": "DESDE EL INICIO",
+      "it": "DALL'INIZIO"
+    },
+    "BAR": {
+      "es": "COMPÁS",
+      "it": "BATTUTA"
+    },
+    "of": {
+      "es": "de",
+      "it": "di"
+    },
+    "all": {
+      "es": "todo",
+      "it": "tutto"
+    },
+    "PITCH": {
+      "es": "TONO",
+      "it": "TONO"
+    },
+    "Set click": {
+      "es": "Configurar clic",
+      "it": "Imposta click"
+    },
+    "Stems": {
+      "es": "Pistas",
+      "it": "Tracce"
+    },
+    "Resources": {
+      "es": "Recursos",
+      "it": "Risorse"
+    },
+    "generated": {
+      "es": "generado",
+      "it": "generato"
+    }
+  },
+  "four steps": {
+    "Four steps, and one of them is waiting.": {
+      "es": "Cuatro pasos, y uno es esperar.",
+      "it": "Quattro passi, e uno è aspettare."
+    },
+    "Upload a file of yours": {
+      "es": "Sube un archivo tuyo",
+      "it": "Carica un tuo file"
+    },
+    "An MP3, a WAV, last night's rehearsal recording. No official stems needed.": {
+      "es": "Un MP3, un WAV, la grabación del ensayo de anoche. No hacen falta stems oficiales.",
+      "it": "Un MP3, un WAV, la registrazione delle prove di ieri sera. Non servono stem ufficiali."
+    },
+    "It comes back in six or seven tracks": {
+      "es": "Vuelve en seis o siete pistas",
+      "it": "Torna in sei o sette tracce"
+    },
+    "Drums, bass, guitar, keys, other and lead vocal — plus backing vocals when you ask, each with its own volume, mute and solo.": {
+      "es": "Batería, bajo, guitarra, teclados, otros y voz principal — más los coros si los pides, cada una con su volumen, mute y solo.",
+      "it": "Batteria, basso, chitarra, tastiere, altro e voce principale — più i cori se li chiedi, ognuna con il suo volume, mute e solo."
+    },
+    "Rehearse with them": {
+      "es": "Ensaya con ellas",
+      "it": "Provaci"
+    },
+    "Solo your part, mute it and play over the band, loop eight bars, move the key without moving the tempo.": {
+      "es": "Aísla tu parte, silénciala y toca sobre la banda, repite ocho compases, cambia el tono sin cambiar el tempo.",
+      "it": "Isola la tua parte, silenziala e suona sopra la band, ripeti otto battute, cambia la tonalità senza cambiare il tempo."
+    },
+    "Enjoy the automated resources": {
+      "es": "Aprovecha los recursos automáticos",
+      "it": "Sfrutta le risorse automatiche"
+    },
+    "Tempo, key, bar lines and chords arrive already found, with a click and a chord sheet built from them. Correct anything by hand — it's a starting point, not a verdict.": {
+      "es": "Tempo, tonalidad, compases y acordes llegan ya detectados, con un clic y una hoja de acordes hecha con ellos. Corrige lo que quieras a mano — es un punto de partida, no un veredicto.",
+      "it": "Tempo, tonalità, battute e accordi arrivano già rilevati, con un click e un foglio accordi costruito su di essi. Correggi ciò che vuoi a mano — è un punto di partenza, non un verdetto."
+    },
+    "Every feature in detail →": {
+      "es": "Todas las funciones en detalle →",
+      "it": "Tutte le funzioni in dettaglio →"
+    },
+    "Every feature in detail": {
+      "es": "Todas las funciones en detalle",
+      "it": "Tutte le funzioni in dettaglio"
+    }
+  },
+  "marquees": {
+    "your songs": {
+      "es": "tus canciones",
+      "it": "le tue canzoni"
+    },
+    "your key": {
+      "es": "tu tonalidad",
+      "it": "la tua tonalità"
+    },
+    "your click": {
+      "es": "tu clic",
+      "it": "il tuo click"
+    },
+    "your setlist": {
+      "es": "tu setlist",
+      "it": "la tua setlist"
+    },
+    "make music yours": {
+      "es": "haz tuya la música",
+      "it": "fai tua la musica"
+    }
+  },
+  "features": {
+    "Features for every musician": {
+      "es": "Funciones para cada músico",
+      "it": "Funzioni per ogni musicista"
+    },
+    "Grouped by what you're doing.": {
+      "es": "Agrupadas por lo que estás haciendo.",
+      "it": "Raggruppate per ciò che stai facendo."
+    },
+    "The split is just the starting point. Suonable is where your music lives: lyrics, chord charts that transpose with the song, audio files, reference takes, tracks and setlists — all of it next to the song, ready to play.": {
+      "es": "La separación es solo el punto de partida. Suonable es donde vive tu música: letras, hojas de acordes que transponen con la canción, archivos de audio, tomas de referencia, pistas y setlists — todo junto a la canción, listo para tocar.",
+      "it": "La separazione è solo il punto di partenza. Suonable è dove vive la tua musica: testi, fogli accordi che traspongono con la canzone, file audio, take di riferimento, tracce e setlist — tutto accanto alla canzone, pronto da suonare."
+    },
+    "Learn your part": {
+      "es": "Aprende tu parte",
+      "it": "Impara la tua parte"
+    },
+    "Solo one track": {
+      "es": "Aísla una pista",
+      "it": "Isola una traccia"
+    },
+    "Isolate the guitar, the harmony, the keys. Hear only what you have to play.": {
+      "es": "Aísla la guitarra, la armonía, los teclados. Escucha solo lo que tienes que tocar.",
+      "it": "Isola la chitarra, l'armonia, le tastiere. Ascolta solo quello che devi suonare."
+    },
+    "Loop A to B": {
+      "es": "Bucle de A a B",
+      "it": "Loop da A a B"
+    },
+    "Mark two points and repeat that stretch with sample accuracy until it comes out.": {
+      "es": "Marca dos puntos y repite ese tramo con precisión de sample hasta que salga.",
+      "it": "Segna due punti e ripeti quel tratto con precisione al sample finché non viene."
+    },
+    "Real transpose": {
+      "es": "Transposición real",
+      "it": "Trasposizione reale"
+    },
+    "Shift the key by semitones without changing the speed. The click and drums never transpose.": {
+      "es": "Cambia el tono por semitonos sin cambiar la velocidad. El clic y la batería nunca se transponen.",
+      "it": "Cambia la tonalità per semitoni senza cambiare la velocità. Il click e la batteria non vengono mai trasposti."
+    },
+    "Lyrics and charts": {
+      "es": "Letras y hojas",
+      "it": "Testi e fogli"
+    },
+    "Store lyrics, chord charts and extra material next to each song: PDFs, a photo of a score, a reference take.": {
+      "es": "Guarda letras, hojas de acordes y material extra junto a cada canción: PDFs, la foto de una partitura, una toma de referencia.",
+      "it": "Salva testi, fogli accordi e materiale extra accanto a ogni canzone: PDF, la foto di uno spartito, una take di riferimento."
+    },
+    "Dynamic chord chart": {
+      "es": "Hoja de acordes dinámica",
+      "it": "Foglio accordi dinamico"
+    },
+    "Chords placed exactly over the lyrics, transposing with the song, in several languages. Drag sections to reorder them.": {
+      "es": "Acordes colocados exactamente sobre la letra, que transponen con la canción, en varios idiomas. Arrastra las secciones para reordenarlas.",
+      "it": "Accordi posizionati esattamente sopra il testo, che traspongono con la canzone, in più lingue. Trascina le sezioni per riordinarle."
+    },
+    "Rehearse with the band": {
+      "es": "Ensaya con la banda",
+      "it": "Prova con la band"
+    },
+    "The click": {
+      "es": "El clic",
+      "it": "Il click"
+    },
+    "Built from the tempo map detected in the song itself, so it follows the real tempo of the recording even when it breathes. It sounds from the first to the last second of the audio.": {
+      "es": "Construido con el mapa de tempo detectado en la propia canción, así sigue el tempo real de la grabación incluso cuando respira. Suena desde el primer hasta el último segundo del audio.",
+      "it": "Costruito sulla mappa del tempo rilevata nella canzone stessa, così segue il tempo reale della registrazione anche quando respira. Suona dal primo all'ultimo secondo dell'audio."
+    },
+    "5 click voices": {
+      "es": "5 voces de clic",
+      "it": "5 voci di click"
+    },
+    "Classic, soft beep, woodblock, sticks, cowbell. Configurable accent pattern and subdivisions.": {
+      "es": "Clásico, beep suave, caja china, baquetas, cencerro. Patrón de acentos y subdivisiones configurables.",
+      "it": "Classico, beep morbido, woodblock, bacchette, campanaccio. Pattern di accenti e suddivisioni configurabili."
+    },
+    "Variable tempo songs": {
+      "es": "Canciones de tempo variable",
+      "it": "Canzoni a tempo variabile"
+    },
+    "Recordings that speed up or slow down are supported.": {
+      "es": "Las grabaciones que aceleran o frenan están soportadas.",
+      "it": "Le registrazioni che accelerano o rallentano sono supportate."
+    },
+    "Multitrack imports": {
+      "es": "Importar multipistas",
+      "it": "Importa multitraccia"
+    },
+    "Drop a ZIP from an Ableton or Logic session, or a bought pack. Tested with a real 430 MB project of 17 tracks.": {
+      "es": "Suelta un ZIP de una sesión de Ableton o Logic, o un pack comprado. Probado con un proyecto real de 430 MB y 17 pistas.",
+      "it": "Trascina uno ZIP da una sessione di Ableton o Logic, o un pacchetto acquistato. Testato con un progetto reale di 430 MB e 17 tracce."
+    },
+    "Setlists": {
+      "es": "Setlists",
+      "it": "Setlist"
+    },
+    "Order the songs for a rehearsal or a show, and share them with a link.": {
+      "es": "Ordena las canciones para un ensayo o un concierto, y compártelas con un enlace.",
+      "it": "Ordina le canzoni per una prova o un concerto, e condividile con un link."
+    },
+    "Separate outputs": {
+      "es": "Salidas separadas",
+      "it": "Uscite separate"
+    },
+    "Each track can leave through a different physical output of your audio interface. Desktop app only.": {
+      "es": "Cada pista puede salir por una salida física distinta de tu interfaz de audio. Solo en la app de escritorio.",
+      "it": "Ogni traccia può uscire da un'uscita fisica diversa della tua interfaccia audio. Solo nell'app desktop."
+    },
+    "Sliding mixer": {
+      "es": "Mezclador deslizante",
+      "it": "Mixer scorrevole"
+    },
+    "With many tracks the desk slides instead of squeezing the channels.": {
+      "es": "Con muchas pistas la mesa se desliza en vez de apretar los canales.",
+      "it": "Con molte tracce il banco scorre invece di comprimere i canali."
+    },
+    "Works offline": {
+      "es": "Funciona sin conexión",
+      "it": "Funziona offline"
+    },
+    "Once a song is downloaded it plays with no connection.": {
+      "es": "Una vez descargada, la canción suena sin conexión.",
+      "it": "Una volta scaricata, la canzone suona senza connessione."
+    },
+    "Installs from the browser": {
+      "es": "Se instala desde el navegador",
+      "it": "Si installa dal browser"
+    },
+    "iPhone, Android, iPad, Mac and Windows. No store to go through.": {
+      "es": "iPhone, Android, iPad, Mac y Windows. Sin pasar por ninguna tienda.",
+      "it": "iPhone, Android, iPad, Mac e Windows. Senza passare da nessuno store."
+    },
+    "Interface in 3 languages": {
+      "es": "Interfaz en 3 idiomas",
+      "it": "Interfaccia in 3 lingue"
+    },
+    "English, Italian and Spanish.": {
+      "es": "Inglés, italiano y español.",
+      "it": "Inglese, italiano e spagnolo."
+    },
+    "English, Italian and Spanish": {
+      "es": "Inglés, italiano y español",
+      "it": "Inglese, italiano e spagnolo"
+    }
+  },
+  "chords": {
+    "Chords, found for you": {
+      "es": "Acordes, detectados para ti",
+      "it": "Accordi, trovati per te"
+    },
+    "Every song arrives with its chords already on it.": {
+      "es": "Cada canción llega con sus acordes ya puestos.",
+      "it": "Ogni canzone arriva con i suoi accordi già sopra."
+    },
+    "Not a guess pasted on top: the chords are placed over the beat map detected in your own recording, so each one sits on the bar and beat where it actually changes. Correct anything by hand — it's a starting point, not a verdict.": {
+      "es": "No es una suposición pegada encima: los acordes se colocan sobre el mapa de compases detectado en tu propia grabación, así cada uno cae en el compás y el tiempo donde realmente cambia. Corrige lo que quieras a mano — es un punto de partida, no un veredicto.",
+      "it": "Non è un'ipotesi incollata sopra: gli accordi sono posizionati sulla mappa delle battute rilevata nella tua registrazione, così ognuno cade sulla battuta e sul movimento in cui cambia davvero. Correggi ciò che vuoi a mano — è un punto di partenza, non un verdetto."
+    },
+    "Placed on the beat": {
+      "es": "Colocados en el tiempo",
+      "it": "Posizionati sul movimento"
+    },
+    "Each chord is anchored to a bar and a beat, not to a stopwatch — so it stays right even when the tempo breathes.": {
+      "es": "Cada acorde está anclado a un compás y un tiempo, no a un cronómetro — así sigue bien aunque el tempo respire.",
+      "it": "Ogni accordo è ancorato a una battuta e a un movimento, non a un cronometro — così resta giusto anche quando il tempo respira."
+    },
+    "Transposes with the song": {
+      "es": "Transpone con la canción",
+      "it": "Traspone con la canzone"
+    },
+    "Move the key and the whole sheet follows — the chords you read are the chords you're hearing.": {
+      "es": "Cambia el tono y la hoja entera lo sigue — los acordes que lees son los que estás oyendo.",
+      "it": "Cambia la tonalità e tutto il foglio la segue — gli accordi che leggi sono quelli che stai sentendo."
+    },
+    "Yours to fix": {
+      "es": "Tuyos para corregir",
+      "it": "Tuoi da correggere"
+    },
+    "Edit any chord by hand and it stays edited. Key and BPM are detected too, and editable everywhere they appear.": {
+      "es": "Edita cualquier acorde a mano y así queda. La tonalidad y el BPM también se detectan, y se editan donde aparezcan.",
+      "it": "Modifica qualsiasi accordo a mano e resta così. Tonalità e BPM sono rilevati anche loro, e si modificano dove appaiono."
+    },
+    "← All resources": {
+      "es": "← Todos los recursos",
+      "it": "← Tutte le risorse"
+    },
+    "Automatic Chords": {
+      "es": "Acordes automáticos",
+      "it": "Accordi automatici"
+    },
+    "your song": {
+      "es": "tu canción",
+      "it": "la tua canzone"
+    },
+    "Bar 25": {
+      "es": "Compás 25",
+      "it": "Battuta 25"
+    },
+    "8 BARS": {
+      "es": "8 COMPASES",
+      "it": "8 BATTUTE"
+    },
+    "Edit": {
+      "es": "Editar",
+      "it": "Modifica"
+    },
+    "BAR 24": {
+      "es": "C. 24",
+      "it": "B. 24"
+    },
+    "BAR 25": {
+      "es": "C. 25",
+      "it": "B. 25"
+    },
+    "BAR 26": {
+      "es": "C. 26",
+      "it": "B. 26"
+    },
+    "BAR 27": {
+      "es": "C. 27",
+      "it": "B. 27"
+    },
+    "BAR 28": {
+      "es": "C. 28",
+      "it": "B. 28"
+    },
+    "BAR 29": {
+      "es": "C. 29",
+      "it": "B. 29"
+    },
+    "BAR 30": {
+      "es": "C. 30",
+      "it": "B. 30"
+    },
+    "BAR 31": {
+      "es": "C. 31",
+      "it": "B. 31"
+    }
+  },
+  "tools": {
+    "The tools": {
+      "es": "Las herramientas",
+      "it": "Gli strumenti"
+    },
+    "Not only the separator.": {
+      "es": "No solo el separador.",
+      "it": "Non solo il separatore."
+    },
+    "It's where the tools you open every day keep landing.": {
+      "es": "Es donde van aterrizando las herramientas que abres cada día.",
+      "it": "È dove atterrano gli strumenti che apri ogni giorno."
+    },
+    "Metronome": {
+      "es": "Metrónomo",
+      "it": "Metronomo"
+    },
+    "AVAILABLE": {
+      "es": "DISPONIBLE",
+      "it": "DISPONIBILE"
+    },
+    ", ten time signatures, subdivisions, tap tempo, and accents you set by tapping the beat. The light lands when the click reaches the speaker, not when the app schedules it.": {
+      "es": ", diez compases, subdivisiones, tap tempo y acentos que marcas tocando el tiempo. La luz cae cuando el clic llega al altavoz, no cuando la app lo programa.",
+      "it": ", dieci indicazioni di tempo, suddivisioni, tap tempo e accenti che imposti battendo il tempo. La luce arriva quando il click raggiunge l'altoparlante, non quando l'app lo programma."
+    },
+    "Tuner": {
+      "es": "Afinador",
+      "it": "Accordatore"
+    },
+    "ON THE WAY": {
+      "es": "EN CAMINO",
+      "it": "IN ARRIVO"
+    },
+    "Chromatic for anything, with a per-instrument mode for strings. The headstock is drawn with the pegs where they actually sit, and each string turns green the moment it's in tune.": {
+      "es": "Cromático para cualquier cosa, con un modo por instrumento para las cuerdas. El clavijero se dibuja con las clavijas donde están de verdad, y cada cuerda se pone verde en el momento en que está afinada.",
+      "it": "Cromatico per qualsiasi cosa, con una modalità per strumento per gli archi. La paletta è disegnata con le meccaniche dove stanno davvero, e ogni corda diventa verde nel momento in cui è accordata."
+    },
+    "And whatever comes next": {
+      "es": "Y lo que venga después",
+      "it": "E quello che verrà"
+    },
+    "MORE TOOLS ON THE WAY": {
+      "es": "MÁS HERRAMIENTAS EN CAMINO",
+      "it": "ALTRI STRUMENTI IN ARRIVO"
+    }
+  },
+  "play live": {
+    "The differentiator": {
+      "es": "La diferencia",
+      "it": "La differenza"
+    },
+    "One track, one physical output": {
+      "es": "Una pista, una salida física",
+      "it": "Una traccia, un'uscita fisica"
+    },
+    "The click to the drummer's ear on output 1. The band to the PA on 2–3. The choir on 5–6. Stereo pairs or mono, and you choose which outputs pair up.": {
+      "es": "El clic al oído del baterista por la salida 1. La banda al PA por 2–3. El coro por 5–6. Pares estéreo o mono, y tú eliges qué salidas se emparejan.",
+      "it": "Il click nell'orecchio del batterista sull'uscita 1. La band al PA su 2–3. Il coro su 5–6. Coppie stereo o mono, e scegli tu quali uscite si accoppiano."
+    },
+    "Desktop app only, on Mac and Windows. It is not a bug: no browser sends more than two channels to the hardware — it's documented as a platform limitation in Chromium and WebKit. That's why the desktop app exists. In the browser and on mobile it's two channels, full stop.": {
+      "es": "Solo en la app de escritorio, en Mac y Windows. No es un bug: ningún navegador manda más de dos canales al hardware — está documentado como limitación de plataforma en Chromium y WebKit. Por eso existe la app de escritorio. En el navegador y en el móvil son dos canales, punto.",
+      "it": "Solo nell'app desktop, su Mac e Windows. Non è un bug: nessun browser manda più di due canali all'hardware — è documentato come limite di piattaforma in Chromium e WebKit. Per questo esiste l'app desktop. Nel browser e su mobile sono due canali, punto."
+    },
+    "AUDIO INTERFACE": {
+      "es": "INTERFAZ DE AUDIO",
+      "it": "INTERFACCIA AUDIO"
+    },
+    "Click → drummer's in-ear": {
+      "es": "Clic → in-ear del baterista",
+      "it": "Click → in-ear del batterista"
+    },
+    "Band → PA": {
+      "es": "Banda → PA",
+      "it": "Band → PA"
+    },
+    "Bass → stage amp": {
+      "es": "Bajo → ampli del escenario",
+      "it": "Basso → ampli sul palco"
+    },
+    "Choir → monitors": {
+      "es": "Coro → monitores",
+      "it": "Coro → monitor"
+    }
+  },
+  "straight talk": {
+    "Straight talk": {
+      "es": "Hablando claro",
+      "it": "Parliamoci chiaro"
+    },
+    "What it doesn't do": {
+      "es": "Lo que no hace",
+      "it": "Cosa non fa"
+    },
+    "It isn't studio quality": {
+      "es": "No es calidad de estudio",
+      "it": "Non è qualità da studio"
+    },
+    "The separation is very good, but it's automatic. One instrument bleeds a little into another, especially in dense mixes.": {
+      "es": "La separación es muy buena, pero es automática. Un instrumento se filtra un poco en otro, sobre todo en mezclas densas.",
+      "it": "La separazione è molto buona, ma è automatica. Uno strumento sborda un po' in un altro, soprattutto nei mix densi."
+    },
+    "It isn't tuned for every kind of music": {
+      "es": "No está ajustada a cualquier música",
+      "it": "Non è tarata su ogni tipo di musica"
+    },
+    "It's tested with modern band music. On orchestra, very dense electronic music or poor recordings the results are worse.": {
+      "es": "Está probada con música moderna de banda. En orquesta, electrónica muy densa o grabaciones pobres los resultados son peores.",
+      "it": "È testata con musica moderna suonata da una band. Su orchestra, elettronica molto densa o registrazioni scarse i risultati sono peggiori."
+    },
+    "It isn't instant": {
+      "es": "No es instantáneo",
+      "it": "Non è istantaneo"
+    },
+    "About three minutes per song — and then it's yours forever.": {
+      "es": "Unos tres minutos por canción — y después es tuya para siempre.",
+      "it": "Circa tre minuti per canzone — e poi è tua per sempre."
+    },
+    "There's no catalogue": {
+      "es": "No hay catálogo",
+      "it": "Non c'è un catalogo"
+    },
+    "You bring your own music, and you're responsible for having the right to use it. ZIP only for imports — RAR isn't supported.": {
+      "es": "Tú traes tu música, y eres responsable de tener derecho a usarla. Solo ZIP para importar — RAR no está soportado.",
+      "it": "La musica la porti tu, e sei responsabile di avere il diritto di usarla. Solo ZIP per le importazioni — RAR non è supportato."
+    }
+  },
+  "beta": {
+    "The beta": {
+      "es": "La beta",
+      "it": "La beta"
+    },
+    "Open beta. Free while it lasts.": {
+      "es": "Beta abierta. Gratis mientras dure.",
+      "it": "Beta aperta. Gratis finché dura."
+    },
+    "No card, nothing to cancel, every feature unlocked. It's a beta, so things move — and when prices exist we'll say so before they do.": {
+      "es": "Sin tarjeta, nada que cancelar, todas las funciones abiertas. Es una beta, así que las cosas se mueven — y cuando haya precios lo diremos antes.",
+      "it": "Senza carta, niente da disdire, tutte le funzioni aperte. È una beta, quindi le cose si muovono — e quando ci saranno prezzi lo diremo prima."
+    },
+    "The beta is closed for now.": {
+      "es": "La beta está cerrada por ahora.",
+      "it": "La beta è chiusa per ora."
+    },
+    "Leave your email and you get one message the day it opens again. Nothing else changes: still free while the beta runs, still every feature.": {
+      "es": "Deja tu correo y recibes un mensaje el día que vuelva a abrir. Nada más cambia: sigue gratis mientras dure la beta, con todas las funciones.",
+      "it": "Lascia la tua mail e ricevi un messaggio il giorno in cui riapre. Nient'altro cambia: resta gratis finché dura la beta, con tutte le funzioni."
+    },
+    "Every feature unlocked, no card": {
+      "es": "Todas las funciones, sin tarjeta",
+      "it": "Tutte le funzioni, senza carta"
+    },
+    "Offline once the song is downloaded": {
+      "es": "Sin conexión una vez descargada la canción",
+      "it": "Offline una volta scaricata la canzone"
+    },
+    "Download for Mac": {
+      "es": "Descargar para Mac",
+      "it": "Scarica per Mac"
+    },
+    "Download for Windows": {
+      "es": "Descargar para Windows",
+      "it": "Scarica per Windows"
+    },
+    "Install from the browser": {
+      "es": "Instalar desde el navegador",
+      "it": "Installa dal browser"
+    },
+    "IOS · ANDROID · NO STORE": {
+      "es": "IOS · ANDROID · SIN TIENDA",
+      "it": "IOS · ANDROID · NIENTE STORE"
+    },
+    "MULTICHANNEL OUTPUT IS DESKTOP ONLY. EVERYTHING ELSE RUNS EVERYWHERE.": {
+      "es": "LA SALIDA MULTICANAL ES SOLO DE ESCRITORIO. TODO LO DEMÁS FUNCIONA EN TODAS PARTES.",
+      "it": "L'USCITA MULTICANALE È SOLO DESKTOP. TUTTO IL RESTO FUNZIONA DAPPERTUTTO."
+    },
+    "Tell me when it opens": {
+      "es": "Avísame cuando abra",
+      "it": "Avvisami quando apre"
+    },
+    "ONE EMAIL, WHEN IT OPENS. NOTHING ELSE.": {
+      "es": "UN CORREO, CUANDO ABRA. NADA MÁS.",
+      "it": "UNA MAIL, QUANDO APRE. NIENT'ALTRO."
+    },
+    "YOU'RE ON THE LIST": {
+      "es": "ESTÁS EN LA LISTA",
+      "it": "SEI IN LISTA"
+    },
+    "One message when it opens, with the links for Mac, Windows and the browser install.": {
+      "es": "Un mensaje cuando abra, con los enlaces para Mac, Windows y la instalación desde el navegador.",
+      "it": "Un messaggio quando apre, con i link per Mac, Windows e l'installazione dal browser."
+    },
+    "Download installer": {
+      "es": "Descargar instalador",
+      "it": "Scarica l'installer"
+    },
+    "Download instructions": {
+      "es": "Descargar instrucciones",
+      "it": "Scarica le istruzioni"
+    }
+  },
+  "footer": {
+    "YOUR FILES": {
+      "es": "TUS ARCHIVOS",
+      "it": "I TUOI FILE"
+    },
+    "Private by architecture": {
+      "es": "Privado por arquitectura",
+      "it": "Privato per architettura"
+    },
+    "Why there's no catalogue": {
+      "es": "Por qué no hay catálogo",
+      "it": "Perché non c'è un catalogo"
+    },
+    "THE TECHNICAL SIDE": {
+      "es": "LA PARTE TÉCNICA",
+      "it": "LA PARTE TECNICA"
+    },
+    "Formats, bitrates and platforms": {
+      "es": "Formatos, bitrates y plataformas",
+      "it": "Formati, bitrate e piattaforme"
+    },
+    "What it isn't — the honest list": {
+      "es": "Lo que no es — la lista honesta",
+      "it": "Cosa non è — la lista onesta"
+    },
+    "THE PRODUCT": {
+      "es": "EL PRODUCTO",
+      "it": "IL PRODOTTO"
+    },
+    "Copyright and takedowns": {
+      "es": "Copyright y retiradas",
+      "it": "Copyright e rimozioni"
+    },
+    "Suonable doesn't supply music: every file in your account got there because you uploaded it, and you're responsible for holding the rights to do so. The tracks are for your own use — learning your part, rehearsing and playing — not for redistributing, publishing, selling or broadcasting them. Files are stored in the European Union, your audio doesn't train any model, and Suonable is in beta.": {
+      "es": "Suonable no proporciona música: cada archivo de tu cuenta está ahí porque tú lo subiste, y eres responsable de tener los derechos para hacerlo. Las pistas son para tu propio uso — aprender tu parte, ensayar y tocar — no para redistribuirlas, publicarlas, venderlas ni emitirlas. Los archivos se guardan en la Unión Europea, tu audio no entrena ningún modelo, y Suonable está en beta.",
+      "it": "Suonable non fornisce musica: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti. Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle. I file sono archiviati nell'Unione Europea, il tuo audio non addestra nessun modello, e Suonable è in beta."
+    },
+    "HOW IT WORKS": {
+      "es": "CÓMO FUNCIONA",
+      "it": "COME FUNZIONA"
+    },
+    "PRIVACY & LEGAL": {
+      "es": "PRIVACIDAD Y LEGAL",
+      "it": "PRIVACY E LEGALE"
+    },
+    "WHAT IT ISN'T": {
+      "es": "LO QUE NO ES",
+      "it": "COSA NON È"
+    },
+    "SPECS": {
+      "es": "FICHA TÉCNICA",
+      "it": "SCHEDA TECNICA"
+    },
+    "CONTACT": {
+      "es": "CONTACTO",
+      "it": "CONTATTO"
+    },
+    "HOME": {
+      "es": "INICIO",
+      "it": "HOME"
+    },
+    "GET THE BETA": {
+      "es": "PROBAR LA BETA",
+      "it": "PROVA LA BETA"
+    },
+    "FROM": {
+      "es": "DE",
+      "it": "DA"
+    },
+    "— TO PLAY": {
+      "es": "— TOCAR",
+      "it": "— SUONARE"
+    },
+    "Data rights, legal requests, notices and takedowns": {
+      "es": "Derechos de datos, solicitudes legales, avisos y retiradas",
+      "it": "Diritti sui dati, richieste legali, segnalazioni e rimozioni"
+    },
+    "THE DOCUMENTS · EN / IT / ES": {
+      "es": "LOS DOCUMENTOS · EN / IT / ES",
+      "it": "I DOCUMENTI · EN / IT / ES"
+    },
+    "Privacy policy": {
+      "es": "Política de privacidad",
+      "it": "Informativa privacy"
+    },
+    "Terms of use": {
+      "es": "Términos de uso",
+      "it": "Termini d'uso"
+    },
+    "Copyright policy and takedown route": {
+      "es": "Política de copyright y vía de retirada",
+      "it": "Politica sul copyright e procedura di rimozione"
+    },
+    "Copyright policy": {
+      "es": "Política de copyright",
+      "it": "Politica sul copyright"
+    },
+    "Your files are stored in the European Union and your audio doesn't train any model. Suonable is in beta.": {
+      "es": "Tus archivos se guardan en la Unión Europea y tu audio no entrena ningún modelo. Suonable está en beta.",
+      "it": "I tuoi file sono archiviati nell'Unione Europea e il tuo audio non addestra nessun modello. Suonable è in beta."
+    },
+    "Suonable doesn't supply music. There's no catalogue and no library: every file in your account got there because you uploaded it, and you're responsible for holding the rights to do so.": {
+      "es": "Suonable no proporciona música. No hay catálogo ni biblioteca: cada archivo de tu cuenta está ahí porque tú lo subiste, y eres responsable de tener los derechos para hacerlo.",
+      "it": "Suonable non fornisce musica. Non c'è catalogo né libreria: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti."
+    },
+    "The tracks are for your own use — learning your part, rehearsing and playing — not for redistributing, publishing, selling or broadcasting them.": {
+      "es": "Las pistas son para tu propio uso — aprender tu parte, ensayar y tocar — no para redistribuirlas, publicarlas, venderlas ni emitirlas.",
+      "it": "Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle."
+    }
+  },
+  "How it works page": {
+    "From one file to a working desk in about three minutes.": {
+      "es": "De un archivo a una mesa lista en unos tres minutos.",
+      "it": "Da un file a un banco pronto in circa tre minuti."
+    },
+    "Everything on this page is in the app today, except where it says otherwise. Where something only runs on desktop, or only comes out so-so, it says so.": {
+      "es": "Todo lo de esta página está hoy en la app, salvo donde dice lo contrario. Donde algo solo funciona en escritorio, o sale regular, lo dice.",
+      "it": "Tutto in questa pagina è già nell'app, tranne dove è indicato diversamente. Dove qualcosa gira solo su desktop, o viene così così, c'è scritto."
+    },
+    "01 · SEPARATION": {
+      "es": "01 · SEPARACIÓN",
+      "it": "01 · SEPARAZIONE"
+    },
+    "Six or seven tracks out of one file": {
+      "es": "Seis o siete pistas de un solo archivo",
+      "it": "Sei o sette tracce da un solo file"
+    },
+    "Upload an audio file and it comes back as drums, bass, guitar, keys, other and lead vocal — and, when you ask for it, the backing vocals split from the lead. Each one with its own volume, mute and solo, all starting at the same instant with no drift.": {
+      "es": "Sube un archivo de audio y vuelve como batería, bajo, guitarra, teclados, otros y voz principal — y, si lo pides, los coros separados de la voz principal. Cada una con su volumen, mute y solo, todas arrancando en el mismo instante y sin desfase.",
+      "it": "Carica un file audio e torna come batteria, basso, chitarra, tastiere, altro e voce principale — e, se lo chiedi, i cori separati dalla voce principale. Ognuna con il suo volume, mute e solo, tutte che partono nello stesso istante senza sfasamenti."
+    },
+    "You don't need anyone's official stems. It works with the recordings you already have, including your own band's rehearsal or an arrangement that exists nowhere else. There is no catalogue to pick from: every song on your desk is one you brought.": {
+      "es": "No necesitas los stems oficiales de nadie. Funciona con las grabaciones que ya tienes, incluido el ensayo de tu banda o un arreglo que no existe en ningún otro sitio. No hay catálogo del que elegir: cada canción de tu mesa la trajiste tú.",
+      "it": "Non ti servono gli stem ufficiali di nessuno. Funziona con le registrazioni che hai già, comprese le prove della tua band o un arrangiamento che non esiste da nessun'altra parte. Non c'è un catalogo da cui scegliere: ogni canzone sul tuo banco l'hai portata tu."
+    },
+    "The separation is automatic and it's a statistical model, so we don't promise a result. On dense mixes an instrument bleeds a little into another. On orchestral material, very dense electronic music or poor recordings it comes out weaker — it's tuned for modern music played by a band.": {
+      "es": "La separación es automática y es un modelo estadístico, así que no prometemos un resultado. En mezclas densas un instrumento se filtra un poco en otro. En material orquestal, electrónica muy densa o grabaciones pobres sale más flojo — está ajustada a música moderna tocada por una banda.",
+      "it": "La separazione è automatica ed è un modello statistico, quindi non promettiamo un risultato. Nei mix densi uno strumento sborda un po' in un altro. Su materiale orchestrale, elettronica molto densa o registrazioni scarse viene più debole — è tarata sulla musica moderna suonata da una band."
+    },
+    "FORMATS IN — 9": {
+      "es": "FORMATOS DE ENTRADA — 9",
+      "it": "FORMATI IN INGRESSO — 9"
+    },
+    "PER SONG": {
+      "es": "POR CANCIÓN",
+      "it": "PER CANZONE"
+    },
+    "KBPS OPUS FOR PLAYBACK": {
+      "es": "KBPS OPUS PARA REPRODUCIR",
+      "it": "KBPS OPUS PER LA RIPRODUZIONE"
+    },
+    "AND BACK OUT": {
+      "es": "Y DE VUELTA",
+      "it": "E IN USCITA"
+    },
+    "Download the tracks as a ZIP of MP3s — LAME VBR at V0,": {
+      "es": "Descarga las pistas como un ZIP de MP3 — LAME VBR en V0,",
+      "it": "Scarica le tracce come uno ZIP di MP3 — LAME VBR a V0,"
+    },
+    "depending on the track — ready for your DAW.": {
+      "es": "según la pista — listas para tu DAW.",
+      "it": "a seconda della traccia — pronte per il tuo DAW."
+    },
+    "02 · MULTITRACK IMPORT": {
+      "es": "02 · IMPORTAR MULTIPISTAS",
+      "it": "02 · IMPORTA MULTITRACCIA"
+    },
+    "Already have the stems? Drag in the ZIP.": {
+      "es": "¿Ya tienes los stems? Arrastra el ZIP.",
+      "it": "Hai già gli stem? Trascina lo ZIP."
+    },
+    "A multitrack package you already have lands as one song with all of its tracks — nothing gets separated, because it doesn't need to be. Tested with a real 430 MB project of 17 tracks.": {
+      "es": "Un paquete multipista que ya tienes entra como una canción con todas sus pistas — no se separa nada, porque no hace falta. Probado con un proyecto real de 430 MB y 17 pistas.",
+      "it": "Un pacchetto multitraccia che hai già entra come una canzone con tutte le sue tracce — non si separa niente, perché non serve. Testato con un progetto reale di 430 MB e 17 tracce."
+    },
+    "Before anything uploads you see what's inside, with a name already proposed for each track. Rename, reorder, drop what you don't need. Anything that isn't audio is ignored. ZIP only — RAR isn't supported.": {
+      "es": "Antes de subir nada ves lo que hay dentro, con un nombre ya propuesto para cada pista. Renombra, reordena, quita lo que no necesites. Todo lo que no sea audio se ignora. Solo ZIP — RAR no está soportado.",
+      "it": "Prima di caricare qualsiasi cosa vedi cosa c'è dentro, con un nome già proposto per ogni traccia. Rinomina, riordina, togli quello che non ti serve. Tutto ciò che non è audio viene ignorato. Solo ZIP — RAR non è supportato."
+    },
+    "430 MB · 17 TRACKS": {
+      "es": "430 MB · 17 PISTAS",
+      "it": "430 MB · 17 TRACCE"
+    },
+    "DRUMS": {
+      "es": "BATERÍA",
+      "it": "BATTERIA"
+    },
+    "BASS": {
+      "es": "BAJO",
+      "it": "BASSO"
+    },
+    "GUITAR": {
+      "es": "GUITARRA",
+      "it": "CHITARRA"
+    },
+    "KEYS": {
+      "es": "TECLADOS",
+      "it": "TASTIERE"
+    },
+    "IGNORED": {
+      "es": "IGNORADO",
+      "it": "IGNORATO"
+    },
+    "+ 12 MORE": {
+      "es": "+ 12 MÁS",
+      "it": "+ 12 ALTRE"
+    },
+    "03 · THE DESK": {
+      "es": "03 · LA MESA",
+      "it": "03 · IL BANCO"
+    },
+    "Volume, mute, solo, meter — per track": {
+      "es": "Volumen, mute, solo, medidor — por pista",
+      "it": "Volume, mute, solo, misuratore — per traccia"
+    },
+    "Silence your instrument and play over the band. Or solo it and learn the part note for note. With many tracks the desk slides sideways instead of squeezing everything into the screen.": {
+      "es": "Silencia tu instrumento y toca sobre la banda. O aíslalo y aprende la parte nota por nota. Con muchas pistas la mesa se desliza en lugar de apretar todo en la pantalla.",
+      "it": "Silenzia il tuo strumento e suona sopra la band. Oppure isolalo e impara la parte nota per nota. Con molte tracce il banco scorre invece di comprimere tutto nello schermo."
+    },
+    "The beat map and the click": {
+      "es": "El mapa de compases y el clic",
+      "it": "La mappa delle battute e il click"
+    },
+    "It finds the tempo, the bar lines and where the one falls, even when the tempo moves. The click comes out of its own output, so pulling the band down to hear yourself doesn't take the count with it.": {
+      "es": "Encuentra el tempo, las líneas de compás y dónde cae el uno, incluso cuando el tempo se mueve. El clic sale por su propia salida, así que bajar la banda para oírte no se lleva la cuenta con ella.",
+      "it": "Trova il tempo, le stanghette e dove cade l'uno, anche quando il tempo si muove. Il click esce dalla sua uscita, così abbassare la band per sentirti non porta via il conteggio."
+    },
+    "CLASSIC": {
+      "es": "CLÁSICO",
+      "it": "CLASSICO"
+    },
+    "SOFT BEEP": {
+      "es": "BEEP SUAVE",
+      "it": "BEEP MORBIDO"
+    },
+    "WOODBLOCK": {
+      "es": "CAJA CHINA",
+      "it": "WOODBLOCK"
+    },
+    "STICKS": {
+      "es": "BAQUETAS",
+      "it": "BACCHETTE"
+    },
+    "COWBELL": {
+      "es": "CENCERRO",
+      "it": "CAMPANACCIO"
+    },
+    "ACCENTS + SUBDIVISIONS": {
+      "es": "ACENTOS + SUBDIVISIONES",
+      "it": "ACCENTI + SUDDIVISIONI"
+    },
+    "Chords, key and BPM": {
+      "es": "Acordes, tonalidad y BPM",
+      "it": "Accordi, tonalità e BPM"
+    },
+    "It finds the chords and lays them over the beat map, ready to correct by hand. The key and the BPM are detected too, and editable everywhere they appear.": {
+      "es": "Encuentra los acordes y los coloca sobre el mapa de compases, listos para corregir a mano. La tonalidad y el BPM también se detectan, y se editan donde aparezcan.",
+      "it": "Trova gli accordi e li dispone sulla mappa delle battute, pronti da correggere a mano. Tonalità e BPM sono rilevati anche loro, e si modificano dove appaiono."
+    },
+    "KEY OF D": {
+      "es": "TONALIDAD DE RE",
+      "it": "TONALITÀ DI RE"
+    },
+    "Pitch, without the speed": {
+      "es": "Tono, sin la velocidad",
+      "it": "Tonalità, senza la velocità"
+    },
+    "Move the key by semitones and the tempo stays where it was. The click and the drums are never transposed — it wouldn't make sense.": {
+      "es": "Cambia el tono por semitonos y el tempo se queda donde estaba. El clic y la batería nunca se transponen — no tendría sentido.",
+      "it": "Cambia la tonalità per semitoni e il tempo resta dov'era. Il click e la batteria non vengono mai trasposti — non avrebbe senso."
+    },
+    "SAME TEMPO": {
+      "es": "MISMO TEMPO",
+      "it": "STESSO TEMPO"
+    },
+    "A–B loop": {
+      "es": "Bucle A–B",
+      "it": "Loop A–B"
+    },
+    "Mark A and B and repeat that stretch with sample precision. For hammering eight bars until they come out right.": {
+      "es": "Marca A y B y repite ese tramo con precisión de sample. Para machacar ocho compases hasta que salgan.",
+      "it": "Segna A e B e ripeti quel tratto con precisione al sample. Per martellare otto battute finché non vengono."
+    },
+    "Live meters": {
+      "es": "Medidores en vivo",
+      "it": "Misuratori dal vivo"
+    },
+    "A real-time level meter on every channel, so you can see what's actually playing before you go looking for it in your ears.": {
+      "es": "Un medidor de nivel en tiempo real en cada canal, para ver qué está sonando de verdad antes de buscarlo en los oídos.",
+      "it": "Un misuratore di livello in tempo reale su ogni canale, per vedere cosa sta suonando davvero prima di cercarlo nelle orecchie."
+    },
+    "04 · WHAT SITS NEXT TO THE SONG": {
+      "es": "04 · LO QUE VA JUNTO A LA CANCIÓN",
+      "it": "04 · COSA STA ACCANTO ALLA CANZONE"
+    },
+    "Lyrics, charts and a chord sheet that transposes": {
+      "es": "Letras, hojas y una hoja de acordes que transpone",
+      "it": "Testi, fogli e un foglio accordi che traspone"
+    },
+    "Lyrics, chord charts and PDFs live next to the song, not in another application — along with a photo of a score or a reference take.": {
+      "es": "Letras, hojas de acordes y PDFs viven junto a la canción, no en otra aplicación — además de la foto de una partitura o una toma de referencia.",
+      "it": "Testi, fogli accordi e PDF vivono accanto alla canzone, non in un'altra applicazione — insieme alla foto di uno spartito o a una take di riferimento."
+    },
+    "The dynamic chord sheet puts the chords above the words in their exact position, transposes together with the song, and works in all three languages. Sections reorder by dragging.": {
+      "es": "La hoja de acordes dinámica pone los acordes sobre las palabras en su posición exacta, transpone junto con la canción y funciona en los tres idiomas. Las secciones se reordenan arrastrando.",
+      "it": "Il foglio accordi dinamico mette gli accordi sopra le parole nella loro posizione esatta, traspone insieme alla canzone e funziona in tutte tre le lingue. Le sezioni si riordinano trascinando."
+    },
+    "Setlists put the songs in the order you'll play them, for a rehearsal or a show, and share with a link.": {
+      "es": "Las setlists ponen las canciones en el orden en que las vas a tocar, para un ensayo o un concierto, y se comparten con un enlace.",
+      "it": "Le setlist mettono le canzoni nell'ordine in cui le suonerai, per una prova o un concerto, e si condividono con un link."
+    },
+    "CHORD SHEET · VERSE": {
+      "es": "HOJA DE ACORDES · ESTROFA",
+      "it": "FOGLIO ACCORDI · STROFA"
+    },
+    "the line the singer is on": {
+      "es": "la línea que canta el cantante",
+      "it": "la riga su cui è il cantante"
+    },
+    "and the one after that": {
+      "es": "y la que viene después",
+      "it": "e quella dopo"
+    },
+    "LYRICS": {
+      "es": "LETRAS",
+      "it": "TESTI"
+    },
+    "CHARTS": {
+      "es": "HOJAS",
+      "it": "FOGLI"
+    },
+    "PHOTOS": {
+      "es": "FOTOS",
+      "it": "FOTO"
+    },
+    "REFERENCE TAKE": {
+      "es": "TOMA DE REFERENCIA",
+      "it": "TAKE DI RIFERIMENTO"
+    },
+    "05 · MULTICHANNEL OUTPUT · DESKTOP ONLY": {
+      "es": "05 · SALIDA MULTICANAL · SOLO ESCRITORIO",
+      "it": "05 · USCITA MULTICANALE · SOLO DESKTOP"
+    },
+    "Each track to a physical output": {
+      "es": "Cada pista a una salida física",
+      "it": "Ogni traccia a un'uscita fisica"
+    },
+    "Click to the drummer's ear on output 1, band to the PA on 2–3, backing vocals on 5–6. Stereo pairs or mono, and you decide which outputs pair up.": {
+      "es": "El clic al oído del baterista por la salida 1, la banda al PA por 2–3, los coros por 5–6. Pares estéreo o mono, y tú decides qué salidas se emparejan.",
+      "it": "Il click nell'orecchio del batterista sull'uscita 1, la band al PA su 2–3, i cori su 5–6. Coppie stereo o mono, e decidi tu quali uscite si accoppiano."
+    },
+    "Desktop app, Mac and Windows. It's the one thing a browser can't give: no browser sends more than two channels to the hardware, and that's the reason the desktop app exists.": {
+      "es": "App de escritorio, Mac y Windows. Es lo único que un navegador no puede dar: ningún navegador manda más de dos canales al hardware, y esa es la razón de que exista la app de escritorio.",
+      "it": "App desktop, Mac e Windows. È l'unica cosa che un browser non può dare: nessun browser manda più di due canali all'hardware, ed è per questo che esiste l'app desktop."
+    },
+    "CLICK": {
+      "es": "CLIC",
+      "it": "CLICK"
+    },
+    "BAND MIX": {
+      "es": "MEZCLA BANDA",
+      "it": "MIX BAND"
+    },
+    "BACKING VOX": {
+      "es": "COROS",
+      "it": "CORI"
+    },
+    "MONO": {
+      "es": "MONO",
+      "it": "MONO"
+    },
+    "06 · THE TOOLS": {
+      "es": "06 · LAS HERRAMIENTAS",
+      "it": "06 · GLI STRUMENTI"
+    },
+    "The things you open every day, in the same place": {
+      "es": "Lo que abres cada día, en el mismo sitio",
+      "it": "Le cose che apri ogni giorno, nello stesso posto"
+    },
+    "Built as a list of data, not of screens: a new tool arrives as one more entry with its icon and its name, and nothing already in use moves.": {
+      "es": "Construido como una lista de datos, no de pantallas: una herramienta nueva llega como una entrada más con su icono y su nombre, y nada de lo que ya se usa se mueve.",
+      "it": "Costruito come una lista di dati, non di schermate: un nuovo strumento arriva come una voce in più con la sua icona e il suo nome, e niente di ciò che è già in uso si sposta."
+    },
+    ", ten time signatures from 2/4 to 12/8, subdivision in eighths, triplets and sixteenths, tap tempo, and accents you set by tapping the beat. Keeps sounding with the screen off. The drawing is pinned to the audio clock with output latency subtracted, so the light lands when the click reaches the speaker.": {
+      "es": ", diez compases del 2/4 al 12/8, subdivisión en corcheas, tresillos y semicorcheas, tap tempo y acentos que marcas tocando el tiempo. Sigue sonando con la pantalla apagada. El dibujo va clavado al reloj de audio restando la latencia de salida, así la luz cae cuando el clic llega al altavoz.",
+      "it": ", dieci indicazioni di tempo dal 2/4 al 12/8, suddivisione in ottavi, terzine e sedicesimi, tap tempo e accenti che imposti battendo il tempo. Continua a suonare con lo schermo spento. Il disegno è agganciato all'orologio audio sottraendo la latenza di uscita, così la luce arriva quando il click raggiunge l'altoparlante."
+    },
+    "FOUR BEATS · THE MARK": {
+      "es": "CUATRO TIEMPOS · LA MARCA",
+      "it": "QUATTRO MOVIMENTI · IL SEGNO"
+    },
+    "Chromatic for any instrument, with a per-instrument mode for strings: acoustic and electric guitar, bass, ukulele, violin, viola and cello. In those modes the headstock is drawn with the pegs where they actually sit, so you look at your instrument and the screen matches. Each string turns green the moment it's in tune.": {
+      "es": "Cromático para cualquier instrumento, con un modo por instrumento para las cuerdas: guitarra acústica y eléctrica, bajo, ukelele, violín, viola y cello. En esos modos el clavijero se dibuja con las clavijas donde están de verdad, así miras tu instrumento y la pantalla coincide. Cada cuerda se pone verde en el momento en que está afinada.",
+      "it": "Cromatico per qualsiasi strumento, con una modalità per strumento per gli archi: chitarra acustica ed elettrica, basso, ukulele, violino, viola e violoncello. In quelle modalità la paletta è disegnata con le meccaniche dove stanno davvero, così guardi il tuo strumento e lo schermo combacia. Ogni corda diventa verde nel momento in cui è accordata."
+    },
+    "07 · WHERE IT RUNS": {
+      "es": "07 · DÓNDE FUNCIONA",
+      "it": "07 · DOVE GIRA"
+    },
+    "Installed from the browser, offline once downloaded": {
+      "es": "Se instala desde el navegador, sin conexión una vez descargada",
+      "it": "Si installa dal browser, offline una volta scaricata"
+    },
+    "NO APP STORE YET · INTERFACE IN EN / IT / ES · OFFLINE ONCE THE SONG IS DOWNLOADED · FILES STORED IN THE EU, PROCESSING PINNED TO THE EEA": {
+      "es": "TODAVÍA SIN TIENDA DE APPS · INTERFAZ EN EN / IT / ES · SIN CONEXIÓN UNA VEZ DESCARGADA LA CANCIÓN · ARCHIVOS EN LA UE, PROCESADO FIJADO AL EEE",
+      "it": "ANCORA NESSUNO STORE · INTERFACCIA IN EN / IT / ES · OFFLINE UNA VOLTA SCARICATA LA CANZONE · FILE ARCHIVIATI NELL'UE, ELABORAZIONE VINCOLATA AL SEE"
+    },
+    "That's the whole product. It's in open beta.": {
+      "es": "Ese es todo el producto. Está en beta abierta.",
+      "it": "Questo è tutto il prodotto. È in beta aperta."
+    },
+    "Free while the beta runs, every feature unlocked, no card.": {
+      "es": "Gratis mientras dure la beta, todas las funciones abiertas, sin tarjeta.",
+      "it": "Gratis finché dura la beta, tutte le funzioni aperte, senza carta."
+    }
+  },
+  "Privacy and legal page": {
+    "Privacy, limits and legal": {
+      "es": "Privacidad, límites y legal",
+      "it": "Privacy, limiti e legale"
+    },
+    "The long version, in one place.": {
+      "es": "La versión larga, en un solo sitio.",
+      "it": "La versione lunga, in un solo posto."
+    },
+    "What happens to your files, what the separation can and can't do, the technical numbers, and who operates this. Nothing here is a promise the terms of use don't already make.": {
+      "es": "Qué pasa con tus archivos, qué puede y qué no puede la separación, los números técnicos y quién opera esto. Nada de aquí es una promesa que los términos de uso no hagan ya.",
+      "it": "Cosa succede ai tuoi file, cosa può e cosa non può la separazione, i numeri tecnici e chi gestisce tutto questo. Niente qui è una promessa che i termini d'uso non facciano già."
+    },
+    "01 · The line that holds everything else up": {
+      "es": "01 · La línea que sostiene todo lo demás",
+      "it": "01 · La riga che regge tutto il resto"
+    },
+    "Suonable doesn't supply music. There's no catalogue, no library to browse and nothing to stream. Every file in your account got there because you uploaded it, and you're responsible for holding the rights to do so.": {
+      "es": "Suonable no proporciona música. No hay catálogo, ni biblioteca que explorar, ni nada que reproducir en streaming. Cada archivo de tu cuenta está ahí porque tú lo subiste, y eres responsable de tener los derechos para hacerlo.",
+      "it": "Suonable non fornisce musica. Non c'è catalogo, né libreria da sfogliare, né niente da ascoltare in streaming. Ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti."
+    },
+    "The tracks are for your own use — learning your part, rehearsing and playing them. Not for redistributing, publishing, selling or broadcasting them, and not as a service run on someone else's behalf or at volume.": {
+      "es": "Las pistas son para tu propio uso — aprender tu parte, ensayar y tocarlas. No para redistribuirlas, publicarlas, venderlas ni emitirlas, y no como un servicio prestado por cuenta de otros o a escala.",
+      "it": "Le tracce sono per uso personale — imparare la tua parte, provare e suonarle. Non per ridistribuirle, pubblicarle, venderle o trasmetterle, e non come servizio svolto per conto di altri o su larga scala."
+    },
+    "02 · Your files": {
+      "es": "02 · Tus archivos",
+      "it": "02 · I tuoi file"
+    },
+    "Private by architecture, not by a setting.": {
+      "es": "Privado por arquitectura, no por un ajuste.",
+      "it": "Privato per architettura, non per un'impostazione."
+    },
+    "Each of these is a decision already made in the code, not an intention.": {
+      "es": "Cada una de estas es una decisión ya tomada en el código, no una intención.",
+      "it": "Ognuna di queste è una decisione già presa nel codice, non un'intenzione."
+    },
+    "Your audio doesn't train our models": {
+      "es": "Tu audio no entrena nuestros modelos",
+      "it": "Il tuo audio non addestra i nostri modelli"
+    },
+    "The models are pretrained. They run over your file and forget it.": {
+      "es": "Los modelos están preentrenados. Pasan por tu archivo y lo olvidan.",
+      "it": "I modelli sono pre-addestrati. Passano sul tuo file e lo dimenticano."
+    },
+    "Stored in the European Union": {
+      "es": "Guardados en la Unión Europea",
+      "it": "Archiviati nell'Unione Europea"
+    },
+    "And the processing is pinned to the European Economic Area. It costs measurable waiting time, and it stays that way.": {
+      "es": "Y el procesado está fijado al Espacio Económico Europeo. Cuesta tiempo de espera medible, y se queda así.",
+      "it": "E l'elaborazione è vincolata allo Spazio Economico Europeo. Costa tempo di attesa misurabile, e resta così."
+    },
+    "One space per account": {
+      "es": "Un espacio por cuenta",
+      "it": "Uno spazio per account"
+    },
+    "Your files live in a space addressed by your own identifier, taken from the session and never from the request. There's no parameter anyone can change to reach someone else's content.": {
+      "es": "Tus archivos viven en un espacio direccionado por tu propio identificador, tomado de la sesión y nunca de la petición. No hay ningún parámetro que alguien pueda cambiar para llegar al contenido de otro.",
+      "it": "I tuoi file vivono in uno spazio indirizzato dal tuo identificatore, preso dalla sessione e mai dalla richiesta. Non c'è alcun parametro che qualcuno possa cambiare per raggiungere i contenuti di un altro."
+    },
+    "Links expire in an hour": {
+      "es": "Los enlaces caducan en una hora",
+      "it": "I link scadono in un'ora"
+    },
+    "And they carry the owner inside the signature, so a leaked link still only reaches its owner's file.": {
+      "es": "Y llevan al propietario dentro de la firma, así que un enlace filtrado sigue llegando solo al archivo de su dueño.",
+      "it": "E portano il proprietario dentro la firma, così un link finito in giro raggiunge comunque solo il file del suo proprietario."
+    },
+    "No ad trackers, no third-party analytics": {
+      "es": "Sin rastreadores publicitarios, sin analíticas de terceros",
+      "it": "Nessun tracker pubblicitario, nessuna analitica di terze parti"
+    },
+    "Nothing here is building a profile of you.": {
+      "es": "Aquí nada está construyendo un perfil de ti.",
+      "it": "Qui niente sta costruendo un profilo su di te."
+    },
+    "Delete it yourself": {
+      "es": "Bórralo tú mismo",
+      "it": "Cancella tu stesso"
+    },
+    "Your account and everything in it, from inside the app — not a request you have to send. Removing a song keeps it 60 days and then deletes it for real, and you can delete it outright before that.": {
+      "es": "Tu cuenta y todo lo que hay dentro, desde la propia app — no una solicitud que tengas que enviar. Al quitar una canción se guarda 60 días y luego se borra de verdad, y puedes borrarla del todo antes.",
+      "it": "Il tuo account e tutto ciò che contiene, dall'app stessa — non una richiesta da inviare. Rimuovendo una canzone resta 60 giorni e poi viene cancellata davvero, e puoi cancellarla del tutto anche prima."
+    },
+    "03 · What it isn't": {
+      "es": "03 · Lo que no es",
+      "it": "03 · Cosa non è"
+    },
+    "The honest version, in full.": {
+      "es": "La versión honesta, completa.",
+      "it": "La versione onesta, per intero."
+    },
+    "The separation is automatic and it's good. It isn't a studio session, and we'd rather you knew that before you upload.": {
+      "es": "La separación es automática y es buena. No es una sesión de estudio, y preferimos que lo sepas antes de subir nada.",
+      "it": "La separazione è automatica ed è buona. Non è una sessione in studio, e preferiamo che lo sappia prima di caricare."
+    },
+    "A CLEAN SPLIT EVERY TIME": {
+      "es": "UNA SEPARACIÓN LIMPIA SIEMPRE",
+      "it": "UNA SEPARAZIONE PULITA SEMPRE"
+    },
+    "It's a statistical model, so we don't promise a result. An instrument bleeds a little into another, most of all in dense mixes.": {
+      "es": "Es un modelo estadístico, así que no prometemos un resultado. Un instrumento se filtra un poco en otro, sobre todo en mezclas densas.",
+      "it": "È un modello statistico, quindi non promettiamo un risultato. Uno strumento sborda un po' in un altro, soprattutto nei mix densi."
+    },
+    "GOOD WITH ANY MUSIC": {
+      "es": "BUENO CON CUALQUIER MÚSICA",
+      "it": "BUONO CON QUALSIASI MUSICA"
+    },
+    "Tuned and tested on modern music played by a band. Orchestral, very dense electronic and poor recordings come out worse.": {
+      "es": "Ajustada y probada con música moderna tocada por una banda. Lo orquestal, la electrónica muy densa y las grabaciones pobres salen peor.",
+      "it": "Tarata e testata su musica moderna suonata da una band. Orchestrale, elettronica molto densa e registrazioni scarse vengono peggio."
+    },
+    "INSTANT": {
+      "es": "INSTANTÁNEO",
+      "it": "ISTANTANEO"
+    },
+    "About three minutes of processing per song, and a little more because the processing stays inside the EEA. Then it's yours offline.": {
+      "es": "Unos tres minutos de procesado por canción, y un poco más porque el procesado se queda dentro del EEE. Después es tuya sin conexión.",
+      "it": "Circa tre minuti di elaborazione per canzone, e un po' di più perché l'elaborazione resta dentro il SEE. Poi è tua offline."
+    },
+    "MULTICHANNEL EVERYWHERE": {
+      "es": "MULTICANAL EN TODAS PARTES",
+      "it": "MULTICANALE DAPPERTUTTO"
+    },
+    "Desktop app only. In the browser and on mobile it's two channels, full stop.": {
+      "es": "Solo app de escritorio. En el navegador y en el móvil son dos canales, punto.",
+      "it": "Solo app desktop. Nel browser e su mobile sono due canali, punto."
+    },
+    "A PLACE TO FIND MUSIC": {
+      "es": "UN SITIO PARA ENCONTRAR MÚSICA",
+      "it": "UN POSTO PER TROVARE MUSICA"
+    },
+    "There's nothing to browse and nothing to stream. You bring the files, and you're responsible for having the right to.": {
+      "es": "No hay nada que explorar ni nada que reproducir en streaming. Tú traes los archivos, y eres responsable de tener derecho a ello.",
+      "it": "Non c'è niente da sfogliare e niente da ascoltare in streaming. I file li porti tu, e sei responsabile di averne il diritto."
+    },
+    "FINISHED · IN THE STORES · RAR": {
+      "es": "TERMINADO · EN LAS TIENDAS · RAR",
+      "it": "FINITO · NEGLI STORE · RAR"
+    },
+    "It's in open beta. Not in the stores yet — it installs from the browser. Multitrack packages come in as ZIP; RAR isn't supported.": {
+      "es": "Está en beta abierta. Todavía no en las tiendas — se instala desde el navegador. Los paquetes multipista entran como ZIP; RAR no está soportado.",
+      "it": "È in beta aperta. Non ancora negli store — si installa dal browser. I pacchetti multitraccia entrano come ZIP; RAR non è supportato."
+    },
+    "03 · The technical data": {
+      "es": "04 · Los datos técnicos",
+      "it": "04 · I dati tecnici"
+    },
+    "For when somebody asks.": {
+      "es": "Para cuando alguien pregunte.",
+      "it": "Per quando qualcuno chiede."
+    },
+    "Tracks per song": {
+      "es": "Pistas por canción",
+      "it": "Tracce per canzone"
+    },
+    "6, or 7 with the backing vocals split from the lead": {
+      "es": "6, o 7 con los coros separados de la voz principal",
+      "it": "6, o 7 con i cori separati dalla voce principale"
+    },
+    "Playback format": {
+      "es": "Formato de reproducción",
+      "it": "Formato di riproduzione"
+    },
+    "Opus at": {
+      "es": "Opus a",
+      "it": "Opus a"
+    },
+    "— reads in every browser": {
+      "es": "— se lee en todos los navegadores",
+      "it": "— si legge in ogni browser"
+    },
+    "Download format": {
+      "es": "Formato de descarga",
+      "it": "Formato di download"
+    },
+    "depending on the track)": {
+      "es": "según la pista)",
+      "it": "a seconda della traccia)"
+    },
+    "Metronome range": {
+      "es": "Rango del metrónomo",
+      "it": "Range del metronomo"
+    },
+    "· ten time signatures from 2/4 to 12/8": {
+      "es": "· diez compases del 2/4 al 12/8",
+      "it": "· dieci indicazioni di tempo dal 2/4 al 12/8"
+    },
+    "Languages": {
+      "es": "Idiomas",
+      "it": "Lingue"
+    },
+    "Platforms": {
+      "es": "Plataformas",
+      "it": "Piattaforme"
+    },
+    "Installable web; desktop on Mac and Windows with multichannel output": {
+      "es": "Web instalable; escritorio en Mac y Windows con salida multicanal",
+      "it": "Web installabile; desktop su Mac e Windows con uscita multicanale"
+    },
+    "Where the audio lives": {
+      "es": "Dónde vive el audio",
+      "it": "Dove vive l'audio"
+    },
+    "European Union. Processing pinned to the EEA": {
+      "es": "Unión Europea. Procesado fijado al EEE",
+      "it": "Unione Europea. Elaborazione vincolata al SEE"
+    },
+    "When you remove a song": {
+      "es": "Cuando quitas una canción",
+      "it": "Quando rimuovi una canzone"
+    },
+    "Recoverable for": {
+      "es": "Recuperable durante",
+      "it": "Recuperabile per"
+    },
+    "days, then deleted": {
+      "es": "días, después se borra",
+      "it": "giorni, poi cancellata"
+    },
+    "Status": {
+      "es": "Estado",
+      "it": "Stato"
+    },
+    "Open beta, free": {
+      "es": "Beta abierta, gratis",
+      "it": "Beta aperta, gratis"
+    },
+    "04 · If something has to come down": {
+      "es": "05 · Si algo tiene que bajarse",
+      "it": "05 · Se qualcosa deve essere rimosso"
+    },
+    "There's a written route, and here's the door.": {
+      "es": "Hay una vía escrita, y esta es la puerta.",
+      "it": "C'è una procedura scritta, ed ecco la porta."
+    },
+    "The copyright policy sets out what a notice has to contain — identify the work, where it is, why it's unlawful, a name and an address that works — what we do with it, and how a restriction is contested. Repeat infringers lose their accounts. The audio is never scanned or fingerprinted.": {
+      "es": "La política de copyright establece qué debe contener un aviso — identificar la obra, dónde está, por qué es ilícita, un nombre y una dirección que funcione —, qué hacemos con él y cómo se impugna una restricción. Los infractores reincidentes pierden su cuenta. El audio nunca se escanea ni se le hace fingerprinting.",
+      "it": "La politica sul copyright stabilisce cosa deve contenere una segnalazione — identificare l'opera, dov'è, perché è illecita, un nome e un indirizzo che funzioni —, cosa ne facciamo e come si contesta una restrizione. I recidivi perdono l'account. L'audio non viene mai scansionato né sottoposto a fingerprinting."
+    },
+    "SEND NOTICES TO": {
+      "es": "ENVÍA LOS AVISOS A",
+      "it": "INVIA LE SEGNALAZIONI A"
+    },
+    "It's a monitored address, and it's the same one for abuse reports.": {
+      "es": "Es una dirección monitorizada, y es la misma para reportes de abuso.",
+      "it": "È un indirizzo monitorato, ed è lo stesso per le segnalazioni di abuso."
+    },
+    "Read the copyright policy": {
+      "es": "Leer la política de copyright",
+      "it": "Leggi la politica sul copyright"
+    },
+    "05 · Getting in touch": {
+      "es": "06 · Cómo contactar",
+      "it": "06 · Come contattarci"
+    },
+    "Version beta-1, 3 September 2026.": {
+      "es": "Versión beta-1, 3 de septiembre de 2026.",
+      "it": "Versione beta-1, 3 settembre 2026."
+    }
+  },
+  "fixes for current live-site copy (marketing site rewrite, not covered by the entries above)": {
+    "An MP3, a WAV, last night's rehearsal recording. No official stems needed — or add your own stems for practice.": {
+      "es": "Un MP3, un WAV, la grabación del ensayo de anoche. No hacen falta stems oficiales — o añade tus propios stems para practicar.",
+      "it": "Un MP3, un WAV, la registrazione delle prove di ieri sera. Non servono stem ufficiali — oppure aggiungi i tuoi stem per esercitarti."
+    },
+    "It comes back in seven tracks": {
+      "es": "Vuelve en siete pistas",
+      "it": "Torna in sette tracce"
+    },
+    "Drums, bass, guitar, piano, other, vocals and backing vocals — each with its own volume, mute and solo.": {
+      "es": "Batería, bajo, guitarra, piano, otros, voz y coros — cada una con su propio volumen, mute y solo.",
+      "it": "Batteria, basso, chitarra, piano, altro, voce e cori — ognuna con il proprio volume, mute e solo."
+    },
+    "Tempo, key, bar lines and chords arrive already found, with a click and a chord sheet built from them. Correct anything by hand, or add your own resources — it's a starting point, not a verdict.": {
+      "es": "Tempo, tonalidad, compases y acordes llegan ya detectados, con un clic y una hoja de acordes hecha con ellos. Corrige lo que quieras a mano, o añade tus propios recursos — es un punto de partida, no un veredicto.",
+      "it": "Tempo, tonalità, battute e accordi arrivano già rilevati, con un click e un foglio accordi costruito su di essi. Correggi ciò che vuoi a mano, oppure aggiungi le tue risorse — è un punto di partenza, non un verdetto."
+    },
+    "Automatic song structure": {
+      "es": "Estructura automática de la canción",
+      "it": "Struttura automatica del brano"
+    },
+    "Intro, verse, chorus, bridge — detected for you and fully editable, so the song arrives already mapped.": {
+      "es": "Intro, estrofa, estribillo, puente — detectados para ti y totalmente editables, así la canción llega ya mapeada.",
+      "it": "Intro, strofa, ritornello, bridge — rilevati per te e completamente modificabili, così il brano arriva già mappato."
+    },
+    "Loop by section": {
+      "es": "Bucle por sección",
+      "it": "Loop per sezione"
+    },
+    "Pick a section — intro, verse, that one chorus — and repeat it with sample accuracy until it comes out.": {
+      "es": "Elige una sección — la intro, una estrofa, ese estribillo — y repítela con precisión de sample hasta que salga.",
+      "it": "Scegli una sezione — l'intro, una strofa, quel ritornello — e ripetila con precisione al sample finché non viene."
+    },
+    "Every track leaves on its own stereo pair — drums on 1–2, bass to the stage amp on 3–4, the vocals to the PA. Only the click goes out mono, straight to the drummer's in-ear, and you choose which outputs pair up.": {
+      "es": "Cada pista sale por su propio par estéreo — la batería por 1–2, el bajo al ampli del escenario por 3–4, la voz a la PA. Solo el clic sale en mono, directo al in-ear del baterista, y tú eliges qué salidas se emparejan.",
+      "it": "Ogni traccia esce dalla propria coppia stereo — la batteria su 1–2, il basso all'ampli sul palco su 3–4, la voce al PA. Solo il click esce in mono, dritto nell'in-ear del batterista, e scegli tu quali uscite si accoppiano."
+    },
+    "AUDIO TRACK": {
+      "es": "PISTA DE AUDIO",
+      "it": "TRACCIA AUDIO"
+    },
+    "PHYSICAL OUTPUT · STEREO": {
+      "es": "SALIDA FÍSICA · ESTÉREO",
+      "it": "USCITA FISICA · STEREO"
+    },
+    "Drums": {
+      "es": "Batería",
+      "it": "Batteria"
+    },
+    "Bass": {
+      "es": "Bajo",
+      "it": "Basso"
+    },
+    "Guitar": {
+      "es": "Guitarra",
+      "it": "Chitarra"
+    },
+    "Piano": {
+      "es": "Piano",
+      "it": "Piano"
+    },
+    "Other": {
+      "es": "Otros",
+      "it": "Altro"
+    },
+    "Vocals": {
+      "es": "Voz",
+      "it": "Voce"
+    },
+    "Backing vocals": {
+      "es": "Coros",
+      "it": "Cori"
+    },
+    "Click": {
+      "es": "Clic",
+      "it": "Click"
+    },
+    "Open beta. Create your free account.": {
+      "es": "Beta abierta. Crea tu cuenta gratis.",
+      "it": "Beta aperta. Crea il tuo account gratuito."
+    },
+    "No card, nothing to cancel, every feature unlocked. Upload and split up to 10 songs at no cost — we'll never charge you for those.": {
+      "es": "Sin tarjeta, nada que cancelar, todas las funciones abiertas. Sube y separa hasta 10 canciones sin costo — nunca te cobraremos por esas.",
+      "it": "Senza carta, niente da disdire, tutte le funzioni aperte. Carica e separa fino a 10 canzoni senza costo — non te le faremo mai pagare."
+    },
+    "10 songs free, every feature unlocked": {
+      "es": "10 canciones gratis, todas las funciones abiertas",
+      "it": "10 canzoni gratis, tutte le funzioni aperte"
+    },
+    "You bring your own music: upload an MP3 to have it split into tracks, or a ZIP of your own multitrack stems to play them as they are. You're responsible for having the right to use it — ZIP only for imports, RAR isn't supported.": {
+      "es": "Traés tu propia música: subí un MP3 para que se separe en pistas, o un ZIP con tus propios stems multipista para reproducirlos tal cual. Sos responsable de tener los derechos para usarla — solo ZIP para importar, RAR no está soportado.",
+      "it": "Porti la tua musica: carica un MP3 per farlo separare in tracce, oppure uno ZIP con i tuoi stem multitraccia per riprodurli così come sono. Sei responsabile di avere i diritti per usarla — solo ZIP per l'importazione, RAR non è supportato."
+    },
+    "Beta version": {
+      "es": "Versión beta",
+      "it": "Versione beta"
+    }
+  }
+}

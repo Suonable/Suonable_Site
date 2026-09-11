@@ -99,37 +99,27 @@
     });
   }
 
-  /* ---------- language switch ---------- */
+  /* ---------- language links ---------- */
+  // Each language is its own URL and nothing redirects (that would break indexing).
+  // The visitor's last pick is remembered only to point it out on another language's page.
   function setupLang() {
-    var buttons = document.querySelectorAll(".lang-btn");
-    if (!buttons.length) return;
+    var KEY = "suonable.lang";
+    var links = document.querySelectorAll(".lang-btn[data-lang]");
+    if (!links.length) return;
+    var current = (document.documentElement.getAttribute("lang") || "en").toUpperCase();
 
-    function paint(lang) {
-      buttons.forEach(function (b) {
-        b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+    links.forEach(function (a) {
+      a.addEventListener("click", function () {
+        try { localStorage.setItem(KEY, a.getAttribute("data-lang")); } catch (e) {}
       });
-    }
-
-    function apply(lang) {
-      paint(lang);
-      var boot = function () {
-        var m = window.SuonableI18n;
-        if (!m) { setTimeout(boot, 60); return; }
-        m.applyLang(lang);
-      };
-      boot();
-    }
-
-    buttons.forEach(function (b) {
-      b.addEventListener("click", function () { apply(b.getAttribute("data-lang")); });
     });
 
-    var boot0 = function () {
-      var m = window.SuonableI18n;
-      if (!m) { setTimeout(boot0, 60); return; }
-      apply(m.readLang());
-    };
-    boot0();
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    if (!saved || saved === current) return;
+    links.forEach(function (a) {
+      if (a.getAttribute("data-lang") === saved) a.classList.add("is-saved");
+    });
   }
 
   /* ---------- hero device mockup ---------- */

@@ -64,9 +64,11 @@ img { max-width: 100%; }
 }
 
 .nav-lang { display: flex; gap: 2px; }
-.lang-btn { padding: 4px 8px; border-radius: 6px; border: none; cursor: pointer; font: inherit; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; background: transparent; color: #6E6E78; }
-.lang-btn[aria-pressed="true"] { background: #17171B; color: #FFFFFF; }
-.lang-btn:hover { opacity: 0.75; }
+.lang-btn { display: inline-block; padding: 4px 8px; border-radius: 6px; border: none; cursor: pointer; font: inherit; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; background: transparent; color: #6E6E78; }
+.lang-btn:hover { opacity: 0.75; color: #6E6E78; }
+.lang-btn[aria-current="page"], .lang-btn[aria-current="page"]:hover { background: #17171B; color: #FFFFFF; }
+/* the language the visitor picked last time, shown on a page in another language */
+.lang-btn.is-saved, .lang-btn.is-saved:hover { color: #1055AD; box-shadow: inset 0 0 0 1.5px #1055AD; }
 
 .cta { background: #1055AD; color: #fff; padding: 10px 16px; border-radius: 10px; font-weight: 700; }
 .cta:hover { background: #0D3D7C; color: #fff; }
