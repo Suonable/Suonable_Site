@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/styles.css?v=21">
 <script src="/app.js?v=19" defer></script>
 </head>
 <body>
@@ -78,7 +78,7 @@
     </div>
   </nav>
 
-  <div style="text-align: center; padding: clamp(56px, 11vh, 128px) 0 0; max-width: 980px; margin: 0 auto;">
+  <div style="text-align: center; padding: var(--space-hero, clamp(56px, 11vh, 128px)) 0 0; max-width: 980px; margin: 0 auto;">
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6E6E78; display: inline-flex; align-items: center; gap: 8px;">
       <span style="width: 7px; height: 7px; border-radius: 99px; background: #1055AD; animation: blink 1.5s steps(1) infinite;"></span>
       Versione beta
@@ -341,7 +341,7 @@
     </div>
   </div>
 
-  <section id="how" style="margin: clamp(88px, 16vh, 196px) calc(-1 * clamp(14px, 3vw, 40px)) 0; background: #0C0F14; color: #F4F7FA; padding: clamp(112px, 19vh, 248px) clamp(14px, 3vw, 40px);">
+  <section id="how" style="margin: var(--space-gap, clamp(88px, 16vh, 196px)) calc(-1 * clamp(14px, 3vw, 40px)) 0; background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
     <div style="max-width: 1160px; margin: 0 auto;">
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6098DB; padding-bottom: 56px;">Come funziona</div>
     <div class="steps-grid">
@@ -369,7 +369,7 @@
     </div>
   </section>
 
-  <div style="margin: clamp(88px, 16vh, 196px) calc(-1 * clamp(14px, 3vw, 40px)) 0; overflow: hidden;">
+  <div style="margin: var(--space-gap, clamp(88px, 16vh, 196px)) calc(-1 * clamp(14px, 3vw, 40px)) 0; overflow: hidden;">
     <div style="display: flex; width: max-content; animation: marq 34s linear infinite;">
       <span style="display: flex; align-items: center; gap: clamp(24px, 3vw, 56px); padding-right: clamp(24px, 3vw, 56px); white-space: nowrap; font-size: clamp(56px, 13vw, 188px); font-weight: 500; letter-spacing: -0.04em; line-height: 1.3; padding-bottom: 0.08em; color: #17171B;">
         le tue canzoni<span style="flex: 0 0 auto; width: 0.34em; height: 0.34em; border-radius: 99px; background: #FD6106;"></span>la tua tonalità<span style="flex: 0 0 auto; width: 0.34em; height: 0.34em; border-radius: 99px; background: #FEB706;"></span>il tuo click<span style="flex: 0 0 auto; width: 0.34em; height: 0.34em; border-radius: 99px; background: #2DC128;"></span>la tua setlist<span style="flex: 0 0 auto; width: 0.34em; height: 0.34em; border-radius: 99px; background: #1055AD;"></span>
@@ -380,7 +380,7 @@
     </div>
   </div>
 
-  <section id="tools" style="max-width: 1160px; margin: clamp(88px, 16vh, 200px) auto 0; padding-bottom: clamp(112px, 19vh, 248px);">
+  <section id="tools" style="max-width: 1160px; margin: var(--space-gap, clamp(88px, 16vh, 200px)) auto 0; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Funzioni per ogni musicista</div>
     <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 22ch;">Raggruppate per ciò che stai facendo.</h2>
     <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #6E6E78; max-width: 60ch;">La separazione è solo il punto di partenza. Suonable è dove vive la tua musica: testi, fogli accordi che traspongono con la canzone, file audio, take di riferimento, tracce e setlist — tutto accanto alla canzone, pronto da suonare.</p>
@@ -479,7 +479,7 @@
     </div>
   </section>
 
-  <section id="chords" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) clamp(112px, 19vh, 248px); background: #0C0F14; color: #F4F7FA; padding: clamp(112px, 19vh, 248px) clamp(14px, 3vw, 40px);">
+  <section id="chords" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) var(--space-section, clamp(112px, 19vh, 248px)); background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
     <div style="max-width: 1160px; margin: 0 auto;">
       <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #FDA51B; padding-bottom: 22px;">Accordi, trovati per te</div>
       <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 24ch;">Ogni canzone arriva con i suoi accordi già sopra.</h2>
@@ -585,7 +585,7 @@
     </div>
   </section>
 
-  <section id="kit" style="max-width: 1160px; margin: 0 auto; padding-bottom: clamp(112px, 19vh, 248px);">
+  <section id="kit" style="max-width: 1160px; margin: 0 auto; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Gli strumenti</div>
     <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 24ch;">Non solo il separatore.</h2>
     <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #6E6E78; max-width: 56ch;">È dove atterrano gli strumenti che apri ogni giorno.</p>
@@ -626,7 +626,7 @@
     </div>
   </section>
 
-  <section id="live" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) clamp(112px, 19vh, 248px); background: #0C0F14; color: #F4F7FA; padding: clamp(112px, 19vh, 248px) clamp(14px, 3vw, 40px);">
+  <section id="live" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) var(--space-section, clamp(112px, 19vh, 248px)); background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
     <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(36px, 5vw, 76px); align-items: center;">
       <div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A97A8; display: flex; align-items: center; gap: 10px; padding-bottom: 22px;">
@@ -695,7 +695,7 @@
     </div>
   </section>
 
-  <div style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) clamp(88px, 16vh, 196px); overflow: hidden;">
+  <div style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) var(--space-gap, clamp(88px, 16vh, 196px)); overflow: hidden;">
     <div style="display: flex; width: max-content; animation: marq2 30s linear infinite;">
       <span style="display: flex; align-items: center; gap: clamp(24px, 3vw, 56px); padding-right: clamp(24px, 3vw, 56px); white-space: nowrap; font-size: clamp(52px, 12vw, 172px); font-weight: 500; letter-spacing: -0.04em; line-height: 1.3; padding-bottom: 0.08em; color: #17171B;">
         fai tua la musica<span style="flex: 0 0 auto; width: 0.34em; height: 0.34em; border-radius: 99px; background: #FD6106;"></span>fai tua la musica<span style="flex: 0 0 auto; width: 0.34em; height: 0.34em; border-radius: 99px; background: #FEB706;"></span>
@@ -706,7 +706,7 @@
     </div>
   </div>
 
-  <section id="straight" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) clamp(112px, 19vh, 248px); background: #0C0F14; color: #F4F7FA; padding: clamp(112px, 19vh, 248px) clamp(14px, 3vw, 40px);">
+  <section id="straight" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) var(--space-section, clamp(112px, 19vh, 248px)); background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
     <div style="max-width: 1160px; margin: 0 auto;">
       <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A97A8; display: flex; align-items: center; gap: 10px; padding-bottom: 22px;">
         <span style="width: 8px; height: 8px; background: #FDA51B;"></span>Parliamoci chiaro

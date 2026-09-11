@@ -35,6 +35,9 @@ img { max-width: 100%; }
 /* ---------- nav ---------- */
 .nav-links { flex: 1 1 0%; min-width: 0; display: flex; flex-wrap: nowrap; align-items: center; justify-content: safe center; gap: clamp(6px, 1.2vw, 26px); font-size: 13px; font-weight: 500; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
 @media (max-width: 759px) { .nav-links { display: none; } }
+/* Section spacing is vh-based, which balloons on tall phone screens: use fixed, tighter steps there.
+   (The inline styles fall back to their desktop values when these aren't set.) */
+@media (max-width: 759px) { :root { --space-hero: 32px; --space-section: 64px; --space-gap: 56px; } }
 
 /* ---------- mobile hamburger menu ---------- */
 .hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 34px; height: 34px; padding: 0; border: none; border-radius: 8px; background: transparent; cursor: pointer; flex: 0 0 auto; }
