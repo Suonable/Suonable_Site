@@ -201,8 +201,19 @@ img { max-width: 100%; }
    content is also masked to that screen's exact shape. The app UI lays out at a
    fixed desktop size and the whole rig is scaled as one picture (app.js). */
 .devices { padding-top: 24px; }
-.devices-stage { position: relative; width: 100%; max-width: 1360px; margin: 0 auto; aspect-ratio: 2400 / 1498; overflow: hidden; }
-@media (min-width: 760px) { .devices-stage { width: 90%; max-width: 1224px; } }
+/* The live rig needs several full-size composited layers plus two masks, which exhausts
+   the iOS Safari web process ("A problem repeatedly occurred"). Only desktop pointers get
+   it (html.live-mockup, set in <head>); everyone else sees still renders of the same rig
+   (mockup/still-*, made by _build/render_mockup.py), cross-faded between light and dark. */
+.devices-still { position: relative; width: 100%; max-width: 1360px; margin: 0 auto; }
+.devices-still .still { display: block; }
+.devices-still img { display: block; width: 100%; height: auto; max-width: none; }
+.devices-still .still-dark { position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.9s ease-in-out; }
+.devices-still.is-dark .still-dark { opacity: 1; }
+.devices-stage { display: none; position: relative; width: 100%; max-width: 1360px; margin: 0 auto; aspect-ratio: 2400 / 1498; overflow: hidden; }
+.live-mockup .devices-stage { display: block; }
+.live-mockup .devices-still { display: none; }
+@media (min-width: 760px) { .devices-stage, .devices-still { width: 90%; max-width: 1224px; } }
 .devices-scale { position: absolute; top: 0; left: 0; transform-origin: top left; }
 .photo-rig { position: relative; width: 2400px; height: 1498px; }
 .photo-bg { position: absolute; inset: 0; z-index: 2; display: block; width: 100%; height: 100%; max-width: none; pointer-events: none; user-select: none; -webkit-user-drag: none; }

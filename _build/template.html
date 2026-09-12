@@ -27,8 +27,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=23">
-<script src="/app.js?v=19" defer></script>
+<link rel="stylesheet" href="/styles.css?v=24">
+<script>
+/* The live hero mockup is too heavy for phones and tablets (iOS Safari runs out of memory and
+   the page fails to load), so only desktop mouse/trackpad screens get it; everyone else sees stills. */
+try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)").matches && !(navigator.maxTouchPoints > 0)) document.documentElement.classList.add("live-mockup"); } catch (e) {}
+</script>
+<link rel="preload" as="image" href="/mockup/devices.png" media="(min-width: 1024px) and (hover: hover) and (pointer: fine)">
+<script src="/app.js?v=20" defer></script>
 </head>
 <body>
 
@@ -91,6 +97,16 @@
   </div>
 
   <div class="devices">
+    <div class="devices-still" id="devicesStill">
+      <picture class="still still-light">
+        <source type="image/webp" srcset="/mockup/still-light-800.webp 800w, /mockup/still-light-1200.webp 1200w, /mockup/still-light-1800.webp 1800w, /mockup/still-light-2400.webp 2400w" sizes="(min-width: 1360px) 1224px, (min-width: 760px) 90vw, 100vw">
+        <img src="/mockup/still-light-1200.png" alt="Suonable's song player on a MacBook and the song library on an iPhone" width="2400" height="1498" decoding="async">
+      </picture>
+      <picture class="still still-dark" aria-hidden="true">
+        <source type="image/webp" srcset="/mockup/still-dark-800.webp 800w, /mockup/still-dark-1200.webp 1200w, /mockup/still-dark-1800.webp 1800w, /mockup/still-dark-2400.webp 2400w" sizes="(min-width: 1360px) 1224px, (min-width: 760px) 90vw, 100vw">
+        <img src="/mockup/still-dark-1200.png" alt="" width="2400" height="1498" decoding="async">
+      </picture>
+    </div>
     <div class="devices-stage" id="devicesStage">
       <div class="devices-scale" id="devicesScale">
         <div class="photo-rig" id="photoRig">
@@ -326,12 +342,12 @@
             </div>
             <div class="screen-clip clip-phone">
               <div class="ov-phone" id="ovPhone">
-                <img class="phone-shot light" src="/mockup/songs-light.png" alt="" width="1179" height="2556">
-                <img class="phone-shot dark" src="/mockup/songs-dark.png" alt="" width="1179" height="2556">
+                <img class="phone-shot light" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-light.png" alt="" width="1179" height="2556">
+                <img class="phone-shot dark" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-dark.png" alt="" width="1179" height="2556">
               </div>
             </div>
           </div>
-          <img class="photo-bg" src="/mockup/devices.png" alt="Suonable's song player on a MacBook and the song library on an iPhone" width="2400" height="1498">
+          <img class="photo-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/devices.png" alt="" width="2400" height="1498">
         </div>
       </div>
     </div>

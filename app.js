@@ -124,12 +124,29 @@
 
   /* ---------- hero device mockup ---------- */
   function setupDevices() {
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // phones, tablets and small windows show the still renders: just alternate light and dark
+    if (!document.documentElement.classList.contains("live-mockup")) {
+      var still = document.getElementById("devicesStill");
+      if (still && !reduceMotion) {
+        var stillDark = false;
+        setInterval(function () { stillDark = !stillDark; still.classList.toggle("is-dark", stillDark); }, 4500);
+      }
+      return;
+    }
+
     var stage = document.getElementById("devicesStage");
     var scaleEl = document.getElementById("devicesScale");
     var ovLaptop = document.getElementById("ovLaptop");
     var shellScale = document.getElementById("shellScale");
     var player = document.getElementById("player");
     if (!stage || !scaleEl || !ovLaptop || !shellScale || !player) return;
+
+    // the live rig's pictures are only fetched on the screens that show it
+    Array.prototype.forEach.call(stage.querySelectorAll("img[data-src]"), function (img) {
+      img.src = img.getAttribute("data-src");
+    });
     var sidebar = document.getElementById("sidebar");
     var appShell = document.getElementById("appShell");
     var phone = document.getElementById("ovPhone");
@@ -187,7 +204,6 @@
     drawWave();
     window.addEventListener("resize", fit);
 
-    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!reduceMotion) {
       var dark = false;
       setInterval(function () { dark = !dark; applyTheme(dark); }, 4500);
