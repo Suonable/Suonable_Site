@@ -704,9 +704,9 @@
       "es": "Copyright y retiradas",
       "it": "Copyright e rimozioni"
     },
-    "Suonable doesn't supply music: every file in your account got there because you uploaded it, and you're responsible for holding the rights to do so. The tracks are for your own use — learning your part, rehearsing and playing — not for redistributing, publishing, selling or broadcasting them. Files are stored in the European Union, your audio doesn't train any model, and Suonable is in beta.": {
-      "es": "Suonable no proporciona música: cada archivo de tu cuenta está ahí porque tú lo subiste, y eres responsable de tener los derechos para hacerlo. Las pistas son para tu propio uso — aprender tu parte, ensayar y tocar — no para redistribuirlas, publicarlas, venderlas ni emitirlas. Los archivos se guardan en la Unión Europea, tu audio no entrena ningún modelo, y Suonable está en beta.",
-      "it": "Suonable non fornisce musica: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti. Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle. I file sono archiviati nell'Unione Europea, il tuo audio non addestra nessun modello, e Suonable è in beta."
+    "Suonable doesn't supply music: every file in your account got there because you uploaded it, and you're responsible for holding the rights to do so. The tracks are for your own use — learning your part, rehearsing and playing — not for redistributing, publishing, selling or broadcasting them. Your audio doesn't train any model, and Suonable is in beta.": {
+      "es": "Suonable no proporciona música: cada archivo de tu cuenta está ahí porque tú lo subiste, y eres responsable de tener los derechos para hacerlo. Las pistas son para tu propio uso — aprender tu parte, ensayar y tocar — no para redistribuirlas, publicarlas, venderlas ni emitirlas. Tu audio no entrena ningún modelo, y Suonable está en beta.",
+      "it": "Suonable non fornisce musica: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti. Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle. Il tuo audio non addestra nessun modello, e Suonable è in beta."
     },
     "HOW IT WORKS": {
       "es": "CÓMO FUNCIONA",
