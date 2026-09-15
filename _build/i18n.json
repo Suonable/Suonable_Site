@@ -768,10 +768,6 @@
       "es": "Política de copyright",
       "it": "Politica sul copyright"
     },
-    "Your files are stored in the European Union and your audio doesn't train any model. Suonable is in beta.": {
-      "es": "Tus archivos se guardan en la Unión Europea y tu audio no entrena ningún modelo. Suonable está en beta.",
-      "it": "I tuoi file sono archiviati nell'Unione Europea e il tuo audio non addestra nessun modello. Suonable è in beta."
-    },
     "Suonable doesn't supply music. There's no catalogue and no library: every file in your account got there because you uploaded it, and you're responsible for holding the rights to do so.": {
       "es": "Suonable no proporciona música. No hay catálogo ni biblioteca: cada archivo de tu cuenta está ahí porque tú lo subiste, y eres responsable de tener los derechos para hacerlo.",
       "it": "Suonable non fornisce musica. Non c'è catalogo né libreria: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti."
@@ -1074,10 +1070,6 @@
       "es": "Se instala desde el navegador, sin conexión una vez descargada",
       "it": "Si installa dal browser, offline una volta scaricata"
     },
-    "NO APP STORE YET · INTERFACE IN EN / IT / ES · OFFLINE ONCE THE SONG IS DOWNLOADED · FILES STORED IN THE EU, PROCESSING PINNED TO THE EEA": {
-      "es": "TODAVÍA SIN TIENDA DE APPS · INTERFAZ EN EN / IT / ES · SIN CONEXIÓN UNA VEZ DESCARGADA LA CANCIÓN · ARCHIVOS EN LA UE, PROCESADO FIJADO AL EEE",
-      "it": "ANCORA NESSUNO STORE · INTERFACCIA IN EN / IT / ES · OFFLINE UNA VOLTA SCARICATA LA CANZONE · FILE ARCHIVIATI NELL'UE, ELABORAZIONE VINCOLATA AL SEE"
-    },
     "That's the whole product. It's in open beta.": {
       "es": "Ese es todo el producto. Está en beta abierta.",
       "it": "Questo è tutto il prodotto. È in beta aperta."
@@ -1131,14 +1123,6 @@
     "The models are pretrained. They run over your file and forget it.": {
       "es": "Los modelos están preentrenados. Pasan por tu archivo y lo olvidan.",
       "it": "I modelli sono pre-addestrati. Passano sul tuo file e lo dimenticano."
-    },
-    "Stored in the European Union": {
-      "es": "Guardados en la Unión Europea",
-      "it": "Archiviati nell'Unione Europea"
-    },
-    "And the processing is pinned to the European Economic Area. It costs measurable waiting time, and it stays that way.": {
-      "es": "Y el procesado está fijado al Espacio Económico Europeo. Cuesta tiempo de espera medible, y se queda así.",
-      "it": "E l'elaborazione è vincolata allo Spazio Economico Europeo. Costa tempo di attesa misurabile, e resta così."
     },
     "One space per account": {
       "es": "Un espacio por cuenta",
@@ -1203,10 +1187,6 @@
     "INSTANT": {
       "es": "INSTANTÁNEO",
       "it": "ISTANTANEO"
-    },
-    "About three minutes of processing per song, and a little more because the processing stays inside the EEA. Then it's yours offline.": {
-      "es": "Unos tres minutos de procesado por canción, y un poco más porque el procesado se queda dentro del EEE. Después es tuya sin conexión.",
-      "it": "Circa tre minuti di elaborazione per canzone, e un po' di più perché l'elaborazione resta dentro il SEE. Poi è tua offline."
     },
     "MULTICHANNEL EVERYWHERE": {
       "es": "MULTICANAL EN TODAS PARTES",
@@ -1291,10 +1271,6 @@
     "Where the audio lives": {
       "es": "Dónde vive el audio",
       "it": "Dove vive l'audio"
-    },
-    "European Union. Processing pinned to the EEA": {
-      "es": "Unión Europea. Procesado fijado al EEE",
-      "it": "Unione Europea. Elaborazione vincolata al SEE"
     },
     "When you remove a song": {
       "es": "Cuando quitas una canción",
