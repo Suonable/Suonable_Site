@@ -33,6 +33,8 @@ SEQ = ["gs", "ds", "as", "cm", "gs", "ds", "as"]          # the chips in the str
 WINDOWS = [(0, 13.7), (13.7, 30), (30, 41.2), (41.2, 62.5),
            (62.5, 71.2), (71.2, 87.5), (87.5, 100)]       # their slices of the 16s loop
 SLOTS = 4                                                 # the chord playing, then three coming
+BIG = {"piano": None, "guitar": 150}                      # the chord playing is drawn larger
+SMALL = {"piano": None, "guitar": 92}
 FADE = 0.35                                               # % of the loop spent swapping shapes
 
 
@@ -48,9 +50,9 @@ def voicing(notes):
     return out
 
 
-def piano_symbol(key, notes, octaves=2, w=10.0, h=58.0):
+def piano_symbol(key, notes, octaves=2, w=10.0, h=40.0):
     on = set(voicing(notes.split()))
-    bw, bh = 6.0, 35.0
+    bw, bh = 6.0, 24.0
     parts = ['<symbol id="pk-%s" viewBox="0 0 %g %g">' % (key, octaves * 7 * w, h)]
     for o in range(octaves):
         for i, semi in enumerate(WHITE):
@@ -122,69 +124,78 @@ def keyframes(slot, key, wins):
     return "@keyframes shape-%d-%s { %s }" % (slot, key, body)
 
 
-def shape(slot, key, size, big):
-    """One chord in one slot: its name, its notes and its drawing, shown on its turn."""
+def shape(slot, key, inst, width):
+    """One chord on one instrument in one slot: its name, its notes and its drawing."""
     name, notes, _ = CHORDS[key]
     wins = windows_for(slot, key)
     rest = " shape-rest" if any(b == 100 for _, b in wins) else ""    # what shows when motion is off
-    sym = ("pk-" if big is not None else "gd-") + key
-    view = '0 0 140 58' if big else '0 0 80 97'
+    sym = ("pk-" if inst == "piano" else "gd-") + key
+    view = "0 0 140 40" if inst == "piano" else "0 0 80 97"
+    size = ' width="%d"' % width if width else ""
     return ('<div class="shape%s" style="animation-name: shape-%d-%s;">'
             '<div class="shape-name">%s</div><div class="shape-notes">%s</div>'
-            '<svg class="shape-art" viewBox="%s" width="%d" aria-hidden="true" focusable="false">'
+            '<svg class="shape-art" viewBox="%s"%s aria-hidden="true" focusable="false">'
             '<use href="#%s" xlink:href="#%s"/></svg></div>'
             % (rest, slot, key, name, notes, view, size, sym, sym))
 
 
-def stack(slot, sizes, piano):
-    inner = "".join(shape(slot, key, sizes, True if piano else None) for key in CHORDS)
-    return '<div class="shape-stack" translate="no">%s</div>' % inner
+def stack(slot, sizes):
+    """Both instruments for one slot; the one not chosen keeps running out of sight."""
+    sets = []
+    for inst in ("piano", "guitar"):
+        shapes = "".join(shape(slot, key, inst, sizes[inst]) for key in CHORDS)
+        sets.append('<div class="shape-set shape-set-%s">%s</div>' % (inst, shapes))
+    return '<div class="shape-stack" translate="no">%s</div>' % "".join(sets)
 
 
-def card(active, piano):
-    pills = []
-    for label in ("Piano", "Guitar"):
-        on = label == active
-        pills.append('<span class="shape-pill%s">%s</span>' % (" shape-pill-on" if on else "", label))
-    big, small = (176, 104) if piano else (104, 62)
-    nexts = "".join('<div class="shape-next">%s</div>' % stack(s, small, piano) for s in range(1, SLOTS))
-    return ('      <div data-reveal="1" class="shapes-card">\n'
-            '        <div class="shape-pills">%s</div>\n'
-            '        <div class="shapes-body">\n'
-            '          <div class="shape-playing">\n'
-            '            <div class="shape-label">PLAYING</div>\n'
-            '            %s\n'
-            '          </div>\n'
-            '          <div>\n'
-            '            <div class="shape-label">UP NEXT</div>\n'
-            '            <div class="shapes-next">%s</div>\n'
-            '          </div>\n'
+def panel():
+    pills = ('<div class="shape-pills" role="group" aria-label="Instrument">'
+             '<button type="button" class="shape-pill shape-pill-on" data-shape-instrument="piano" aria-pressed="true">Piano</button>'
+             '<button type="button" class="shape-pill" data-shape-instrument="guitar" aria-pressed="false">Guitar</button>'
+             '</div>')
+    nexts = "".join('<div class="shape-next">%s</div>' % stack(s, SMALL) for s in range(1, SLOTS))
+    return ('    <div class="shapes-panel" data-instrument="piano">\n'
+            '      %s\n'
+            '      <div class="shapes-body">\n'
+            '        <div class="shape-playing">\n'
+            '          <div class="shape-label">PLAYING</div>\n'
+            '          %s\n'
             '        </div>\n'
-            '      </div>' % ("".join(pills), stack(0, big, piano), nexts))
+            '        <div>\n'
+            '          <div class="shape-label">UP NEXT</div>\n'
+            '          <div class="shapes-next">%s</div>\n'
+            '        </div>\n'
+            '      </div>\n'
+            '    </div>' % (pills, stack(0, BIG), nexts))
 
 
 CSS = """<style>
 /* The shapes follow the chord strip above: same 16s loop, same slices (_build/chord_shapes.py). */
-.shapes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
-.shapes-card { background: #101823; border: 1px solid #2A333F; border-radius: 16px; padding: clamp(14px, 1.8vw, 20px); }
+.shapes-panel { border-top: 1px solid #2A333F; margin-top: 22px; padding-top: 20px; }
 .shape-pills { display: inline-flex; align-items: center; gap: 4px; background: #1C232C; border-radius: 99px; padding: 3px; margin-bottom: 16px; }
-.shape-pill { border-radius: 99px; padding: 6px 15px; font-size: 12.5px; font-weight: 600; color: #8A97A8; }
-.shape-pill-on { background: #2A333F; color: #6098DB; font-weight: 700; }
-.shapes-body { display: grid; grid-template-columns: minmax(118px, 176px) 1fr; gap: 14px; align-items: start; }
-.shape-playing { border: 1px solid #2E4C77; border-radius: 12px; background: #17243A; padding: 12px 12px 14px; }
-.shape-next { border: 1px solid #2A333F; border-radius: 10px; padding: 9px 6px 11px; }
-.shapes-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.shape-pill { border: none; border-radius: 99px; padding: 6px 16px; font: inherit; font-size: 12.5px; font-weight: 600; color: #8A97A8; background: transparent; cursor: pointer; }
+.shape-pill:hover { color: #C6D2E0; }
+.shape-pill-on, .shape-pill-on:hover { background: #2A333F; color: #6098DB; font-weight: 700; }
+.shapes-body { display: grid; grid-template-columns: minmax(200px, 420px) 1fr; gap: clamp(12px, 1.4vw, 20px); align-items: start; }
+.shape-playing { border: 1px solid #2E4C77; border-radius: 12px; background: #17243A; padding: 14px 14px 16px; }
+.shapes-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.shape-next { border: 1px solid #2A333F; border-radius: 10px; padding: 10px 8px 12px; }
 .shape-label { %(mono)s font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8; text-align: center; padding-bottom: 8px; }
-.shape-next .shape-label, .shapes-next .shape-label { text-align: center; }
-.shape-stack { display: grid; }
-.shape { grid-area: 1 / 1; opacity: 0; animation-duration: 16s; animation-timing-function: linear; animation-iteration-count: infinite; }
-.shape-rest { opacity: 1; }                       /* the frame left showing when animation is off */
-.shape-name { font-size: 13px; font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA; text-align: center; }
-.shape-playing .shape-name { font-size: clamp(21px, 2vw, 26px); color: #6098DB; letter-spacing: -0.03em; }
-.shape-notes { %(mono)s font-size: 9.5px; letter-spacing: 0.06em; color: #8A97A8; text-align: center; padding-bottom: 9px; }
-.shape-playing .shape-notes { font-size: 11px; color: #8FB6E8; padding-bottom: 12px; }
+.shape-stack { position: relative; }
+.shape-set { display: grid; }
+.shape-set > .shape { grid-area: 1 / 1; opacity: 0; animation-duration: 16s; animation-timing-function: linear; animation-iteration-count: infinite; }
+.shape-set > .shape-rest { opacity: 1; }          /* the frame left showing when animation is off */
+/* the instrument you are not looking at keeps running, out of flow, so switching stays in step */
+[data-instrument="piano"] .shape-set-guitar, [data-instrument="guitar"] .shape-set-piano { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; }
+.shape-name { font-size: 14px; font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA; text-align: center; }
+.shape-playing .shape-name { font-size: clamp(22px, 2.2vw, 30px); color: #6098DB; letter-spacing: -0.03em; }
+.shape-notes { %(mono)s font-size: 10px; letter-spacing: 0.06em; color: #8A97A8; text-align: center; padding-bottom: 10px; }
+.shape-playing .shape-notes { font-size: 11.5px; color: #8FB6E8; padding-bottom: 14px; }
 .shape-art { display: block; width: 100%%; height: auto; margin: 0 auto; }
-.shape-playing .shape-art { max-width: 176px; }
+.shape-playing .shape-art { max-width: 380px; }
+.shape-next .shape-art { max-width: 210px; }
+.shape-playing .shape-set-guitar .shape-art { max-width: 150px; }
+.shape-next .shape-set-guitar .shape-art { max-width: 92px; }
 @media (max-width: 759px) {
   /* on a phone the row is too narrow to split, and two shapes stay readable where three would not */
   .shapes-body { grid-template-columns: 1fr; }
@@ -192,7 +203,9 @@ CSS = """<style>
   .shapes-next > :nth-child(3) { display: none; }
 }
 %(keyframes)s
-</style>""" % {
+</style>"""
+
+CSS = CSS % {
     "mono": MONO,
     "keyframes": "\n".join(keyframes(s, k, windows_for(s, k)) for s in range(SLOTS) for k in CHORDS),
 }
@@ -202,8 +215,7 @@ defs = "".join(piano_symbol(k, CHORDS[k][1]) for k in CHORDS) + \
 sprite = ('<svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">'
           '<defs>%s</defs></svg>' % defs)
 
-block = "%s\n    %s\n    %s\n    <div class=\"shapes-grid\">\n%s\n%s\n    </div>\n    %s" % (
-    START, CSS, sprite, card("Piano", True), card("Guitar", False), END)
+block = "%s\n    %s\n    %s\n%s\n    %s" % (START, CSS, sprite, panel(), END)
 
 path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "template.html")
 tpl = open(path, encoding="utf-8").read()

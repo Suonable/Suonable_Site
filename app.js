@@ -210,6 +210,24 @@
     }
   }
 
+  /* ---------- piano / guitar switch on the chord shapes ---------- */
+  function setupChordShapes() {
+    var panel = document.querySelector(".shapes-panel");
+    if (!panel) return;
+    var pills = Array.prototype.slice.call(panel.querySelectorAll("[data-shape-instrument]"));
+    pills.forEach(function (pill) {
+      pill.addEventListener("click", function () {
+        // both instruments keep animating, so the one you switch to is already on the right chord
+        panel.setAttribute("data-instrument", pill.getAttribute("data-shape-instrument"));
+        pills.forEach(function (other) {
+          var on = other === pill;
+          other.classList.toggle("shape-pill-on", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      });
+    });
+  }
+
   /* ---------- scroll reveal ---------- */
   function setupReveal() {
     var els = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
@@ -253,6 +271,7 @@
     setupDownloadDropdowns();
     setupLang();
     setupDevices();
+    setupChordShapes();
     setupReveal();
     jumpToHash();
   });

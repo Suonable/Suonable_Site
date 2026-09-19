@@ -470,10 +470,6 @@
       "es": "C. 31",
       "it": "B. 31"
     },
-    "And how to play each one.": {
-      "es": "Y cómo tocar cada uno.",
-      "it": "E come suonare ognuno."
-    },
     "Pick piano or guitar and the chord that's sounding shows the notes to press or the shape to hold, with the next three already on screen so your hand arrives ready to the change.": {
       "es": "Elige piano o guitarra y el acorde que está sonando muestra las notas que hay que pulsar o la posición que hay que hacer, con los tres siguientes ya en pantalla para llegar al cambio con la mano lista.",
       "it": "Scegli piano o chitarra e l'accordo che sta suonando mostra le note da premere o la posizione da fare, con i tre successivi già sullo schermo per arrivare al cambio con la mano pronta."
@@ -485,6 +481,10 @@
     "UP NEXT": {
       "es": "SIGUIENTES",
       "it": "PROSSIMI"
+    },
+    "And how to play each one": {
+      "es": "Y cómo tocar cada uno",
+      "it": "E come suonare ognuno"
     }
   },
   "tools": {
