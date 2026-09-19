@@ -17,8 +17,8 @@ PC = {"C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5, "F#": 6,
 WHITE = [0, 2, 4, 5, 7, 9, 11]
 BLACK_AFTER = {0: 1, 1: 3, 3: 6, 4: 8, 5: 10}   # white key index in the octave -> black key semitone
 
-KEY, KEY_EDGE, KEY_BLACK, KEY_ON = "#F4F7FA", "#0C0F14", "#0C0F14", "#6098DB"
-FRET, DOT, FRET_NUM = "#C6D2E0", "#F4F7FA", "#8A97A8"
+KEY, KEY_BLACK, KEY_ON, KEY_GAP = "#FFFFFF", "#22222A", "#418BEA", 1.3
+FRET, DOT, FRET_NUM = "#F4F7FA", "#FFFFFF", "#C4CEDA"
 MONO = "font-family: 'JetBrains Mono', monospace;"
 START, END = "<!-- chord shapes: python3 _build/chord_shapes.py -->", "<!-- /chord shapes -->"
 
@@ -50,15 +50,15 @@ def voicing(notes):
     return out
 
 
-def piano_symbol(key, notes, octaves=2, w=10.0, h=40.0):
+def piano_symbol(key, notes, octaves=2, w=10.0, h=36.0):
     on = set(voicing(notes.split()))
-    bw, bh = 6.0, 24.0
+    bw, bh = 6.0, 22.0
     parts = ['<symbol id="pk-%s" viewBox="0 0 %g %g">' % (key, octaves * 7 * w, h)]
     for o in range(octaves):
         for i, semi in enumerate(WHITE):
             fill = KEY_ON if (o * 12 + semi) in on else KEY
-            parts.append('<rect x="%g" y="0.5" width="%g" height="%g" rx="1.6" fill="%s" stroke="%s" stroke-width="1"/>'
-                         % ((o * 7 + i) * w + 0.5, w - 1, h - 1, fill, KEY_EDGE))
+            parts.append('<rect x="%g" y="0" width="%g" height="%g" rx="1.6" fill="%s"/>'
+                         % ((o * 7 + i) * w + KEY_GAP / 2, w - KEY_GAP, h, fill))
     for o in range(octaves):                               # black keys sit on top of the white ones
         for i, semi in BLACK_AFTER.items():
             fill = KEY_ON if (o * 12 + semi) in on else KEY_BLACK
@@ -130,7 +130,7 @@ def shape(slot, key, inst, width):
     wins = windows_for(slot, key)
     rest = " shape-rest" if any(b == 100 for _, b in wins) else ""    # what shows when motion is off
     sym = ("pk-" if inst == "piano" else "gd-") + key
-    view = "0 0 140 40" if inst == "piano" else "0 0 80 97"
+    view = "0 0 140 36" if inst == "piano" else "0 0 80 97"
     size = ' width="%d"' % width if width else ""
     return ('<div class="shape%s" style="animation-name: shape-%d-%s;">'
             '<div class="shape-name">%s</div><div class="shape-notes">%s</div>'
@@ -162,7 +162,7 @@ def panel():
             '          %s\n'
             '        </div>\n'
             '        <div>\n'
-            '          <div class="shape-label">UP NEXT</div>\n'
+            '          <div class="shape-label shape-label-next">UP NEXT</div>\n'
             '          <div class="shapes-next">%s</div>\n'
             '        </div>\n'
             '      </div>\n'
@@ -171,26 +171,27 @@ def panel():
 
 CSS = """<style>
 /* The shapes follow the chord strip above: same 16s loop, same slices (_build/chord_shapes.py). */
-.shapes-panel { border-top: 1px solid #2A333F; margin-top: 22px; padding-top: 20px; }
-.shape-pills { display: inline-flex; align-items: center; gap: 4px; background: #1C232C; border-radius: 99px; padding: 3px; margin-bottom: 16px; }
-.shape-pill { border: none; border-radius: 99px; padding: 6px 16px; font: inherit; font-size: 12.5px; font-weight: 600; color: #8A97A8; background: transparent; cursor: pointer; }
-.shape-pill:hover { color: #C6D2E0; }
-.shape-pill-on, .shape-pill-on:hover { background: #2A333F; color: #6098DB; font-weight: 700; }
+.shapes-panel { border-top: 1px solid #2E353F; margin-top: 22px; padding-top: 20px; }
+.shape-pills { display: inline-flex; align-items: center; gap: 4px; background: #262D35; border: 1px solid #2E353F; border-radius: 12px; padding: 3px; margin-bottom: 16px; }
+.shape-pill { border: none; border-radius: 9px; padding: 8px 18px; font: inherit; font-size: 13px; font-weight: 600; color: #C9D0DA; background: transparent; cursor: pointer; }
+.shape-pill:hover { color: #FFFFFF; }
+.shape-pill-on, .shape-pill-on:hover { background: #1C232D; color: #518EE1; font-weight: 700; }
 .shapes-body { display: grid; grid-template-columns: minmax(200px, 420px) 1fr; gap: clamp(12px, 1.4vw, 20px); align-items: start; }
-.shape-playing { border: 1px solid #2E4C77; border-radius: 12px; background: #17243A; padding: 14px 14px 16px; }
+.shape-playing { border: 1px solid #5E93DC; border-radius: 14px; background: #1E2834; padding: 14px 14px 16px; box-shadow: 0 0 22px rgba(65,139,234,0.18); }
 .shapes-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.shape-next { border: 1px solid #2A333F; border-radius: 10px; padding: 10px 8px 12px; }
-.shape-label { %(mono)s font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8; text-align: center; padding-bottom: 8px; }
+.shape-next { border: 1px solid #2E353F; border-radius: 12px; padding: 10px 8px 12px; }
+.shape-label { %(mono)s font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #949EAA; text-align: center; padding-bottom: 8px; }
+.shape-label-next { text-align: left; }
 .shape-stack { position: relative; }
 .shape-set { display: grid; }
 .shape-set > .shape { grid-area: 1 / 1; opacity: 0; animation-duration: 16s; animation-timing-function: linear; animation-iteration-count: infinite; }
 .shape-set > .shape-rest { opacity: 1; }          /* the frame left showing when animation is off */
 /* the instrument you are not looking at keeps running, out of flow, so switching stays in step */
 [data-instrument="piano"] .shape-set-guitar, [data-instrument="guitar"] .shape-set-piano { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; }
-.shape-name { font-size: 14px; font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA; text-align: center; }
-.shape-playing .shape-name { font-size: clamp(22px, 2.2vw, 30px); color: #6098DB; letter-spacing: -0.03em; }
-.shape-notes { %(mono)s font-size: 10px; letter-spacing: 0.06em; color: #8A97A8; text-align: center; padding-bottom: 10px; }
-.shape-playing .shape-notes { font-size: 11.5px; color: #8FB6E8; padding-bottom: 14px; }
+.shape-name { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF; text-align: center; }
+.shape-playing .shape-name { font-size: clamp(24px, 2.6vw, 36px); color: #FFFFFF; letter-spacing: -0.03em; }
+.shape-notes { %(mono)s font-size: 11px; letter-spacing: 0.06em; color: #C0C6D2; text-align: center; padding-bottom: 10px; }
+.shape-playing .shape-notes { font-size: 12px; color: #F4F7FA; padding-bottom: 14px; }
 .shape-art { display: block; width: 100%%; height: auto; margin: 0 auto; }
 .shape-playing .shape-art { max-width: 380px; }
 .shape-next .shape-art { max-width: 210px; }
@@ -200,6 +201,7 @@ CSS = """<style>
   /* on a phone the row is too narrow to split, and two shapes stay readable where three would not */
   .shapes-body { grid-template-columns: 1fr; }
   .shape-pill { padding: 10px 20px; font-size: 13.5px; }        /* a finger-sized target */
+  .shape-playing .shape-name { font-size: 30px; }
   .shapes-next { grid-template-columns: repeat(2, 1fr); }
   .shapes-next > :nth-child(3) { display: none; }
 }
