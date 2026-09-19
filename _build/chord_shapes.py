@@ -4,10 +4,11 @@
     python3 _build/chord_shapes.py && python3 _build/build.py
 
 Rewrites what sits between the "chord shapes" markers inside <section id="chords">
-in _build/template.html, so changing which chords are shown, or their fingerings,
-is an edit here instead of by hand in the SVG. The copy around the diagrams lives
-in the template and its translations in i18n.json. Colours follow the app's dark
-mode, because the block sits in the dark chords section.
+in _build/template.html. The shapes follow the chord strip above them the way the
+app does: SEQ is the same run of chords as the chips in that strip and WINDOWS are
+the same slices of the 16s loop as their ch1..ch7 animations, so the chord playing
+and the three coming next change on the beat with it. Change either and both stay
+in step. Colours follow the app's dark mode, because the section is dark.
 """
 import os
 
@@ -20,6 +21,19 @@ KEY, KEY_EDGE, KEY_BLACK, KEY_ON = "#F4F7FA", "#0C0F14", "#0C0F14", "#6098DB"
 FRET, DOT, FRET_NUM = "#C6D2E0", "#F4F7FA", "#8A97A8"
 MONO = "font-family: 'JetBrains Mono', monospace;"
 START, END = "<!-- chord shapes: python3 _build/chord_shapes.py -->", "<!-- /chord shapes -->"
+
+# name, the notes the app prints, and the guitar shape (first fret drawn, barre, dots, muted strings)
+CHORDS = {
+    "gs": ("G#", "G# C D#", dict(base=4, barre=(4, 0, 5), dots=[(1, 6), (2, 6), (3, 5)], muted=[])),
+    "ds": ("D#", "D# G A#", dict(base=6, barre=(6, 1, 5), dots=[(2, 8), (3, 8), (4, 8)], muted=[0])),
+    "as": ("A#", "A# D F", dict(base=1, barre=(1, 1, 5), dots=[(2, 3), (3, 3), (4, 3)], muted=[0])),
+    "cm": ("Cm", "C D# G", dict(base=3, barre=(3, 1, 5), dots=[(2, 5), (3, 5), (4, 4)], muted=[0])),
+}
+SEQ = ["gs", "ds", "as", "cm", "gs", "ds", "as"]          # the chips in the strip above, in order
+WINDOWS = [(0, 13.7), (13.7, 30), (30, 41.2), (41.2, 62.5),
+           (62.5, 71.2), (71.2, 87.5), (87.5, 100)]       # their slices of the 16s loop
+SLOTS = 4                                                 # the chord playing, then three coming
+FADE = 0.35                                               # % of the loop spent swapping shapes
 
 
 def voicing(notes):
@@ -34,31 +48,27 @@ def voicing(notes):
     return out
 
 
-def piano(notes, octaves=2, w=10.0, h=58.0, maxw=None):
-    on = set(voicing(notes))
+def piano_symbol(key, notes, octaves=2, w=10.0, h=58.0):
+    on = set(voicing(notes.split()))
     bw, bh = 6.0, 35.0
-    cap = ("max-width: %dpx;" % maxw) if maxw else ""
-    parts = ['<svg viewBox="0 0 %g %g" width="100%%" height="auto" aria-hidden="true" focusable="false" '
-             'style="display: block; width: 100%%; %s height: auto; margin: 0 auto;">' % (octaves * 7 * w, h, cap)]
+    parts = ['<symbol id="pk-%s" viewBox="0 0 %g %g">' % (key, octaves * 7 * w, h)]
     for o in range(octaves):
         for i, semi in enumerate(WHITE):
             fill = KEY_ON if (o * 12 + semi) in on else KEY
             parts.append('<rect x="%g" y="0.5" width="%g" height="%g" rx="1.6" fill="%s" stroke="%s" stroke-width="1"/>'
                          % ((o * 7 + i) * w + 0.5, w - 1, h - 1, fill, KEY_EDGE))
-    for o in range(octaves):                                   # black keys sit on top of the white ones
+    for o in range(octaves):                               # black keys sit on top of the white ones
         for i, semi in BLACK_AFTER.items():
             fill = KEY_ON if (o * 12 + semi) in on else KEY_BLACK
             parts.append('<rect x="%g" y="0.5" width="%g" height="%g" rx="1.4" fill="%s"/>'
                          % ((o * 7 + i + 1) * w - bw / 2, bw, bh, fill))
-    return "".join(parts) + "</svg>"
+    return "".join(parts) + "</symbol>"
 
 
-def guitar(base, barre, dots, muted, width):
-    """base: first fret drawn; barre: (fret, from_string, to_string); dots: [(string, fret)]."""
+def guitar_symbol(key, base, barre, dots, muted):
     L, TOP, SX, FY, FRETS = 15.0, 18.0, 11.0, 15.0, 5
     W, H = L + 5 * SX + 10, TOP + FRETS * FY + 4
-    p = ['<svg viewBox="0 0 %g %g" width="%d" height="auto" aria-hidden="true" focusable="false" '
-         'style="display: block; width: %dpx; max-width: 100%%; height: auto; margin: 0 auto;">' % (W, H, width, width)]
+    p = ['<symbol id="gd-%s" viewBox="0 0 %g %g">' % (key, W, H)]
     for s in range(6):
         p.append('<line x1="%g" y1="%g" x2="%g" y2="%g" stroke="%s" stroke-width="1"/>'
                  % (L + s * SX, TOP, L + s * SX, TOP + FRETS * FY, FRET))
@@ -81,68 +91,119 @@ def guitar(base, barre, dots, muted, width):
                  % (L + s1 * SX - 3.2, y - 3.2, (s2 - s1) * SX + 6.4, DOT))
     for s, f in dots:
         p.append('<circle cx="%g" cy="%g" r="3.6" fill="%s"/>' % (L + s * SX, TOP + (f - base + 0.5) * FY, DOT))
-    return "".join(p) + "</svg>"
+    return "".join(p) + "</symbol>"
 
 
-# the same moment of a song on both instruments: G# playing, then C#, F#, A#m
-PIANO = [("G#", "G# C D#"), ("C#", "C# F G#"), ("F#", "F# A# C#"), ("A#m", "A# C# F")]
-GUITAR = [  # (name, notes, first fret drawn, barre, dots, muted strings) — low E on the left
-    ("G#", "G# C D#", 4, (4, 0, 5), [(1, 6), (2, 6), (3, 5)], []),
-    ("C#", "C# F G#", 4, (4, 1, 5), [(2, 6), (3, 6), (4, 6)], [0]),
-    ("F#", "F# A# C#", 2, (2, 0, 5), [(1, 4), (2, 4), (3, 3)], []),
-    ("A#m", "A# C# F", 1, (1, 1, 5), [(2, 3), (3, 3), (4, 2)], [0]),
-]
+def windows_for(slot, key):
+    """The slices of the loop where this chord sits in this slot."""
+    out = []
+    for i, (a, b) in enumerate(WINDOWS):
+        if SEQ[(i + slot) % len(SEQ)] == key:
+            out.append((a, b))
+    return out
 
 
-def playing_card(name, notes, art):
-    return ('<div style="border: 1px solid #2E4C77; border-radius: 12px; background: #17243A; padding: 14px 14px 16px; '
-            'flex: 1; display: flex; flex-direction: column; justify-content: center;">\n'
-            '            <div style="%s font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8; text-align: center;">PLAYING</div>\n'
-            '            <div translate="no">\n'
-            '              <div style="font-size: clamp(21px, 2vw, 26px); font-weight: 800; letter-spacing: -0.03em; color: #6098DB; text-align: center; padding: 3px 0 1px;">%s</div>\n'
-            '              <div style="%s font-size: 11px; letter-spacing: 0.06em; color: #8FB6E8; text-align: center; padding-bottom: 12px;">%s</div>\n'
-            '              %s\n'
-            '            </div>\n'
-            '          </div>' % (MONO, name, MONO, notes, art))
+def keyframes(slot, key, wins):
+    """Hold the shape visible through its slices and swap quickly in between."""
+    stops = []
+    if not any(a == 0 for a, _ in wins):
+        stops.append((0, 0))
+    for a, b in wins:
+        if a > 0:
+            stops.append((round(a - FADE, 2), 0))
+        stops.append((a, 1))
+        stops.append((b if b < 100 else 100, 1))
+        if b < 100:
+            stops.append((round(b + FADE, 2), 0))
+    if not any(b == 100 for _, b in wins):
+        stops.append((100, 0))
+    stops.sort()
+    body = " ".join("%g%% { opacity: %d; }" % (p, v) for p, v in stops)
+    return "@keyframes shape-%d-%s { %s }" % (slot, key, body)
 
 
-def next_card(name, notes, art):
-    return ('<div style="border: 1px solid #2A333F; border-radius: 10px; padding: 10px 8px 12px;" translate="no">\n'
-            '            <div style="font-size: 13.5px; font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA; text-align: center;">%s</div>\n'
-            '            <div style="%s font-size: 9.5px; letter-spacing: 0.06em; color: #8A97A8; text-align: center; padding-bottom: 9px;">%s</div>\n'
-            '            %s\n'
-            '          </div>' % (name, MONO, notes, art))
+def shape(slot, key, size, big):
+    """One chord in one slot: its name, its notes and its drawing, shown on its turn."""
+    name, notes, _ = CHORDS[key]
+    wins = windows_for(slot, key)
+    rest = " shape-rest" if any(b == 100 for _, b in wins) else ""    # what shows when motion is off
+    sym = ("pk-" if big is not None else "gd-") + key
+    view = '0 0 140 58' if big else '0 0 80 97'
+    return ('<div class="shape%s" style="animation-name: shape-%d-%s;">'
+            '<div class="shape-name">%s</div><div class="shape-notes">%s</div>'
+            '<svg class="shape-art" viewBox="%s" width="%d" aria-hidden="true" focusable="false">'
+            '<use href="#%s" xlink:href="#%s"/></svg></div>'
+            % (rest, slot, key, name, notes, view, size, sym, sym))
 
 
-def card(active, cards):
+def stack(slot, sizes, piano):
+    inner = "".join(shape(slot, key, sizes, True if piano else None) for key in CHORDS)
+    return '<div class="shape-stack" translate="no">%s</div>' % inner
+
+
+def card(active, piano):
     pills = []
     for label in ("Piano", "Guitar"):
-        if label == active:
-            pills.append('<span style="border-radius: 99px; padding: 6px 15px; font-size: 12.5px; font-weight: 700; background: #2A333F; color: #6098DB;">%s</span>' % label)
-        else:
-            pills.append('<span style="border-radius: 99px; padding: 6px 15px; font-size: 12.5px; font-weight: 600; color: #8A97A8;">%s</span>' % label)
-    nexts = "\n          ".join(next_card(*c) for c in cards[1:])
-    return ('      <div data-reveal="1" style="background: #101823; border: 1px solid #2A333F; border-radius: 16px; '
-            'padding: clamp(14px, 1.8vw, 20px); display: flex; flex-direction: column;">\n'
-            '        <div style="display: inline-flex; align-items: center; gap: 4px; background: #1C232C; border-radius: 99px; '
-            'padding: 3px; margin-bottom: 16px; align-self: flex-start;">\n'
-            '          %s\n'
+        on = label == active
+        pills.append('<span class="shape-pill%s">%s</span>' % (" shape-pill-on" if on else "", label))
+    big, small = (176, 104) if piano else (104, 62)
+    nexts = "".join('<div class="shape-next">%s</div>' % stack(s, small, piano) for s in range(1, SLOTS))
+    return ('      <div data-reveal="1" class="shapes-card">\n'
+            '        <div class="shape-pills">%s</div>\n'
+            '        <div class="shapes-body">\n'
+            '          <div class="shape-playing">\n'
+            '            <div class="shape-label">PLAYING</div>\n'
+            '            %s\n'
+            '          </div>\n'
+            '          <div>\n'
+            '            <div class="shape-label">UP NEXT</div>\n'
+            '            <div class="shapes-next">%s</div>\n'
+            '          </div>\n'
             '        </div>\n'
-            '        %s\n'
-            '        <div style="%s font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8; padding: 16px 0 10px;">UP NEXT</div>\n'
-            '        <div class="shapes-next">\n'
-            '          %s\n'
-            '        </div>\n'
-            '      </div>' % ("\n          ".join(pills), playing_card(*cards[0]), MONO, nexts))
+            '      </div>' % ("".join(pills), stack(0, big, piano), nexts))
 
 
-piano_cards = [(n, notes, piano(notes.split(), maxw=232 if i == 0 else 126))
-               for i, (n, notes) in enumerate(PIANO)]
-guitar_cards = [(n, notes, guitar(b, barre, dots, muted, 124 if i == 0 else 72))
-                for i, (n, notes, b, barre, dots, muted) in enumerate(GUITAR)]
+CSS = """<style>
+/* The shapes follow the chord strip above: same 16s loop, same slices (_build/chord_shapes.py). */
+.shapes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+.shapes-card { background: #101823; border: 1px solid #2A333F; border-radius: 16px; padding: clamp(14px, 1.8vw, 20px); }
+.shape-pills { display: inline-flex; align-items: center; gap: 4px; background: #1C232C; border-radius: 99px; padding: 3px; margin-bottom: 16px; }
+.shape-pill { border-radius: 99px; padding: 6px 15px; font-size: 12.5px; font-weight: 600; color: #8A97A8; }
+.shape-pill-on { background: #2A333F; color: #6098DB; font-weight: 700; }
+.shapes-body { display: grid; grid-template-columns: minmax(118px, 176px) 1fr; gap: 14px; align-items: start; }
+.shape-playing { border: 1px solid #2E4C77; border-radius: 12px; background: #17243A; padding: 12px 12px 14px; }
+.shape-next { border: 1px solid #2A333F; border-radius: 10px; padding: 9px 6px 11px; }
+.shapes-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.shape-label { %(mono)s font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8; text-align: center; padding-bottom: 8px; }
+.shape-next .shape-label, .shapes-next .shape-label { text-align: center; }
+.shape-stack { display: grid; }
+.shape { grid-area: 1 / 1; opacity: 0; animation-duration: 16s; animation-timing-function: linear; animation-iteration-count: infinite; }
+.shape-rest { opacity: 1; }                       /* the frame left showing when animation is off */
+.shape-name { font-size: 13px; font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA; text-align: center; }
+.shape-playing .shape-name { font-size: clamp(21px, 2vw, 26px); color: #6098DB; letter-spacing: -0.03em; }
+.shape-notes { %(mono)s font-size: 9.5px; letter-spacing: 0.06em; color: #8A97A8; text-align: center; padding-bottom: 9px; }
+.shape-playing .shape-notes { font-size: 11px; color: #8FB6E8; padding-bottom: 12px; }
+.shape-art { display: block; width: 100%%; height: auto; margin: 0 auto; }
+.shape-playing .shape-art { max-width: 176px; }
+@media (max-width: 759px) {
+  /* on a phone the row is too narrow to split, and two shapes stay readable where three would not */
+  .shapes-body { grid-template-columns: 1fr; }
+  .shapes-next { grid-template-columns: repeat(2, 1fr); }
+  .shapes-next > :nth-child(3) { display: none; }
+}
+%(keyframes)s
+</style>""" % {
+    "mono": MONO,
+    "keyframes": "\n".join(keyframes(s, k, windows_for(s, k)) for s in range(SLOTS) for k in CHORDS),
+}
 
-block = '%s\n    <div class="shapes-grid">\n%s\n%s\n    </div>\n    %s' % (
-    START, card("Piano", piano_cards), card("Guitar", guitar_cards), END)
+defs = "".join(piano_symbol(k, CHORDS[k][1]) for k in CHORDS) + \
+       "".join(guitar_symbol(k, **CHORDS[k][2]) for k in CHORDS)
+sprite = ('<svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">'
+          '<defs>%s</defs></svg>' % defs)
+
+block = "%s\n    %s\n    %s\n    <div class=\"shapes-grid\">\n%s\n%s\n    </div>\n    %s" % (
+    START, CSS, sprite, card("Piano", True), card("Guitar", False), END)
 
 path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "template.html")
 tpl = open(path, encoding="utf-8").read()
