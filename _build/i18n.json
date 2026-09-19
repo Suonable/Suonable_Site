@@ -382,13 +382,13 @@
       "es": "Acordes, detectados para ti",
       "it": "Accordi, trovati per te"
     },
-    "Every song arrives with its chords already on it.": {
-      "es": "Cada canción llega con sus acordes ya puestos.",
-      "it": "Ogni canzone arriva con i suoi accordi già sopra."
+    "Every song arrives with its chords, and how to play them.": {
+      "es": "Cada canción llega con sus acordes, y con cómo tocarlos.",
+      "it": "Ogni canzone arriva con i suoi accordi, e con come suonarli."
     },
-    "Not a guess pasted on top: the chords are placed over the beat map detected in your own recording, so each one sits on the bar and beat where it actually changes. Correct anything by hand — it's a starting point, not a verdict.": {
-      "es": "No es una suposición pegada encima: los acordes se colocan sobre el mapa de compases detectado en tu propia grabación, así cada uno cae en el compás y el tiempo donde realmente cambia. Corrige lo que quieras a mano — es un punto de partida, no un veredicto.",
-      "it": "Non è un'ipotesi incollata sopra: gli accordi sono posizionati sulla mappa delle battute rilevata nella tua registrazione, così ognuno cade sulla battuta e sul movimento in cui cambia davvero. Correggi ciò che vuoi a mano — è un punto di partenza, non un verdetto."
+    "Not a guess pasted on top: the chords are placed over the beat map detected in your own recording, so each one sits on the bar and beat where it actually changes. Each one also comes with the way to play it, on piano or guitar, following the song as it moves. Correct anything by hand — it's a starting point, not a verdict.": {
+      "es": "No es una suposición pegada encima: los acordes se colocan sobre el mapa de compases detectado en tu propia grabación, así cada uno cae en el compás y el tiempo donde realmente cambia. Cada uno llega además con la forma de tocarlo, en piano o en guitarra, siguiendo la canción mientras avanza. Corrige lo que quieras a mano — es un punto de partida, no un veredicto.",
+      "it": "Non è un'ipotesi incollata sopra: gli accordi sono posizionati sulla mappa delle battute rilevata nella tua registrazione, così ognuno cade sulla battuta e sul movimento in cui cambia davvero. Ognuno arriva anche con il modo di suonarlo, al piano o alla chitarra, seguendo la canzone mentre va avanti. Correggi ciò che vuoi a mano — è un punto di partenza, non un verdetto."
     },
     "Placed on the beat": {
       "es": "Colocados en el tiempo",
