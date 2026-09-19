@@ -199,6 +199,7 @@ CSS = """<style>
 @media (max-width: 759px) {
   /* on a phone the row is too narrow to split, and two shapes stay readable where three would not */
   .shapes-body { grid-template-columns: 1fr; }
+  .shape-pill { padding: 10px 20px; font-size: 13.5px; }        /* a finger-sized target */
   .shapes-next { grid-template-columns: repeat(2, 1fr); }
   .shapes-next > :nth-child(3) { display: none; }
 }
