@@ -787,14 +787,6 @@
     "The tracks are for your own use — learning your part, rehearsing and playing — not for redistributing, publishing, selling or broadcasting them.": {
       "es": "Las pistas son para tu propio uso — aprender tu parte, ensayar y tocar — no para redistribuirlas, publicarlas, venderlas ni emitirlas.",
       "it": "Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle."
-    },
-    "Private by default.": {
-      "es": "Privado por construcción.",
-      "it": "Privato per costruzione."
-    },
-    "Suonable has no catalogue, no feed and no public links: the songs you upload are reachable only from your own account, and only you decide what leaves your library.": {
-      "es": "Suonable no tiene catálogo, ni muro, ni enlaces públicos: las canciones que subes solo se alcanzan desde tu propia cuenta, y solo tú decides qué sale de tu biblioteca.",
-      "it": "Suonable non ha catalogo, né feed, né link pubblici: le canzoni che carichi si raggiungono solo dal tuo account, e decidi solo tu cosa esce dalla tua libreria."
     }
   },
   "How it works page": {
@@ -1441,6 +1433,16 @@
     "Beta version": {
       "es": "Versión beta",
       "it": "Versione beta"
+    }
+  },
+  "privacy": {
+    "Your song stays yours": {
+      "es": "Tu canción sigue siendo tuya",
+      "it": "La tua canzone resta tua"
+    },
+    "Suonable has no catalogue, no feed and no public links: the songs you upload are reachable only from your own account, and only you decide what leaves your library. Your audio never trains any model.": {
+      "es": "Suonable no tiene catálogo, ni muro, ni enlaces públicos: las canciones que subes solo se alcanzan desde tu propia cuenta, y solo tú decides qué sale de tu biblioteca. Tu audio no entrena ningún modelo.",
+      "it": "Suonable non ha catalogo, né feed, né link pubblici: le canzoni che carichi si raggiungono solo dal tuo account, e decidi solo tu cosa esce dalla tua libreria. Il tuo audio non addestra nessun modello."
     }
   }
 }

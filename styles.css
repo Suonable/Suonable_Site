@@ -334,6 +334,10 @@ img { max-width: 100%; }
 
 /* ---------- how-it-works steps grid ---------- */
 .steps-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+/* the privacy point runs the full width under the four steps, title beside the text */
+.step-wide { display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 0 clamp(20px, 3vw, 56px); align-items: start; }
+.step-wide > p { padding-top: 38px; }                 /* start on the title's line, not the number's */
+@media (max-width: 759px) { .step-wide { grid-template-columns: 1fr; gap: 12px; } .step-wide > p { padding-top: 0; } }
 @media (max-width: 1179px) { .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 559px) { .steps-grid { grid-template-columns: 1fr; } }
 
