@@ -194,6 +194,15 @@ img { max-width: 100%; }
 .master-knob { position: absolute; left: 79%; top: 50%; width: 17px; height: 17px; margin: -8.5px 0 0 -8.5px; border-radius: 99px; background: #FFFFFF; border: 1.5px solid var(--masterKnobBorder); display: block; }
 .master-value { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 14px; color: var(--mid); }
 
+/* ---------- chord shapes (piano and guitar) ---------- */
+.shapes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+.shapes-next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+@media (max-width: 759px) {
+  /* two shapes stay readable on a phone where three would not */
+  .shapes-next { grid-template-columns: repeat(2, 1fr); }
+  .shapes-next > :nth-child(3) { display: none; }
+}
+
 /* ---------- hero device mockup ---------- */
 /* A real photo of a MacBook and an iPhone with both screens punched out to
    transparency. The photo sits on top and the app UI renders underneath, so the
