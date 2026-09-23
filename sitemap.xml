@@ -22,4 +22,40 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://suonable.com/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://suonable.com/"/>
   </url>
+  <url>
+    <loc>https://suonable.com/legal/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/legal/privacy/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/legal/terms/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/legal/copyright/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/it/legal/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/it/legal/privacy/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/it/legal/terms/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/it/legal/copyright/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/es/legal/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/es/legal/privacy/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/es/legal/terms/</loc>
+  </url>
+  <url>
+    <loc>https://suonable.com/es/legal/copyright/</loc>
+  </url>
 </urlset>

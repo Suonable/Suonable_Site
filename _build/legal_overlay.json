@@ -1,0 +1,172 @@
+{
+  "_note": [
+    "Corrections the site publishes on top of the text extracted from the app.",
+    "They survive re-running fetch_legal.py, and they are the list of what still has to be",
+    "changed inside the app so that both say the same thing.",
+    "Indexes count sections and paragraphs as the app orders them; 'was' is checked on build",
+    "and a warning is printed when the app's own wording has moved on."
+  ],
+  "operator": {
+    "abuse": "copyright@suonable.com"
+  },
+  "swaps": [
+    {
+      "doc": "copyright",
+      "from": "support@suonable.com",
+      "to": "copyright@suonable.com",
+      "why": "notices need their own mailbox; a legal deadline missed in the support queue costs the safe harbour"
+    }
+  ],
+  "edits": [
+    {
+      "op": "intro",
+      "doc": "privacy",
+      "why": "our own copyright policy lets us restrict content, so 'nobody' was too absolute",
+      "text": {
+        "en": "This policy explains what Suonable does with your data. The short version: your music is yours, it is private by default, no other user can reach it, and it is never used to train AI models.",
+        "it": "Questa informativa spiega cosa fa Suonable con i tuoi dati. In breve: la tua musica è tua, è privata per impostazione predefinita, nessun altro utente può arrivarci e non viene mai usata per addestrare modelli di IA.",
+        "es": "Esta política explica qué hace Suonable con tus datos. En corto: tu música es tuya, es privada por defecto, ningún otro usuario puede llegar a ella, y nunca se usa para entrenar modelos de inteligencia artificial."
+      }
+    },
+    {
+      "op": "append",
+      "doc": "privacy",
+      "section": 1,
+      "why": "Cloudflare handles IP addresses for security and the policy did not say so",
+      "text": {
+        "en": "Your IP address and basic security records — which requests reached the service and when — handled by our hosting provider to block abuse and attacks. They are not joined to your files, and we do not use them to profile you.",
+        "it": "Il tuo indirizzo IP e i registri di sicurezza essenziali — quali richieste sono arrivate al servizio e quando — trattati dal nostro fornitore di hosting per bloccare abusi e attacchi. Non vengono uniti ai tuoi file e non li usiamo per profilarti.",
+        "es": "Tu dirección IP y los registros básicos de seguridad — qué peticiones llegaron al servicio y cuándo — tratados por nuestro proveedor de alojamiento para bloquear abusos y ataques. No se unen a tus archivos y no los usamos para perfilarte."
+      }
+    },
+    {
+      "op": "replace",
+      "doc": "privacy",
+      "section": 2,
+      "paragraph": 3,
+      "was": "We do not store your IP address or browser fingerprint alongside your consent records.",
+      "why": "reads as 'we never hold IPs', which is not true of any hosted service",
+      "text": {
+        "en": "We do not keep a browser fingerprint, and we do not file your IP address next to your consent records or your library.",
+        "it": "Non conserviamo un'impronta del browser e non archiviamo il tuo indirizzo IP accanto ai tuoi consensi o alla tua libreria.",
+        "es": "No guardamos una huella de tu navegador, ni archivamos tu dirección IP junto a tus consentimientos ni a tu biblioteca."
+      }
+    },
+    {
+      "op": "append",
+      "doc": "privacy",
+      "section": 2,
+      "why": "Apple asks for an age, and the EU sets 16 in several countries",
+      "text": {
+        "en": "We do not hold data from children: Suonable is for people aged 16 and over.",
+        "it": "Non trattiamo dati di minori: Suonable è per chi ha almeno 16 anni.",
+        "es": "No tratamos datos de menores: Suonable es para mayores de 16 años."
+      }
+    },
+    {
+      "op": "append",
+      "doc": "privacy",
+      "section": 4,
+      "why": "says plainly when a person on our side can open a file",
+      "text": {
+        "en": "No other user can reach your files. We can, in three situations and no others: when you ask support for help with a song, when a rightsholder sends us a notice about specific content and we have to act on it, and when we are stopping an attack on the service. Nothing else opens your library.",
+        "it": "Nessun altro utente può arrivare ai tuoi file. Noi possiamo, in tre casi e in nessun altro: quando chiedi assistenza su un brano, quando un titolare di diritti ci segnala un contenuto specifico e dobbiamo intervenire, e quando stiamo fermando un attacco al servizio. Nient'altro apre la tua libreria.",
+        "es": "Ningún otro usuario puede llegar a tus archivos. Nosotros sí podemos, en tres casos y en ninguno más: cuando pides ayuda a soporte con una canción, cuando un titular de derechos nos notifica un contenido concreto y tenemos que actuar, y cuando estamos frenando un ataque al servicio. Nada más abre tu biblioteca."
+      }
+    },
+    {
+      "op": "section",
+      "doc": "privacy",
+      "after": 0,
+      "why": "GDPR art. 27 and DSA art. 13 both require a representative in the Union",
+      "h": {
+        "en": "Representative in the European Union",
+        "it": "Rappresentante nell'Unione Europea",
+        "es": "Representante en la Unión Europea"
+      },
+      "p": [
+        {
+          "en": "For anyone in the European Union, our representative under Article 27 GDPR and our legal representative under Article 13 of the Digital Services Act is Jorge Aldo Peña Arguedas, in Turin, Italy (10152).",
+          "it": "Per chi si trova nell'Unione Europea, il nostro rappresentante ai sensi dell'articolo 27 del GDPR e rappresentante legale ai sensi dell'articolo 13 del Regolamento sui servizi digitali è Jorge Aldo Peña Arguedas, a Torino, Italia (10152).",
+          "es": "Para quien esté en la Unión Europea, nuestro representante según el artículo 27 del RGPD y representante legal según el artículo 13 del Reglamento de Servicios Digitales es Jorge Aldo Peña Arguedas, en Turín, Italia (10152)."
+        },
+        {
+          "en": "You can write to him at aldo@suonable.com about anything in this policy, and he is also our point of contact for authorities in the Union.",
+          "it": "Puoi scrivergli a aldo@suonable.com per qualsiasi cosa riguardi questa informativa, ed è anche il nostro punto di contatto per le autorità dell'Unione.",
+          "es": "Puedes escribirle a aldo@suonable.com por cualquier cosa de esta política, y es también nuestro punto de contacto para las autoridades de la Unión."
+        }
+      ]
+    },
+    {
+      "op": "section",
+      "doc": "privacy",
+      "after": 7,
+      "why": "nothing was said about how the data is protected or what happens after a breach",
+      "h": {
+        "en": "Security",
+        "it": "Sicurezza",
+        "es": "Seguridad"
+      },
+      "p": [
+        {
+          "en": "Traffic between you and Suonable travels encrypted, your files sit encrypted at rest with our providers, and your password is kept only as a hash that cannot be turned back.",
+          "it": "Il traffico tra te e Suonable viaggia cifrato, i tuoi file restano cifrati a riposo presso i nostri fornitori e la tua password è conservata solo come hash, che non si può riportare indietro.",
+          "es": "El tráfico entre tú y Suonable viaja cifrado, tus archivos están cifrados en reposo en nuestros proveedores, y tu contraseña se guarda solo como hash, que no se puede revertir."
+        },
+        {
+          "en": "No service is beyond a breach. If one ever reaches your data, we will tell the authority within the time the law gives us, and tell you directly when the risk to you is high.",
+          "it": "Nessun servizio è al riparo da una violazione. Se una dovesse riguardare i tuoi dati, lo comunicheremo all'autorità nei tempi previsti dalla legge e lo diremo direttamente a te quando il rischio per te è alto.",
+          "es": "Ningún servicio está a salvo de una brecha. Si alguna llega a tus datos, se lo comunicaremos a la autoridad en el plazo que marca la ley, y te lo diremos directamente a ti cuando el riesgo para ti sea alto."
+        }
+      ]
+    },
+    {
+      "op": "replace",
+      "doc": "terms",
+      "section": 3,
+      "paragraph": 0,
+      "was": "If somebody brings a claim against Suonable because of a file you uploaded",
+      "why": "an indemnity this broad can be struck out whole against a consumer, leaving nothing",
+      "text": {
+        "en": "If somebody brings a claim against Suonable because you broke these terms — a file you had no right to upload, or what you did with the tracks made from it — you will cover the resulting costs, damages and legal fees, to the extent the law allows. We will tell you about the claim without delay, and we may run our own defence.",
+        "it": "Se qualcuno presenta una richiesta contro Suonable perché hai violato questi termini — un file che non avevi il diritto di caricare, o quello che hai fatto con le tracce che ne sono uscite — coprirai i costi, i danni e le spese legali che ne derivano, nei limiti consentiti dalla legge. Ti informeremo della richiesta senza ritardo e potremo gestire la nostra difesa.",
+        "es": "Si alguien presenta una reclamación contra Suonable porque incumpliste estos términos — un archivo que no tenías derecho a subir, o lo que hiciste con las pistas que salieron de él — cubrirás los costes, daños y gastos legales que se deriven, en la medida en que la ley lo permita. Te avisaremos de la reclamación sin demora y podremos dirigir nuestra propia defensa."
+      }
+    },
+    {
+      "op": "prepend",
+      "doc": "terms",
+      "section": 5,
+      "why": "the minimum age was missing everywhere",
+      "text": {
+        "en": "You must be 16 or older to use Suonable. If you are younger, the account has to be opened and held by a parent or guardian.",
+        "it": "Devi avere almeno 16 anni per usare Suonable. Se sei più giovane, l'account deve essere aperto e intestato a un genitore o a chi esercita la responsabilità genitoriale.",
+        "es": "Tienes que tener 16 años o más para usar Suonable. Si eres más joven, la cuenta tiene que abrirla y mantenerla tu padre, madre o tutor."
+      }
+    },
+    {
+      "op": "replace",
+      "doc": "terms",
+      "section": 8,
+      "paragraph": 1,
+      "was": "The English text is the authoritative version",
+      "why": "Peruvian consumer law wants Spanish, and other countries want their own language",
+      "text": {
+        "en": "The English text is the reference version. For consumers in Peru the Spanish text prevails, and wherever consumer law requires your own language, that version prevails.",
+        "it": "Il testo inglese è la versione di riferimento. Per i consumatori in Perù prevale il testo spagnolo e, ovunque la normativa sui consumatori imponga la tua lingua, prevale quella versione.",
+        "es": "El texto en inglés es la versión de referencia. Para consumidores en Perú prevalece el texto en español, y allí donde la normativa de consumo exija tu propio idioma, prevalece esa versión."
+      }
+    },
+    {
+      "op": "append",
+      "doc": "terms",
+      "section": 2,
+      "why": "playing in public needs its own licence, and the word 'performing' could be read as us granting one",
+      "text": {
+        "en": "Suonable grants you no rights over the songs themselves. Playing them in public needs a licence from the society that collects for those works where you are, and that is yours to hold.",
+        "it": "Suonable non ti concede alcun diritto sulle canzoni in sé. Suonarle in pubblico richiede una licenza dalla società che raccoglie i diritti su quelle opere dove ti trovi, ed è a tuo carico.",
+        "es": "Suonable no te concede ningún derecho sobre las canciones en sí. Tocarlas en público requiere una licencia de la sociedad que recauda por esas obras donde estés, y corre por tu cuenta."
+      }
+    }
+  ]
+}

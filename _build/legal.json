@@ -1,0 +1,774 @@
+{
+  "source": "https://app.suonable.com/",
+  "version": "beta-2",
+  "updated": "2026-09-12",
+  "operator": {
+    "name": "Viacolectiva S.R.L.",
+    "address": "Av. San Luis 2754, San Borja, Lima",
+    "country": "Peru",
+    "taxId": "20606672081",
+    "taxLabel": "RUC",
+    "contact": "legal@suonable.com",
+    "abuse": "support@suonable.com"
+  },
+  "country": {
+    "en": "Peru",
+    "it": "Perù",
+    "es": "Perú"
+  },
+  "langs": {
+    "en": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "intro": "This policy explains what Suonable does with your data. The short version: your music is yours, it is private by default, nobody else can reach it, and it is never used to train AI models.",
+        "sections": [
+          {
+            "h": "Who is responsible",
+            "p": [
+              "The controller of your personal data is Viacolectiva S.R.L., Av. San Luis 2754, San Borja, Lima, Peru, RUC 20606672081. You can reach us at legal@suonable.com.",
+              "Suonable is operated from Peru. Peru's personal data law (Ley 29733) applies. The GDPR also applies to anyone in the European Union, because the service is offered to them from outside the EU (Art. 3(2) GDPR), and everything described here is written to meet it."
+            ]
+          },
+          {
+            "h": "What we hold",
+            "p": [
+              "Your email address and a cryptographic hash of your password. We never store the password itself and cannot recover it.",
+              "The audio files you upload, the separated tracks generated from them, and anything you attach to a song — lyrics, chord charts, PDFs, reference takes.",
+              "Your setlists, and the settings you choose on each device.",
+              "Technical records of processing: when a file was uploaded, how long it took, whether it succeeded. These do not contain audio."
+            ]
+          },
+          {
+            "h": "What we do not hold",
+            "p": [
+              "We do not collect your name, address, phone number, date of birth or payment details. The beta is free and asks for none of that.",
+              "We do not use advertising trackers or third-party analytics that profile you.",
+              "We do not log the full URLs of your private files, because those carry access permissions inside them.",
+              "We do not store your IP address or browser fingerprint alongside your consent records."
+            ]
+          },
+          {
+            "h": "Why we are allowed to process it",
+            "p": [
+              "To give you the service you asked for — storing your files and separating them into tracks. Legal basis: performance of a contract (Art. 6(1)(b) GDPR).",
+              "To keep accounts secure and prevent abuse. Legal basis: our legitimate interest (Art. 6(1)(f) GDPR).",
+              "To send you the account confirmation email. Legal basis: performance of a contract.",
+              "Anything beyond that is asked for separately, as consent you can refuse and later withdraw (Art. 6(1)(a) GDPR)."
+            ]
+          },
+          {
+            "h": "Private by default",
+            "p": [
+              "Every file you upload and every track generated from it is private from the moment it exists. There is no public library, no discovery feed, no search across users, and no permanent public link.",
+              "This is enforced in the architecture, not by a setting. Each account's files live in a storage space addressed by that account's own identifier, and that identifier is taken from your logged-in session — never from anything a request can specify. There is no id, URL or parameter a person can change to reach somebody else's content.",
+              "Playback links are signed, expire within an hour, and carry the owner inside the signature: a link that leaks still only reaches its own owner's file.",
+              "If sharing is ever added, it will be a separate feature that you switch on deliberately, one item at a time. It will never be on by default."
+            ]
+          },
+          {
+            "h": "Artificial intelligence",
+            "p": [
+              "Your uploads and your generated tracks are not used to train or fine-tune AI models, not used to build datasets, and not analysed for commercial purposes.",
+              "The separation itself is done by pre-trained models that run on your file and then forget it. Your audio does not change those models.",
+              "If we ever want to use content to improve the models, we will ask for that separately, it will be optional, refusing it will not limit your use of Suonable, and you will be able to withdraw it at any time."
+            ]
+          },
+          {
+            "h": "Who else touches your data",
+            "p": [
+              "Cloudflare — hosting, database and file storage.",
+              "Modal — the GPU that performs the separation. Your file is sent there, processed, and the result returned; it is not retained afterwards.",
+              "Resend — sends the account confirmation email. It receives your email address, never your audio.",
+              "None of these are allowed to use your content for their own purposes."
+            ]
+          },
+          {
+            "h": "Where your data is",
+            "p": [
+              "Suonable is operated from Peru and its providers run in several countries, so your files and your account data may be stored and processed in any of them, inside or outside the European Union.",
+              "Wherever they are, the same rules in this policy apply. For anyone in the European Union, transfers rely on the European Commission's standard contractual clauses, which our providers have signed."
+            ]
+          },
+          {
+            "h": "How long we keep it",
+            "p": [
+              "Your files stay as long as you keep them. Nothing is deleted automatically after processing.",
+              "When you remove a song, it leaves your library immediately and the files are held for 60 days so you can get it back. After 60 days they are deleted for good.",
+              "You can delete a song permanently at any time instead of waiting.",
+              "When you delete your account, your files and records are deleted. We keep only a minimal record that a deletion happened, with no content in it, because otherwise we could not show that we honoured your request.",
+              "We do not keep file backups that would survive a deletion."
+            ]
+          },
+          {
+            "h": "Your rights",
+            "p": [
+              "You can ask for a copy of your data, correct it, delete it, take it elsewhere, or object to processing. Write to legal@suonable.com.",
+              "You can delete your account and everything in it yourself, from inside the app. It is not a request you have to send us.",
+              "You can withdraw any optional consent at any time without giving a reason and without losing access to the service.",
+              "If you think we have handled your data badly you can complain to a data protection authority — the one in the country where you live, wherever that is. In Peru it is the Autoridad Nacional de Protección de Datos Personales; in the European Union, the authority of your country of residence."
+            ]
+          },
+          {
+            "h": "Storage on your device",
+            "p": [
+              "Suonable stores your session token and your settings in your browser, and keeps downloaded tracks on your device so it works offline. This is functional storage the app needs to run, not tracking, and it never leaves your device.",
+              "Clearing your browser data removes all of it."
+            ]
+          },
+          {
+            "h": "This is a beta",
+            "p": [
+              "Suonable is in open beta and free. Things will change, including this policy. If a change affects what you agreed to, we will ask you again rather than assume."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "intro": "These terms are the agreement between you and Suonable. The parts that matter most: you are responsible for the music you upload, Suonable is a tool you operate rather than a catalogue we supply, and what you make with it is for your own use.",
+        "sections": [
+          {
+            "h": "What Suonable is",
+            "p": [
+              "Suonable is operated and provided by Viacolectiva S.R.L., a company incorporated under the laws of Peru, with its registered address at Av. San Luis 2754, San Borja, Lima (RUC 20606672081). You can reach us at legal@suonable.com.",
+              "Suonable is a tool. You give it an audio file you already have, it separates that file into individual instrument tracks, and it stores the result in your private account so you can rehearse and perform with it.",
+              "Suonable does not supply music. There is no catalogue, no library of songs to browse, and nothing to stream. Every file in your account got there because you put it there."
+            ]
+          },
+          {
+            "h": "What you promise about what you upload",
+            "p": [
+              "You confirm that for every file you upload you hold the necessary rights, or you have permission from whoever does, or the law where you are allows what you are doing.",
+              "You confirm you are not uploading anything you obtained unlawfully, including files taken from streaming services.",
+              "You are solely responsible for your uploads and for what you do with the tracks Suonable produces from them. We have no way to know what rights you hold in a file, and we do not check.",
+              "If you are not sure whether you may upload something, do not upload it."
+            ]
+          },
+          {
+            "h": "What you may do with the tracks",
+            "p": [
+              "The separated tracks are for your own use: learning your part, rehearsing, and performing.",
+              "You may not redistribute, publish, sell, stream, or make the tracks publicly available.",
+              "You may not use them to create or train AI or machine-learning models.",
+              "You may not use Suonable to process files on somebody else's behalf as a service, or in bulk as a commercial operation."
+            ]
+          },
+          {
+            "h": "You cover us if your upload causes a claim",
+            "p": [
+              "If somebody brings a claim against Suonable because of a file you uploaded or what you did with its tracks, you will defend us and cover the resulting costs, damages and legal fees.",
+              "This is the ordinary consequence of the previous sections: you decide what enters your account, so you carry what follows from that decision."
+            ]
+          },
+          {
+            "h": "Copyright complaints",
+            "p": [
+              "If a rightsholder tells us in good faith that content in an account infringes their rights, we will restrict access to that content. See the Copyright Policy for how to send a notice and how to contest one.",
+              "We will close the accounts of users who repeatedly infringe.",
+              "We do not scan or fingerprint your audio, and we do not monitor accounts looking for infringement. We act on notices."
+            ]
+          },
+          {
+            "h": "Your account",
+            "p": [
+              "One account per person. Keep your password to yourself; anything done with your account is treated as done by you.",
+              "You must give a working email address, because that is how we confirm the account and how we would reach you about a complaint.",
+              "You can delete your account, and everything in it, at any time from inside the app.",
+              "We can suspend or close an account that breaks these terms, that is used to infringe repeatedly, or that is used to attack the service."
+            ]
+          },
+          {
+            "h": "Beta",
+            "p": [
+              "Suonable is in open beta and free to use. There is no guarantee that it works, that it stays available, that separation quality suits your purpose, or that your files survive a fault — keep your own copies of anything you care about.",
+              "Features and limits will change. Prices do not exist yet; if they arrive, they will not apply to anything you already have without telling you first."
+            ]
+          },
+          {
+            "h": "Limits of our liability",
+            "p": [
+              "The service is provided as it is. To the extent the law allows, we are not liable for indirect or consequential loss, lost recordings, lost time, or lost income.",
+              "Nothing here removes rights you have as a consumer under the law of the country you live in, and nothing here limits liability that cannot lawfully be limited."
+            ]
+          },
+          {
+            "h": "Law and language",
+            "p": [
+              "These terms are governed by Peruvian law, and the courts of Lima, Peru have jurisdiction, without depriving you of the protection of the consumer law of your own country of residence.",
+              "The English text is the authoritative version. Translations are provided for convenience."
+            ]
+          },
+          {
+            "h": "Changes",
+            "p": [
+              "We record which version of these terms you accepted, and when. If we change them in a way that affects what you agreed to, we will ask you to accept the new version rather than assume you did."
+            ]
+          }
+        ]
+      },
+      "copyright": {
+        "title": "Copyright Policy",
+        "intro": "How to tell us that content in a Suonable account infringes your rights, and what we do about it.",
+        "sections": [
+          {
+            "h": "What Suonable holds, and what it does not",
+            "p": [
+              "Suonable stores files that individual users upload for their own private use. There is no public catalogue, nothing is shared between accounts, no content is publicly accessible, and nothing is indexed by search engines.",
+              "This means that when we receive a notice we cannot look up a song by name across the service. We act on a specific item in a specific account, identified by the person sending the notice."
+            ]
+          },
+          {
+            "h": "Words and chords that a user adds",
+            "p": [
+              "Suonable does not obtain lyrics or chord charts. It does not copy them, it does not keep a catalogue of them, and it does not fetch them on anybody's behalf.",
+              "Some screens link to other people's sites, or show their page inside a window. That page is theirs, with their own address, their own advertising and their own terms, and we are not associated with them. Reading it and copying from it is done by the person using Suonable, on their own device and for their own use — the same act as opening those sites in a browser.",
+              "What ends up in an account is what the account holder put there. It stays in that account: no other user can see it, nothing is published, and we do not reuse it.",
+              "If you hold rights in words or music and believe an account holds them without permission, the notice route below applies to that content exactly as it does to anything else."
+            ]
+          },
+          {
+            "h": "Sending a notice",
+            "p": [
+              "Write to support@suonable.com and include all of the following, or we may not be able to act:",
+              "1. Enough detail to identify the work you hold rights in.",
+              "2. Enough detail to identify the content you are complaining about — the link or the exact identifier you were given, not a general description.",
+              "3. Why you believe it is unlawful.",
+              "4. Your name and a working email address.",
+              "5. A statement that you believe in good faith that the use is not authorised, and that the information you are giving is accurate."
+            ]
+          },
+          {
+            "h": "What we do with it",
+            "p": [
+              "We confirm we received it, without delay.",
+              "If the notice lets us identify the content and appears well founded, we restrict access to it. Playback stops, downloads stop, and further processing stops. The files are preserved rather than destroyed, so that the complaint can be resolved on what actually exists.",
+              "We tell the account holder that access has been restricted and why, and we tell you what we did.",
+              "Restrictions we apply cannot be lifted by the account holder."
+            ]
+          },
+          {
+            "h": "Contesting a restriction",
+            "p": [
+              "If your content was restricted and you believe that is wrong, reply to the message we sent you and explain why, including what rights or permission you hold.",
+              "We will look at it and restore access if the complaint does not hold up. If the two sides disagree, this is a dispute between you and the rightsholder, and we may keep the restriction in place until it is resolved."
+            ]
+          },
+          {
+            "h": "Repeat infringement",
+            "p": [
+              "Accounts that are the subject of repeated well-founded notices are closed, and their content deleted."
+            ]
+          },
+          {
+            "h": "Misuse of this process",
+            "p": [
+              "Sending notices you know to be false wastes our time and harms the person on the other end. We keep a record of notices and may refuse to act on ones from a source that has repeatedly sent bad-faith complaints."
+            ]
+          }
+        ]
+      }
+    },
+    "it": {
+      "privacy": {
+        "title": "Informativa sulla privacy",
+        "intro": "Questa informativa spiega cosa fa Suonable con i tuoi dati. In breve: la tua musica è tua, è privata per impostazione predefinita, nessun altro può raggiungerla, e non viene mai usata per addestrare modelli di IA.",
+        "sections": [
+          {
+            "h": "Chi è responsabile",
+            "p": [
+              "Il titolare del trattamento dei tuoi dati personali è Viacolectiva S.R.L., Av. San Luis 2754, San Borja, Lima, Peru, RUC 20606672081. Puoi scriverci a legal@suonable.com.",
+              "Suonable è gestito dal Perù. Si applica la legge peruviana sui dati personali (Ley 29733). Il GDPR si applica comunque a chi si trova nell’Unione Europea, perché il servizio è offerto dall’esterno dell’UE (art. 3(2) GDPR), e tutto quello che è descritto qui è scritto per rispettarlo."
+            ]
+          },
+          {
+            "h": "Cosa conserviamo",
+            "p": [
+              "Il tuo indirizzo email e un hash crittografico della password. Non conserviamo mai la password in chiaro e non possiamo recuperarla.",
+              "I file audio che carichi, le tracce separate che ne vengono generate, e tutto ciò che alleghi a un brano — testi, accordi, PDF, registrazioni di riferimento.",
+              "Le tue scalette e le impostazioni che scegli su ogni dispositivo.",
+              "Dati tecnici di elaborazione: quando un file è stato caricato, quanto è durato, se è andato a buon fine. Non contengono audio."
+            ]
+          },
+          {
+            "h": "Cosa non conserviamo",
+            "p": [
+              "Non raccogliamo nome, indirizzo, telefono, data di nascita o dati di pagamento. La beta è gratuita e non chiede nulla di tutto questo.",
+              "Non usiamo tracciatori pubblicitari né strumenti di analisi di terze parti che ti profilino.",
+              "Non registriamo gli URL completi dei tuoi file privati, perché contengono al loro interno le autorizzazioni di accesso.",
+              "Non conserviamo il tuo indirizzo IP né l’impronta del browser accanto ai consensi."
+            ]
+          },
+          {
+            "h": "Perché possiamo trattarli",
+            "p": [
+              "Per fornirti il servizio che hai chiesto — conservare i tuoi file e separarli in tracce. Base giuridica: esecuzione di un contratto (art. 6(1)(b) GDPR).",
+              "Per tenere gli account sicuri e prevenire abusi. Base giuridica: nostro legittimo interesse (art. 6(1)(f) GDPR).",
+              "Per inviarti l’email di conferma dell’account. Base giuridica: esecuzione di un contratto.",
+              "Tutto ciò che va oltre viene chiesto a parte, come consenso che puoi rifiutare e poi revocare (art. 6(1)(a) GDPR)."
+            ]
+          },
+          {
+            "h": "Privato per impostazione predefinita",
+            "p": [
+              "Ogni file che carichi e ogni traccia generata da esso è privata dal momento in cui esiste. Non esiste una libreria pubblica, né una sezione scoperta, né una ricerca fra utenti, né un link pubblico permanente.",
+              "Questo è garantito dall’architettura, non da un’impostazione. I file di ogni account vivono in uno spazio indirizzato dall’identificativo di quell’account, e quell’identificativo viene preso dalla tua sessione — mai da qualcosa che una richiesta possa specificare. Non esiste un id, un URL o un parametro che una persona possa modificare per raggiungere i contenuti di un’altra.",
+              "I link di riproduzione sono firmati, scadono entro un’ora e contengono il proprietario dentro la firma: un link che si diffonde raggiunge comunque solo il file del suo stesso proprietario.",
+              "Se un giorno aggiungeremo la condivisione, sarà una funzione separata che attivi deliberatamente, un elemento alla volta. Non sarà mai attiva per impostazione predefinita."
+            ]
+          },
+          {
+            "h": "Intelligenza artificiale",
+            "p": [
+              "I tuoi caricamenti e le tracce generate non vengono usati per addestrare o perfezionare modelli di IA, non vengono usati per costruire dataset, e non vengono analizzati per scopi commerciali.",
+              "La separazione viene fatta da modelli già addestrati che elaborano il tuo file e poi lo dimenticano. Il tuo audio non modifica quei modelli.",
+              "Se un giorno volessimo usare i contenuti per migliorare i modelli, lo chiederemmo a parte, sarebbe opzionale, rifiutare non limiterebbe l’uso di Suonable, e potresti revocarlo in qualsiasi momento."
+            ]
+          },
+          {
+            "h": "Chi altro tocca i tuoi dati",
+            "p": [
+              "Cloudflare — hosting, database e archiviazione dei file.",
+              "Modal — la GPU che esegue la separazione. Il tuo file viene inviato, elaborato e il risultato restituito; non viene conservato dopo.",
+              "Resend — invia l’email di conferma dell’account. Riceve il tuo indirizzo email, mai il tuo audio.",
+              "Nessuno di questi può usare i tuoi contenuti per finalità proprie."
+            ]
+          },
+          {
+            "h": "Dove sono i tuoi dati",
+            "p": [
+              "Suonable è gestito dal Perù e i suoi fornitori operano in vari Paesi, quindi i tuoi file e i dati del tuo account possono essere conservati ed elaborati in uno qualsiasi di essi, dentro o fuori dall’Unione Europea.",
+              "Ovunque si trovino, si applicano le stesse regole di questa policy. Per chi si trova nell’Unione Europea, i trasferimenti si basano sulle clausole contrattuali tipo della Commissione Europea, firmate dai nostri fornitori."
+            ]
+          },
+          {
+            "h": "Per quanto tempo",
+            "p": [
+              "I tuoi file restano finché li tieni. Nulla viene cancellato automaticamente dopo l’elaborazione.",
+              "Quando rimuovi un brano, esce subito dalla tua libreria e i file vengono conservati 60 giorni per poterlo recuperare. Dopo 60 giorni vengono cancellati definitivamente.",
+              "Puoi cancellare un brano in modo definitivo in qualsiasi momento, senza aspettare.",
+              "Quando cancelli l’account, i tuoi file e i tuoi dati vengono cancellati. Conserviamo solo un dato minimo che attesta l’avvenuta cancellazione, senza alcun contenuto, perché altrimenti non potremmo dimostrare di aver dato seguito alla tua richiesta.",
+              "Non conserviamo backup dei file che sopravvivano a una cancellazione."
+            ]
+          },
+          {
+            "h": "I tuoi diritti",
+            "p": [
+              "Puoi chiedere una copia dei tuoi dati, correggerli, cancellarli, portarli altrove od opporti al trattamento. Scrivi a legal@suonable.com.",
+              "Puoi cancellare l’account e tutto il suo contenuto da dentro l’applicazione. Non è una richiesta che devi inviarci.",
+              "Puoi revocare qualsiasi consenso opzionale in qualsiasi momento, senza motivare e senza perdere l’accesso al servizio.",
+              "Se ritieni che abbiamo trattato male i tuoi dati puoi rivolgerti a un’autorità di protezione dei dati: quella del Paese in cui vivi, qualunque esso sia. In Perù è la Autoridad Nacional de Protección de Datos Personales; nell’Unione Europea, l’autorità del tuo Paese di residenza."
+            ]
+          },
+          {
+            "h": "Archiviazione sul tuo dispositivo",
+            "p": [
+              "Suonable conserva nel tuo browser il token di sessione e le tue impostazioni, e mantiene sul dispositivo le tracce scaricate per funzionare offline. È archiviazione funzionale che serve all’applicazione, non tracciamento, e non lascia mai il tuo dispositivo.",
+              "Svuotare i dati del browser la rimuove del tutto."
+            ]
+          },
+          {
+            "h": "Questa è una beta",
+            "p": [
+              "Suonable è in beta aperta e gratuita. Le cose cambieranno, questa informativa compresa. Se un cambiamento riguarda ciò che hai accettato, te lo chiederemo di nuovo invece di darlo per scontato."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Termini di servizio",
+        "intro": "Questi termini sono l’accordo fra te e Suonable. Le parti che contano di più: sei responsabile della musica che carichi, Suonable è uno strumento che usi tu e non un catalogo che ti forniamo noi, e quello che ne ricavi è per uso tuo.",
+        "sections": [
+          {
+            "h": "Cos’è Suonable",
+            "p": [
+              "Suonable è gestito e fornito da Viacolectiva S.R.L., società costituita secondo la legge del Perù, con sede legale in Av. San Luis 2754, San Borja, Lima (RUC 20606672081). Puoi scriverci a legal@suonable.com.",
+              "Suonable è uno strumento. Gli dai un file audio che già possiedi, lo separa in singole tracce strumentali e conserva il risultato nel tuo account privato, così puoi provare e suonare.",
+              "Suonable non fornisce musica. Non c’è un catalogo, non c’è una libreria di brani da sfogliare e non c’è niente da ascoltare in streaming. Ogni file nel tuo account è lì perché ce l’hai messo tu."
+            ]
+          },
+          {
+            "h": "Cosa dichiari su ciò che carichi",
+            "p": [
+              "Confermi che per ogni file che carichi possiedi i diritti necessari, oppure hai il permesso di chi li possiede, oppure la legge del luogo in cui ti trovi consente ciò che stai facendo.",
+              "Confermi di non caricare nulla ottenuto illecitamente, compresi file estratti da servizi di streaming.",
+              "Sei l’unico responsabile di ciò che carichi e di ciò che fai con le tracce che Suonable ne ricava. Non abbiamo modo di sapere quali diritti detieni su un file, e non lo verifichiamo.",
+              "Se non sei sicuro di poter caricare qualcosa, non caricarlo."
+            ]
+          },
+          {
+            "h": "Cosa puoi fare con le tracce",
+            "p": [
+              "Le tracce separate sono per uso tuo: imparare la tua parte, provare e suonare.",
+              "Non puoi redistribuirle, pubblicarle, venderle, trasmetterle in streaming né renderle pubblicamente accessibili.",
+              "Non puoi usarle per creare o addestrare modelli di IA o di apprendimento automatico.",
+              "Non puoi usare Suonable per elaborare file per conto di altri come servizio, né in grande quantità come attività commerciale."
+            ]
+          },
+          {
+            "h": "Ci tieni indenni se il tuo caricamento causa una contestazione",
+            "p": [
+              "Se qualcuno avanza una pretesa contro Suonable a causa di un file che hai caricato o di quello che hai fatto con le sue tracce, ci difenderai e coprirai i costi, i danni e le spese legali che ne derivano.",
+              "È la conseguenza ordinaria delle sezioni precedenti: decidi tu cosa entra nel tuo account, quindi porti tu ciò che ne consegue."
+            ]
+          },
+          {
+            "h": "Segnalazioni sul diritto d’autore",
+            "p": [
+              "Se un titolare di diritti ci comunica in buona fede che un contenuto presente in un account viola i suoi diritti, limiteremo l’accesso a quel contenuto. Vedi la Politica sul diritto d’autore per come inviare una segnalazione e come contestarla.",
+              "Chiuderemo gli account degli utenti che violano ripetutamente.",
+              "Non analizziamo né identifichiamo il tuo audio, e non controlliamo gli account in cerca di violazioni. Agiamo su segnalazione."
+            ]
+          },
+          {
+            "h": "Il tuo account",
+            "p": [
+              "Un account per persona. Tieni la password per te; tutto quello che viene fatto con il tuo account è considerato fatto da te.",
+              "Devi indicare un indirizzo email funzionante, perché è così che confermiamo l’account ed è così che ti contatteremmo per una segnalazione.",
+              "Puoi cancellare il tuo account, e tutto quello che contiene, in qualsiasi momento da dentro l’applicazione.",
+              "Possiamo sospendere o chiudere un account che viola questi termini, che viene usato per violare ripetutamente, o che viene usato per attaccare il servizio."
+            ]
+          },
+          {
+            "h": "Beta",
+            "p": [
+              "Suonable è in beta aperta e gratuita. Non c’è garanzia che funzioni, che resti disponibile, che la qualità della separazione sia adatta ai tuoi scopi, né che i tuoi file sopravvivano a un guasto — conserva copie tue di tutto ciò a cui tieni.",
+              "Funzioni e limiti cambieranno. I prezzi non esistono ancora; se arriveranno, non si applicheranno a quello che hai già senza avvisarti prima."
+            ]
+          },
+          {
+            "h": "Limiti della nostra responsabilità",
+            "p": [
+              "Il servizio è fornito così com’è. Nei limiti consentiti dalla legge, non rispondiamo di danni indiretti o consequenziali, registrazioni perdute, tempo perso o mancato guadagno.",
+              "Nulla di quanto qui scritto elimina i diritti che hai come consumatore secondo la legge del Paese in cui vivi, e nulla limita responsabilità che per legge non possono essere limitate."
+            ]
+          },
+          {
+            "h": "Legge e lingua",
+            "p": [
+              "Questi termini sono regolati dalla legge peruviana e la giurisdizione è dei tribunali di Lima, Perù, senza privarti della tutela della legge sui consumatori del tuo Paese di residenza.",
+              "Il testo inglese è la versione che fa fede. Le traduzioni sono fornite per comodità."
+            ]
+          },
+          {
+            "h": "Modifiche",
+            "p": [
+              "Registriamo quale versione di questi termini hai accettato, e quando. Se li modifichiamo in modo che incida su ciò che hai accettato, ti chiederemo di accettare la nuova versione invece di darlo per scontato."
+            ]
+          }
+        ]
+      },
+      "copyright": {
+        "title": "Politica sul diritto d’autore",
+        "intro": "Come segnalarci che un contenuto presente in un account Suonable viola i tuoi diritti, e cosa facciamo di conseguenza.",
+        "sections": [
+          {
+            "h": "Cosa contiene Suonable, e cosa no",
+            "p": [
+              "Suonable conserva file che singoli utenti caricano per uso privato. Non esiste un catalogo pubblico, nulla è condiviso fra account, nessun contenuto è pubblicamente accessibile e nulla è indicizzato dai motori di ricerca.",
+              "Questo significa che, quando riceviamo una segnalazione, non possiamo cercare un brano per nome in tutto il servizio. Agiamo su un elemento specifico in un account specifico, identificato da chi invia la segnalazione."
+            ]
+          },
+          {
+            "h": "Testi e accordi aggiunti da un utente",
+            "p": [
+              "Suonable non procura testi né spartiti. Non li copia, non ne tiene un catalogo e non va a prenderli per conto di nessuno.",
+              "Alcune schermate rimandano a siti di altri, o ne mostrano la pagina dentro una finestra. Quella pagina è loro, con il loro indirizzo, la loro pubblicità e le loro condizioni, e noi non siamo associati a loro. Leggerla e copiarne il testo lo fa la persona che usa Suonable, sul proprio dispositivo e per uso proprio — lo stesso gesto di aprire quei siti in un browser.",
+              "Quello che finisce in un account è ciò che ci ha messo chi lo usa. Resta in quell’account: nessun altro utente lo vede, nulla viene pubblicato e noi non lo riutilizziamo.",
+              "Se detieni diritti su un testo o su una musica e ritieni che un account li contenga senza permesso, la procedura di segnalazione qui sotto vale per quel contenuto esattamente come per qualsiasi altro."
+            ]
+          },
+          {
+            "h": "Inviare una segnalazione",
+            "p": [
+              "Scrivi a support@suonable.com includendo tutto quanto segue, altrimenti potremmo non essere in grado di agire:",
+              "1. Dettagli sufficienti a identificare l’opera su cui detieni diritti.",
+              "2. Dettagli sufficienti a identificare il contenuto contestato — il link o l’identificativo esatto che ti è stato fornito, non una descrizione generica.",
+              "3. Perché ritieni che sia illecito.",
+              "4. Il tuo nome e un indirizzo email funzionante.",
+              "5. Una dichiarazione che ritieni in buona fede che l’uso non sia autorizzato e che le informazioni fornite sono accurate."
+            ]
+          },
+          {
+            "h": "Cosa ne facciamo",
+            "p": [
+              "Confermiamo di averla ricevuta, senza indugio.",
+              "Se la segnalazione ci permette di identificare il contenuto e appare fondata, ne limitiamo l’accesso. La riproduzione si ferma, i download si fermano e l’elaborazione si ferma. I file vengono conservati anziché distrutti, così che la contestazione possa essere risolta su ciò che esiste davvero.",
+              "Informiamo il titolare dell’account che l’accesso è stato limitato e perché, e informiamo te di cosa abbiamo fatto.",
+              "Le limitazioni che applichiamo non possono essere rimosse dal titolare dell’account."
+            ]
+          },
+          {
+            "h": "Contestare una limitazione",
+            "p": [
+              "Se il tuo contenuto è stato limitato e ritieni che sia un errore, rispondi al messaggio che ti abbiamo inviato spiegando perché, indicando quali diritti o permessi detieni.",
+              "Esamineremo il caso e ripristineremo l’accesso se la contestazione non regge. Se le due parti non trovano un accordo, si tratta di una controversia fra te e il titolare dei diritti, e potremmo mantenere la limitazione fino alla sua risoluzione."
+            ]
+          },
+          {
+            "h": "Violazioni ripetute",
+            "p": [
+              "Gli account oggetto di ripetute segnalazioni fondate vengono chiusi e i loro contenuti cancellati."
+            ]
+          },
+          {
+            "h": "Uso abusivo di questa procedura",
+            "p": [
+              "Inviare segnalazioni che sai essere false spreca il nostro tempo e danneggia chi sta dall’altra parte. Conserviamo un registro delle segnalazioni e possiamo rifiutare di dar seguito a quelle provenienti da chi ha ripetutamente segnalato in mala fede."
+            ]
+          }
+        ]
+      }
+    },
+    "es": {
+      "privacy": {
+        "title": "Política de privacidad",
+        "intro": "Esta política explica qué hace Suonable con tus datos. En corto: tu música es tuya, es privada por defecto, nadie más puede llegar a ella, y nunca se usa para entrenar modelos de inteligencia artificial.",
+        "sections": [
+          {
+            "h": "Quién es responsable",
+            "p": [
+              "El responsable del tratamiento de tus datos personales es Viacolectiva S.R.L., Av. San Luis 2754, San Borja, Lima, Peru, RUC 20606672081. Puedes escribirnos a legal@suonable.com.",
+              "Suonable se opera desde Perú. Se aplica la ley peruana de protección de datos personales (Ley 29733). El GDPR se aplica igualmente a quien esté en la Unión Europea, porque el servicio se le ofrece desde fuera de la UE (art. 3(2) GDPR), y todo lo que se describe aquí está escrito para cumplirlo."
+            ]
+          },
+          {
+            "h": "Qué guardamos",
+            "p": [
+              "Tu correo electrónico y un hash criptográfico de tu contraseña. Nunca guardamos la contraseña en claro y no podemos recuperarla.",
+              "Los archivos de audio que subes, las pistas separadas que se generan de ellos, y todo lo que adjuntes a una canción — letras, cifrados, PDFs, tomas de referencia.",
+              "Tus listas y los ajustes que eliges en cada dispositivo.",
+              "Datos técnicos del procesado: cuándo se subió un archivo, cuánto tardó, si salió bien. No contienen audio."
+            ]
+          },
+          {
+            "h": "Qué no guardamos",
+            "p": [
+              "No recogemos tu nombre, dirección, teléfono, fecha de nacimiento ni datos de pago. La beta es gratuita y no pide nada de eso.",
+              "No usamos rastreadores publicitarios ni herramientas de análisis de terceros que te perfilen.",
+              "No registramos las URL completas de tus archivos privados, porque llevan dentro los permisos de acceso.",
+              "No guardamos tu dirección IP ni la huella de tu navegador junto a los consentimientos."
+            ]
+          },
+          {
+            "h": "Por qué podemos tratarlos",
+            "p": [
+              "Para darte el servicio que pediste — guardar tus archivos y separarlos en pistas. Base jurídica: ejecución de un contrato (art. 6(1)(b) GDPR).",
+              "Para mantener las cuentas seguras y prevenir abusos. Base jurídica: nuestro interés legítimo (art. 6(1)(f) GDPR).",
+              "Para mandarte el correo de confirmación de la cuenta. Base jurídica: ejecución de un contrato.",
+              "Todo lo que va más allá se pide aparte, como consentimiento que puedes rechazar y después retirar (art. 6(1)(a) GDPR)."
+            ]
+          },
+          {
+            "h": "Privado por defecto",
+            "p": [
+              "Cada archivo que subes y cada pista generada de él es privada desde el momento en que existe. No hay biblioteca pública, ni sección de descubrimiento, ni búsqueda entre usuarios, ni enlace público permanente.",
+              "Esto lo garantiza la arquitectura, no un ajuste. Los archivos de cada cuenta viven en un espacio direccionado por el identificador de esa cuenta, y ese identificador se toma de tu sesión — nunca de algo que una petición pueda indicar. No existe un id, una URL ni un parámetro que alguien pueda cambiar para llegar al contenido de otro.",
+              "Los enlaces de reproducción van firmados, caducan en menos de una hora y llevan el dueño dentro de la firma: un enlace que se filtre sigue alcanzando solo el archivo de su propio dueño.",
+              "Si algún día se añade compartir, será una función aparte que enciendas a propósito, elemento por elemento. Nunca estará activa por defecto."
+            ]
+          },
+          {
+            "h": "Inteligencia artificial",
+            "p": [
+              "Tus subidas y las pistas generadas no se usan para entrenar ni ajustar modelos de IA, no se usan para construir conjuntos de datos, y no se analizan con fines comerciales.",
+              "La separación la hacen modelos ya entrenados que procesan tu archivo y después lo olvidan. Tu audio no modifica esos modelos.",
+              "Si algún día quisiéramos usar contenido para mejorar los modelos, lo pediríamos aparte, sería opcional, negarse no limitaría el uso de Suonable, y podrías retirarlo en cualquier momento."
+            ]
+          },
+          {
+            "h": "Quién más toca tus datos",
+            "p": [
+              "Cloudflare — alojamiento, base de datos y almacenamiento de archivos.",
+              "Modal — la GPU que hace la separación. Tu archivo se envía, se procesa y se devuelve el resultado; no se conserva después.",
+              "Resend — manda el correo de confirmación de la cuenta. Recibe tu dirección de correo, nunca tu audio.",
+              "Ninguno de ellos puede usar tu contenido para sus propios fines."
+            ]
+          },
+          {
+            "h": "Dónde están tus datos",
+            "p": [
+              "Suonable se opera desde Perú y sus proveedores funcionan en varios países, así que tus archivos y los datos de tu cuenta pueden guardarse y procesarse en cualquiera de ellos, dentro o fuera de la Unión Europea.",
+              "Estén donde estén, se les aplican las mismas reglas de esta política. Para quien esté en la Unión Europea, las transferencias se apoyan en las cláusulas contractuales tipo de la Comisión Europea, que nuestros proveedores tienen firmadas."
+            ]
+          },
+          {
+            "h": "Cuánto tiempo los guardamos",
+            "p": [
+              "Tus archivos se quedan mientras los tengas. Nada se borra automáticamente después de procesarlo.",
+              "Cuando quitas una canción, sale de tu biblioteca al momento y los archivos se guardan 60 días para que puedas recuperarla. Pasados los 60 días se borran definitivamente.",
+              "Puedes borrar una canción de forma definitiva en cualquier momento, sin esperar.",
+              "Cuando borras tu cuenta, tus archivos y tus datos se borran. Solo conservamos un dato mínimo de que hubo un borrado, sin contenido alguno, porque de otro modo no podríamos demostrar que atendimos tu petición.",
+              "No guardamos copias de seguridad de los archivos que sobrevivan a un borrado."
+            ]
+          },
+          {
+            "h": "Tus derechos",
+            "p": [
+              "Puedes pedir una copia de tus datos, corregirlos, borrarlos, llevártelos a otro sitio u oponerte al tratamiento. Escribe a legal@suonable.com.",
+              "Puedes borrar tu cuenta y todo lo que contiene desde dentro de la aplicación. No es una petición que tengas que mandarnos.",
+              "Puedes retirar cualquier consentimiento opcional en cualquier momento, sin dar explicaciones y sin perder el acceso al servicio.",
+              "Si crees que hemos tratado mal tus datos puedes reclamar ante una autoridad de protección de datos: la del país donde vivas, sea cual sea. En Perú es la Autoridad Nacional de Protección de Datos Personales; en la Unión Europea, la autoridad de tu país de residencia."
+            ]
+          },
+          {
+            "h": "Almacenamiento en tu dispositivo",
+            "p": [
+              "Suonable guarda en tu navegador el token de sesión y tus ajustes, y mantiene en tu dispositivo las pistas descargadas para funcionar sin conexión. Es almacenamiento funcional que la aplicación necesita, no rastreo, y nunca sale de tu dispositivo.",
+              "Borrar los datos del navegador lo elimina todo."
+            ]
+          },
+          {
+            "h": "Esto es una beta",
+            "p": [
+              "Suonable está en beta abierta y gratuita. Las cosas van a cambiar, esta política incluida. Si un cambio afecta a lo que aceptaste, te lo preguntaremos otra vez en lugar de darlo por hecho."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Términos del servicio",
+        "intro": "Estos términos son el acuerdo entre tú y Suonable. Lo que más importa: eres responsable de la música que subes, Suonable es una herramienta que manejas tú y no un catálogo que te damos nosotros, y lo que salga de ella es para tu uso.",
+        "sections": [
+          {
+            "h": "Qué es Suonable",
+            "p": [
+              "Suonable lo opera y lo presta Viacolectiva S.R.L., sociedad constituida conforme a la ley del Perú, con domicilio en Av. San Luis 2754, San Borja, Lima (RUC 20606672081). Puedes escribirnos a legal@suonable.com.",
+              "Suonable es una herramienta. Le das un archivo de audio que ya tienes, lo separa en pistas de instrumentos y guarda el resultado en tu cuenta privada, para que ensayes y toques con él.",
+              "Suonable no suministra música. No hay catálogo, no hay biblioteca de canciones que hojear y no hay nada que escuchar en streaming. Cada archivo de tu cuenta está ahí porque lo pusiste tú."
+            ]
+          },
+          {
+            "h": "Qué prometes sobre lo que subes",
+            "p": [
+              "Confirmas que para cada archivo que subes tienes los derechos necesarios, o el permiso de quien los tiene, o que la ley del lugar donde estás permite lo que estás haciendo.",
+              "Confirmas que no subes nada obtenido de forma ilícita, incluidos archivos sacados de servicios de streaming.",
+              "Eres el único responsable de lo que subes y de lo que haces con las pistas que Suonable saca de ello. No tenemos forma de saber qué derechos tienes sobre un archivo, y no lo comprobamos.",
+              "Si no estás seguro de poder subir algo, no lo subas."
+            ]
+          },
+          {
+            "h": "Qué puedes hacer con las pistas",
+            "p": [
+              "Las pistas separadas son para tu uso: aprenderte tu parte, ensayar y tocar.",
+              "No puedes redistribuirlas, publicarlas, venderlas, emitirlas ni ponerlas a disposición del público.",
+              "No puedes usarlas para crear ni entrenar modelos de IA o de aprendizaje automático.",
+              "No puedes usar Suonable para procesar archivos por cuenta de otros como servicio, ni en volumen como actividad comercial."
+            ]
+          },
+          {
+            "h": "Nos cubres si lo que subes provoca una reclamación",
+            "p": [
+              "Si alguien reclama contra Suonable por un archivo que subiste o por lo que hiciste con sus pistas, nos defenderás y cubrirás los costes, daños y gastos legales que resulten.",
+              "Es la consecuencia normal de los apartados anteriores: tú decides qué entra en tu cuenta, así que cargas con lo que se derive de esa decisión."
+            ]
+          },
+          {
+            "h": "Reclamaciones de derechos de autor",
+            "p": [
+              "Si un titular de derechos nos comunica de buena fe que un contenido de una cuenta infringe sus derechos, restringiremos el acceso a ese contenido. Mira la Política de copyright para saber cómo mandar una notificación y cómo contestarla.",
+              "Cerraremos las cuentas de quienes infrinjan de forma reiterada.",
+              "No analizamos ni identificamos tu audio, y no vigilamos las cuentas buscando infracciones. Actuamos sobre notificaciones."
+            ]
+          },
+          {
+            "h": "Tu cuenta",
+            "p": [
+              "Una cuenta por persona. Guárdate la contraseña; todo lo que se haga con tu cuenta se considera hecho por ti.",
+              "Tienes que dar un correo que funcione, porque es como confirmamos la cuenta y como te avisaríamos de una reclamación.",
+              "Puedes borrar tu cuenta, y todo lo que contiene, en cualquier momento desde dentro de la aplicación.",
+              "Podemos suspender o cerrar una cuenta que incumpla estos términos, que se use para infringir de forma reiterada, o que se use para atacar el servicio."
+            ]
+          },
+          {
+            "h": "Beta",
+            "p": [
+              "Suonable está en beta abierta y es gratis. No hay garantía de que funcione, de que siga disponible, de que la calidad de la separación sirva para lo que quieres, ni de que tus archivos sobrevivan a un fallo — guarda tus propias copias de todo lo que te importe.",
+              "Las funciones y los límites van a cambiar. Los precios no existen todavía; si llegan, no se aplicarán a lo que ya tengas sin avisarte antes."
+            ]
+          },
+          {
+            "h": "Límites de nuestra responsabilidad",
+            "p": [
+              "El servicio se presta tal como está. En la medida en que la ley lo permita, no respondemos de daños indirectos o consecuentes, grabaciones perdidas, tiempo perdido ni lucro cesante.",
+              "Nada de lo escrito aquí te quita los derechos que tienes como consumidor según la ley del país donde vives, y nada limita responsabilidades que legalmente no se pueden limitar."
+            ]
+          },
+          {
+            "h": "Ley e idioma",
+            "p": [
+              "Estos términos se rigen por la ley peruana y los tribunales de Lima, Perú son competentes, sin privarte de la protección de la ley de consumo de tu propio país de residencia.",
+              "El texto en inglés es la versión que vale. Las traducciones se dan por comodidad."
+            ]
+          },
+          {
+            "h": "Cambios",
+            "p": [
+              "Registramos qué versión de estos términos aceptaste, y cuándo. Si los cambiamos de forma que afecte a lo que aceptaste, te pediremos que aceptes la nueva versión en lugar de darlo por hecho."
+            ]
+          }
+        ]
+      },
+      "copyright": {
+        "title": "Política de copyright",
+        "intro": "Cómo decirnos que un contenido de una cuenta de Suonable infringe tus derechos, y qué hacemos al respecto.",
+        "sections": [
+          {
+            "h": "Qué contiene Suonable, y qué no",
+            "p": [
+              "Suonable guarda archivos que usuarios concretos suben para su uso privado. No hay catálogo público, no se comparte nada entre cuentas, ningún contenido es accesible al público y nada está indexado por buscadores.",
+              "Eso significa que, cuando recibimos una notificación, no podemos buscar una canción por su nombre en todo el servicio. Actuamos sobre un elemento concreto de una cuenta concreta, identificado por quien manda la notificación."
+            ]
+          },
+          {
+            "h": "Letras y acordes que añade un usuario",
+            "p": [
+              "Suonable no consigue letras ni cifrados. No los copia, no guarda un catálogo de ellos y no va a buscarlos en nombre de nadie.",
+              "Algunas pantallas enlazan a sitios de otros, o enseñan su página dentro de una ventana. Esa página es suya, con su dirección, su publicidad y sus condiciones, y no estamos asociados con ellos. Leerla y copiar de ella lo hace la persona que usa Suonable, en su propio aparato y para su propio uso — el mismo gesto que abrir esos sitios en un navegador.",
+              "Lo que acaba en una cuenta es lo que puso quien la usa. Se queda en esa cuenta: ningún otro usuario lo ve, nada se publica y nosotros no lo reutilizamos.",
+              "Si tienes derechos sobre una letra o una música y crees que una cuenta los contiene sin permiso, la vía de aviso de aquí abajo vale para ese contenido exactamente igual que para cualquier otro."
+            ]
+          },
+          {
+            "h": "Mandar una notificación",
+            "p": [
+              "Escribe a support@suonable.com incluyendo todo lo siguiente, o puede que no podamos actuar:",
+              "1. Detalle suficiente para identificar la obra sobre la que tienes derechos.",
+              "2. Detalle suficiente para identificar el contenido del que te quejas — el enlace o el identificador exacto que te dieron, no una descripción general.",
+              "3. Por qué crees que es ilícito.",
+              "4. Tu nombre y un correo que funcione.",
+              "5. Una declaración de que crees de buena fe que el uso no está autorizado y que la información que das es exacta."
+            ]
+          },
+          {
+            "h": "Qué hacemos con ella",
+            "p": [
+              "Confirmamos que la recibimos, sin demora.",
+              "Si la notificación nos permite identificar el contenido y parece fundada, restringimos su acceso. La reproducción se detiene, las descargas se detienen y el procesado se detiene. Los archivos se conservan en lugar de destruirse, para que la reclamación se resuelva sobre lo que existe de verdad.",
+              "Avisamos al titular de la cuenta de que se restringió el acceso y por qué, y te contamos a ti qué hicimos.",
+              "Las restricciones que aplicamos no las puede levantar el titular de la cuenta."
+            ]
+          },
+          {
+            "h": "Contestar una restricción",
+            "p": [
+              "Si tu contenido fue restringido y crees que es un error, responde al mensaje que te mandamos explicando por qué, indicando qué derechos o permisos tienes.",
+              "Lo revisaremos y restableceremos el acceso si la reclamación no se sostiene. Si las dos partes no se ponen de acuerdo, es un conflicto entre tú y el titular de los derechos, y podemos mantener la restricción hasta que se resuelva."
+            ]
+          },
+          {
+            "h": "Infracción reiterada",
+            "p": [
+              "Las cuentas que son objeto de notificaciones fundadas repetidas se cierran, y su contenido se borra."
+            ]
+          },
+          {
+            "h": "Uso abusivo de este procedimiento",
+            "p": [
+              "Mandar notificaciones que sabes falsas nos hace perder el tiempo y perjudica a quien está al otro lado. Guardamos registro de las notificaciones y podemos negarnos a atender las que vengan de quien ha reclamado de mala fe de forma reiterada."
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

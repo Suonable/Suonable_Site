@@ -153,6 +153,7 @@ def build_page(template, lang, path, dictionary):
     page = re.sub(r'<html lang="[^"]*">', f'<html lang="{lang}">', page, count=1)
     page = page.replace("<!-- @alternates -->", alternates(path), 1)
     page = page.replace('href="/" data-home', f'href="{path}"')
+    page = page.replace('href="/legal/" data-legal', f'href="{path}legal/"')
     page = re.sub(r'(<a class="lang-btn" [^>]*data-lang="%s")' % lang.upper(),
                   r'\1 aria-current="page"', page)
 
@@ -178,7 +179,8 @@ def sitemap():
 
 def main():
     template = (BUILD / "template.html").read_text(encoding="utf-8")
-    for marker in ("<!-- @alternates -->", 'data-home', '<meta name="robots" content="noindex">'):
+    for marker in ("<!-- @alternates -->", 'data-home', 'data-legal',
+                   '<meta name="robots" content="noindex">'):
         if marker not in template:
             sys.exit(f"template is missing {marker!r}")
     dictionary = load_dict()
@@ -200,6 +202,9 @@ def main():
 
     (ROOT / "sitemap.xml").write_text(sitemap(), encoding="utf-8")
     print("wrote sitemap.xml")
+
+    import legal_pages
+    legal_pages.build()
 
 
 if __name__ == "__main__":

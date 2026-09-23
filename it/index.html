@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=30">
+<link rel="stylesheet" href="/styles.css?v=32">
 <script>
 /* The live hero mockup is too heavy for phones and tablets (iOS Safari runs out of memory and
    the page fails to load), so only desktop mouse/trackpad screens get it; everyone else sees stills. */
@@ -58,6 +58,7 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
       <a href="#tools">Funzioni</a>
       <a href="#kit">Strumenti</a>
       <a href="#live">Dal vivo</a>
+      <a href="/it/legal/">Legale</a>
     </div>
     <div style="display: flex; align-items: center; gap: clamp(10px, 1.6vw, 20px); font-size: 14px; font-weight: 500;">
       <div class="nav-lang">
@@ -81,11 +82,12 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
       <a href="#tools">Funzioni</a>
       <a href="#kit">Strumenti</a>
       <a href="#live">Dal vivo</a>
+      <a href="/it/legal/">Legale</a>
     </div>
   </nav>
 
-  <div style="text-align: center; padding: var(--space-hero, clamp(56px, 11vh, 128px)) 0 0; max-width: 980px; margin: 0 auto;">
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6E6E78; display: inline-flex; align-items: center; gap: 8px;">
+  <div style="text-align: center; padding: var(--space-hero, clamp(56px, 11vh, 128px)) 0 0; max-width: var(--page-text, 980px); margin: 0 auto;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6E6E78; display: inline-flex; align-items: center; gap: 8px;">
       <span style="width: 7px; height: 7px; border-radius: 99px; background: #1055AD; animation: blink 1.5s steps(1) infinite;"></span>
       Versione beta
     </div>
@@ -358,36 +360,36 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
   </div>
 
   <section id="how" style="margin: var(--space-gap, clamp(88px, 16vh, 196px)) calc(-1 * clamp(14px, 3vw, 40px)) 0; background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
-    <div style="max-width: 1160px; margin: 0 auto;">
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6098DB; padding-bottom: 56px;">Come funziona</div>
+    <div style="max-width: var(--page, 1160px); margin: 0 auto;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6098DB; padding-bottom: 56px;">Come funziona</div>
     <div class="steps-grid">
       <div data-reveal="1" style="background: #1C232C; border: 1px solid #2A333F; border-radius: 16px; padding: 32px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #FDA51B; padding-bottom: 26px;">01</div>
-        <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Carica un tuo file</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C6D2E0;">Un MP3, un WAV, la registrazione delle prove di ieri sera. Non servono stem ufficiali — oppure aggiungi i tuoi stem per esercitarti.</p>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; color: #FDA51B; padding-bottom: 26px;">01</div>
+        <h3 style="margin: 0 0 12px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Carica un tuo file</h3>
+        <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #C6D2E0;">Un MP3, un WAV, la registrazione delle prove di ieri sera. Non servono stem ufficiali — oppure aggiungi i tuoi stem per esercitarti.</p>
       </div>
       <div data-reveal="1" style="background: #1C232C; border: 1px solid #2A333F; border-radius: 16px; padding: 32px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #7AE02E; padding-bottom: 26px;">02</div>
-        <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Torna in sette tracce</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C6D2E0;">Batteria, basso, chitarra, piano, altro, voce e cori — ognuna con il proprio volume, mute e solo.</p>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; color: #7AE02E; padding-bottom: 26px;">02</div>
+        <h3 style="margin: 0 0 12px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Torna in sette tracce</h3>
+        <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #C6D2E0;">Batteria, basso, chitarra, piano, altro, voce e cori — ognuna con il proprio volume, mute e solo.</p>
       </div>
       <div data-reveal="1" style="background: #1C232C; border: 1px solid #2A333F; border-radius: 16px; padding: 32px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #6098DB; padding-bottom: 26px;">03</div>
-        <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Provaci</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C6D2E0;">Isola la tua parte, silenziala e suona sopra la band, ripeti otto battute, cambia la tonalità senza cambiare il tempo.</p>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; color: #6098DB; padding-bottom: 26px;">03</div>
+        <h3 style="margin: 0 0 12px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Provaci</h3>
+        <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #C6D2E0;">Isola la tua parte, silenziala e suona sopra la band, ripeti otto battute, cambia la tonalità senza cambiare il tempo.</p>
       </div>
       <div data-reveal="1" style="background: #1C232C; border: 1px solid #2A333F; border-radius: 16px; padding: 32px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #FF6B85; padding-bottom: 26px;">04</div>
-        <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Sfrutta le risorse automatiche</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C6D2E0;">Tempo, tonalità, battute e accordi arrivano già rilevati, con un click e un foglio accordi costruito su di essi. Correggi ciò che vuoi a mano, oppure aggiungi le tue risorse — è un punto di partenza, non un verdetto.</p>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; color: #FF6B85; padding-bottom: 26px;">04</div>
+        <h3 style="margin: 0 0 12px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">Sfrutta le risorse automatiche</h3>
+        <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #C6D2E0;">Tempo, tonalità, battute e accordi arrivano già rilevati, con un click e un foglio accordi costruito su di essi. Correggi ciò che vuoi a mano, oppure aggiungi le tue risorse — è un punto di partenza, non un verdetto.</p>
       </div>
     </div>
     <div data-reveal="1" class="step-wide" style="background: #1C232C; border: 1px solid #2A333F; border-radius: 16px; padding: 32px; margin-top: 20px;">
       <div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #FEB706; padding-bottom: 26px;">05</div>
-        <h3 style="margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">La tua canzone resta tua</h3>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; color: #FEB706; padding-bottom: 26px;">05</div>
+        <h3 style="margin: 0; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA;">La tua canzone resta tua</h3>
       </div>
-      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C6D2E0; max-width: 78ch;">Suonable non ha catalogo, né feed, né link pubblici: le canzoni che carichi si raggiungono solo dal tuo account, e decidi solo tu cosa esce dalla tua libreria. Il tuo audio non addestra nessun modello.</p>
+      <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #C6D2E0; max-width: 78ch;">Suonable non ha catalogo, né feed, né link pubblici: le canzoni che carichi si raggiungono solo dal tuo account, e nessun altro utente può arrivarci. Il tuo audio non addestra nessun modello.</p>
     </div>
     </div>
   </section>
@@ -404,15 +406,15 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
   </div>
 
   <section id="chords" style="margin: var(--space-gap, clamp(88px, 16vh, 196px)) calc(-1 * clamp(14px, 3vw, 40px)) var(--space-section, clamp(112px, 19vh, 248px)); background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
-    <div style="max-width: 1160px; margin: 0 auto;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #FDA51B; padding-bottom: 22px;">Accordi, trovati per te</div>
+    <div style="max-width: var(--page, 1160px); margin: 0 auto;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #FDA51B; padding-bottom: 22px;">Accordi, trovati per te</div>
       <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 24ch;">Ogni canzone arriva con i suoi accordi, e con come suonarli.</h2>
-      <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #C6D2E0; max-width: 60ch;">Non è un'ipotesi incollata sopra: gli accordi sono posizionati sulla mappa delle battute rilevata nella tua registrazione, così ognuno cade sulla battuta e sul movimento in cui cambia davvero. Ognuno arriva anche con il modo di suonarlo, al piano o alla chitarra, seguendo la canzone mentre va avanti. Correggi ciò che vuoi a mano — è un punto di partenza, non un verdetto.</p>
+      <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 19px); line-height: 1.6; color: #C6D2E0; max-width: 60ch;">Non è un'ipotesi incollata sopra: gli accordi sono posizionati sulla mappa delle battute rilevata nella tua registrazione, così ognuno cade sulla battuta e sul movimento in cui cambia davvero. Ognuno arriva anche con il modo di suonarlo, al piano o alla chitarra, seguendo la canzone mentre va avanti. Correggi ciò che vuoi a mano — è un punto di partenza, non un verdetto.</p>
 
       <div data-reveal="1" style="background: #1C232D; border: 1px solid #2E353F; border-radius: 18px; padding: clamp(18px, 2.2vw, 26px); overflow: hidden;">
         <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding-bottom: 22px;">
-          <span style="font-size: 15px; font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA;">Accordi automatici</span>
-          <span style="font-size: 15px; font-weight: 500; color: #8A97A8;">la tua canzone</span>
+          <span style="font-size: var(--t-body, 15px); font-weight: 800; letter-spacing: -0.02em; color: #F4F7FA;">Accordi automatici</span>
+          <span style="font-size: var(--t-body, 15px); font-weight: 500; color: #8A97A8;">la tua canzone</span>
         </div>
 
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; padding-bottom: 22px;">
@@ -560,32 +562,32 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
         <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
           <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #FDA51B; margin-bottom: 18px;"></span>
           <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Posizionati sul movimento<span class="accordion-caret light">▾</span></h3>
-          <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Ogni accordo è ancorato a una battuta e a un movimento, non a un cronometro — così resta giusto anche quando il tempo respira.</p>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body-sm, 14.5px); line-height: 1.6; color: #C6D2E0;">Ogni accordo è ancorato a una battuta e a un movimento, non a un cronometro — così resta giusto anche quando il tempo respira.</p>
         </div>
         <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
           <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #6098DB; margin-bottom: 18px;"></span>
           <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Traspone con la canzone<span class="accordion-caret light">▾</span></h3>
-          <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Cambia la tonalità e tutto il foglio la segue — gli accordi che leggi sono quelli che stai sentendo.</p>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body-sm, 14.5px); line-height: 1.6; color: #C6D2E0;">Cambia la tonalità e tutto il foglio la segue — gli accordi che leggi sono quelli che stai sentendo.</p>
         </div>
         <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
           <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #FF6B85; margin-bottom: 18px;"></span>
           <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Tuoi da correggere<span class="accordion-caret light">▾</span></h3>
-          <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Modifica qualsiasi accordo a mano e resta così. Tonalità e BPM sono rilevati anche loro, e si modificano dove appaiono.</p>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body-sm, 14.5px); line-height: 1.6; color: #C6D2E0;">Modifica qualsiasi accordo a mano e resta così. Tonalità e BPM sono rilevati anche loro, e si modificano dove appaiono.</p>
         </div>
         <div data-reveal="1" class="accordion" style="border-top: 1px solid #2A333F; padding: 28px 0 34px;">
           <span style="display: block; width: 22px; height: 5px; border-radius: 99px; background: #7AE02E; margin-bottom: 18px;"></span>
           <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 12px; font-size: 18px; font-weight: 700; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">E come suonare ognuno<span class="accordion-caret light">▾</span></h3>
-          <p class="accordion-panel" style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #C6D2E0;">Scegli piano o chitarra e l'accordo che sta suonando mostra le note da premere o la posizione da fare, con i tre successivi già sullo schermo per arrivare al cambio con la mano pronta.</p>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body-sm, 14.5px); line-height: 1.6; color: #C6D2E0;">Scegli piano o chitarra e l'accordo che sta suonando mostra le note da premere o la posizione da fare, con i tre successivi già sullo schermo per arrivare al cambio con la mano pronta.</p>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section id="tools" style="max-width: 1160px; margin: 0 auto; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Funzioni per ogni musicista</div>
+  <section id="tools" style="max-width: var(--page, 1160px); margin: 0 auto; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Funzioni per ogni musicista</div>
     <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 22ch;">Raggruppate per ciò che stai facendo.</h2>
-    <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #6E6E78; max-width: 60ch;">La separazione è solo il punto di partenza. Suonable è dove vive la tua musica: testi, fogli accordi che traspongono con la canzone, file audio, take di riferimento, tracce e setlist — tutto accanto alla canzone, pronto da suonare.</p>
+    <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 19px); line-height: 1.6; color: #6E6E78; max-width: 60ch;">La separazione è solo il punto di partenza. Suonable è dove vive la tua musica: testi, fogli accordi che traspongono con la canzone, file audio, take di riferimento, tracce e setlist — tutto accanto alla canzone, pronto da suonare.</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(32px, 4.5vw, 64px);">
       <div class="accordion">
         <div class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 20px;">
@@ -596,27 +598,27 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
         <div class="accordion-panel feature-list" style="border-top: 1px solid #E8E8E4;">
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Isola una traccia</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Isola la chitarra, l'armonia, le tastiere. Ascolta solo quello che devi suonare.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Isola la chitarra, l'armonia, le tastiere. Ascolta solo quello che devi suonare.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Struttura automatica del brano</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Intro, strofa, ritornello, bridge — rilevati per te e completamente modificabili, così il brano arriva già mappato.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Intro, strofa, ritornello, bridge — rilevati per te e completamente modificabili, così il brano arriva già mappato.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Loop per sezione</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Scegli una sezione — l'intro, una strofa, quel ritornello — e ripetila con precisione al sample finché non viene.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Scegli una sezione — l'intro, una strofa, quel ritornello — e ripetila con precisione al sample finché non viene.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Trasposizione reale</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Cambia la tonalità per semitoni senza cambiare la velocità. Il click e la batteria non vengono mai trasposti.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Cambia la tonalità per semitoni senza cambiare la velocità. Il click e la batteria non vengono mai trasposti.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Testi e fogli</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Salva testi, fogli accordi e materiale extra accanto a ogni canzone: PDF, la foto di uno spartito, una take di riferimento.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Salva testi, fogli accordi e materiale extra accanto a ogni canzone: PDF, la foto di uno spartito, una take di riferimento.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Foglio accordi dinamico</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Accordi posizionati esattamente sopra il testo, che traspongono con la canzone, in più lingue. Trascina le sezioni per riordinarle.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Accordi posizionati esattamente sopra il testo, che traspongono con la canzone, in più lingue. Trascina le sezioni per riordinarle.</p>
           </div>
         </div>
       </div>
@@ -629,23 +631,23 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
         <div class="accordion-panel feature-list" style="border-top: 1px solid #E8E8E4;">
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Il click</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Costruito sulla mappa del tempo rilevata nella canzone stessa, così segue il tempo reale della registrazione anche quando respira. Suona dal primo all'ultimo secondo dell'audio.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Costruito sulla mappa del tempo rilevata nella canzone stessa, così segue il tempo reale della registrazione anche quando respira. Suona dal primo all'ultimo secondo dell'audio.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">5 voci di click</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Classico, beep morbido, woodblock, bacchette, campanaccio. Pattern di accenti e suddivisioni configurabili.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Classico, beep morbido, woodblock, bacchette, campanaccio. Pattern di accenti e suddivisioni configurabili.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Canzoni a tempo variabile</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Le registrazioni che accelerano o rallentano sono supportate.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Le registrazioni che accelerano o rallentano sono supportate.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Importa multitraccia</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Trascina uno ZIP da una sessione di Ableton o Logic, o un pacchetto acquistato. Testato con un progetto reale di 430 MB e 17 tracce.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Trascina uno ZIP da una sessione di Ableton o Logic, o un pacchetto acquistato. Testato con un progetto reale di 430 MB e 17 tracce.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Setlist</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Ordina le canzoni per una prova o un concerto, e condividile con un link.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Ordina le canzoni per una prova o un concerto, e condividile con un link.</p>
           </div>
         </div>
       </div>
@@ -658,33 +660,33 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
         <div class="accordion-panel feature-list" style="border-top: 1px solid #E8E8E4;">
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Uscite separate</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Ogni traccia può uscire da un'uscita fisica diversa della tua interfaccia audio. Solo nell'app desktop.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Ogni traccia può uscire da un'uscita fisica diversa della tua interfaccia audio. Solo nell'app desktop.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Mixer scorrevole</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Con molte tracce il banco scorre invece di comprimere i canali.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Con molte tracce il banco scorre invece di comprimere i canali.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Funziona offline</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Una volta scaricata, la canzone suona senza connessione.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Una volta scaricata, la canzone suona senza connessione.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Si installa dal browser</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">iPhone, Android, iPad, Mac e Windows. Senza passare da nessuno store.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">iPhone, Android, iPad, Mac e Windows. Senza passare da nessuno store.</p>
           </div>
           <div data-reveal="1" style="padding: 26px 0 0;">
             <h4 style="margin: 0 0 8px; font-size: 16.5px; font-weight: 700; letter-spacing: -0.02em; color: #17171B;">Interfaccia in 3 lingue</h4>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Inglese, italiano e spagnolo.</p>
+            <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Inglese, italiano e spagnolo.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="kit" style="max-width: 1160px; margin: 0 auto; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Gli strumenti</div>
+  <section id="kit" style="max-width: var(--page, 1160px); margin: 0 auto; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Gli strumenti</div>
     <h2 data-reveal="1" style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 24ch;">Non solo il separatore.</h2>
-    <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #6E6E78; max-width: 56ch;">È dove atterrano gli strumenti che apri ogni giorno.</p>
+    <p style="margin: 0 0 56px; font-size: clamp(15px, 1.3vw, 19px); line-height: 1.6; color: #6E6E78; max-width: 56ch;">È dove atterrano gli strumenti che apri ogni giorno.</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px;">
       <div data-reveal="1" style="background: #FFFFFF; border: 1px solid #E8E8E4; border-radius: 16px; padding: 34px;">
         <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 26px;">
@@ -698,7 +700,7 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
           <span style="width: 17px; height: 34px; border-radius: 99px; background: linear-gradient(180deg, #418CEB, #1055AD); animation: beat 2s steps(1) infinite; animation-delay: 1.5s;"></span>
           <span style="font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: #6E6E78; padding-left: 8px;">120 BPM · 4/4</span>
         </div>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;"><span style="font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums;">30–300 BPM</span>, dieci indicazioni di tempo, suddivisioni, tap tempo e accenti che imposti battendo il tempo. La luce arriva quando il click raggiunge l'altoparlante, non quando l'app lo programma.</p>
+        <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;"><span style="font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums;">30–300 BPM</span>, dieci indicazioni di tempo, suddivisioni, tap tempo e accenti che imposti battendo il tempo. La luce arriva quando il click raggiunge l'altoparlante, non quando l'app lo programma.</p>
       </div>
       <div data-reveal="1" style="background: #FFFFFF; border: 1px solid #E8E8E4; border-radius: 16px; padding: 34px;">
         <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 26px;">
@@ -713,27 +715,27 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
           <span style="width: 3px; height: 40%; border-radius: 99px; background: #E8E8E4;"></span>
           <span style="font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 13px; color: #6E6E78; padding-left: 8px;">A♯2</span>
         </div>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6E6E78;">Cromatico per qualsiasi cosa, con una modalità per strumento per gli archi. La paletta è disegnata con le meccaniche dove stanno davvero, e ogni corda diventa verde nel momento in cui è accordata.</p>
+        <p style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.6; color: #6E6E78;">Cromatico per qualsiasi cosa, con una modalità per strumento per gli archi. La paletta è disegnata con le meccaniche dove stanno davvero, e ogni corda diventa verde nel momento in cui è accordata.</p>
       </div>
       <div data-reveal="1" style="background: #F6F5F2; border: 1px dashed #E8E8E4; border-radius: 16px; padding: 34px; display: flex; flex-direction: column; justify-content: center;">
         <h3 style="margin: 0 0 10px; font-size: 24px; font-weight: 800; letter-spacing: -0.025em;">E quello che verrà</h3>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #6E6E78;">ALTRI STRUMENTI IN ARRIVO</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; color: #6E6E78;">ALTRI STRUMENTI IN ARRIVO</div>
       </div>
     </div>
   </section>
 
   <section id="live" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) var(--space-section, clamp(112px, 19vh, 248px)); background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
-    <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(36px, 5vw, 76px); align-items: center;">
+    <div style="max-width: var(--page, 1160px); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(36px, 5vw, 76px); align-items: center;">
       <div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A97A8; display: flex; align-items: center; gap: 10px; padding-bottom: 22px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A97A8; display: flex; align-items: center; gap: 10px; padding-bottom: 22px;">
           <span style="width: 8px; height: 8px; background: #FD6106;"></span>Dal vivo
         </div>
         <h2 data-reveal="1" style="margin: 0 0 30px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03; max-width: 16ch;">Una traccia, un'uscita fisica</h2>
         <p style="margin: 0 0 30px; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.6; color: #C6D2E0; max-width: 44ch;">Ogni traccia esce dalla propria coppia stereo — la batteria su 1–2, il basso all'ampli sul palco su 3–4, la voce al PA. Solo il click esce in mono, dritto nell'in-ear del batterista, e scegli tu quali uscite si accoppiano.</p>
-        <p style="margin: 0; border-left: 2px solid #FD6106; padding: 4px 0 4px 22px; font-size: 15px; line-height: 1.7; color: #8A97A8; max-width: 48ch;">Solo nell'app desktop, su Mac e Windows. Non è un bug: nessun browser manda più di due canali all'hardware — è documentato come limite di piattaforma in Chromium e WebKit. Per questo esiste l'app desktop. Nel browser e su mobile sono due canali, punto.</p>
+        <p style="margin: 0; border-left: 2px solid #FD6106; padding: 4px 0 4px 22px; font-size: var(--t-body, 15px); line-height: 1.7; color: #8A97A8; max-width: 48ch;">Solo nell'app desktop, su Mac e Windows. Non è un bug: nessun browser manda più di due canali all'hardware — è documentato come limite di piattaforma in Chromium e WebKit. Per questo esiste l'app desktop. Nel browser e su mobile sono due canali, punto.</p>
       </div>
       <div data-reveal="1" style="background: #101823; border: 1px solid #1E2731; border-radius: 18px; padding: clamp(18px, 2.2vw, 28px);">
-        <div style="display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; padding-bottom: 22px;">
+        <div style="display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.14em; padding-bottom: 22px;">
           <span style="color: #8A97A8;">TRACCIA AUDIO</span>
           <span style="color: #FD6106;">USCITA FISICA · STEREO</span>
         </div>
@@ -803,39 +805,39 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
   </div>
 
   <section id="straight" style="margin: 0 calc(-1 * clamp(14px, 3vw, 40px)) var(--space-section, clamp(112px, 19vh, 248px)); background: #0C0F14; color: #F4F7FA; padding: var(--space-section, clamp(112px, 19vh, 248px)) clamp(14px, 3vw, 40px);">
-    <div style="max-width: 1160px; margin: 0 auto;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A97A8; display: flex; align-items: center; gap: 10px; padding-bottom: 22px;">
+    <div style="max-width: var(--page, 1160px); margin: 0 auto;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8A97A8; display: flex; align-items: center; gap: 10px; padding-bottom: 22px;">
         <span style="width: 8px; height: 8px; background: #FDA51B;"></span>Parliamoci chiaro
       </div>
       <h2 data-reveal="1" style="margin: 0 0 56px; font-size: clamp(32px, 5.4vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03;">Cosa non fa</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1px; background: #2A333F; border: 1px solid #2A333F; border-radius: 16px; overflow: hidden;">
         <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non è qualità da studio<span class="accordion-caret light">▾</span></h3>
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non è qualità da studio<span class="accordion-caret light">▾</span></h3>
           <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">La separazione è molto buona, ma è automatica. Uno strumento sborda un po' in un altro, soprattutto nei mix densi.</p>
         </div>
         <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non è tarata su ogni tipo di musica<span class="accordion-caret light">▾</span></h3>
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non è tarata su ogni tipo di musica<span class="accordion-caret light">▾</span></h3>
           <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">È testata con musica moderna suonata da una band. Su orchestra, elettronica molto densa o registrazioni scarse i risultati sono peggiori.</p>
         </div>
         <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non è istantaneo<span class="accordion-caret light">▾</span></h3>
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non è istantaneo<span class="accordion-caret light">▾</span></h3>
           <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">Circa tre minuti per canzone — e poi è tua per sempre.</p>
         </div>
         <div data-reveal="1" class="accordion" style="background: #101823; padding: clamp(28px, 3.4vw, 46px);">
-          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: 21px; font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non c'è un catalogo<span class="accordion-caret light">▾</span></h3>
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 20px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Non c'è un catalogo<span class="accordion-caret light">▾</span></h3>
           <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">Porti la tua musica: carica un MP3 per farlo separare in tracce, oppure uno ZIP con i tuoi stem multitraccia per riprodurli così come sono. Sei responsabile di avere i diritti per usarla — solo ZIP per l'importazione, RAR non è supportato.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="beta" style="max-width: 1160px; margin: 0 auto clamp(40px, 6vh, 72px);">
+  <section id="beta" style="max-width: var(--page, 1160px); margin: 0 auto clamp(40px, 6vh, 72px);">
     <div style="background: #FFFFFF; border: 1px solid #E8E8E4; border-radius: 22px; padding: clamp(28px, 4.4vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 4vw, 56px);">
       <div>
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">La beta</div>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">La beta</div>
         <h2 data-reveal="1" style="margin: 0 0 16px; font-size: clamp(32px, 5.4vw, 68px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.03;">Beta aperta. Crea il tuo account gratuito.</h2>
-        <p style="margin: 0 0 26px; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.6; color: #6E6E78; max-width: 44ch;">Senza carta, niente da disdire, tutte le funzioni aperte. Carica e separa fino a 10 canzoni senza costo — non te le faremo mai pagare.</p>
-        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #17171B;">
+        <p style="margin: 0 0 26px; font-size: clamp(15px, 1.3vw, 19px); line-height: 1.6; color: #6E6E78; max-width: 44ch;">Senza carta, niente da disdire, tutte le funzioni aperte. Carica e separa fino a 10 canzoni senza costo — non te le faremo mai pagare.</p>
+        <div style="display: flex; flex-direction: column; gap: 12px; font-size: var(--t-body, 15px); color: #17171B;">
           <div style="display: flex; align-items: center; gap: 12px;"><span style="width: 18px; height: 5px; border-radius: 99px; background: #FD6106;"></span>10 canzoni gratis, tutte le funzioni aperte</div>
           <div style="display: flex; align-items: center; gap: 12px;"><span style="width: 18px; height: 5px; border-radius: 99px; background: #2DC128;"></span>Offline una volta scaricata la canzone</div>
           <div style="display: flex; align-items: center; gap: 12px;"><span style="width: 18px; height: 5px; border-radius: 99px; background: #1055AD;"></span>Inglese, italiano e spagnolo</div>
@@ -886,14 +888,15 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
     </div>
   </section>
 
-  <footer style="max-width: 1160px; margin: 0 auto; padding-bottom: 64px;">
-    <p style="margin: 0 0 32px; font-size: 13.5px; line-height: 1.7; color: #6E6E78;">Suonable non fornisce musica: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti. Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle. Il tuo audio non addestra nessun modello, e Suonable è in beta.</p>
+  <footer style="max-width: var(--page, 1160px); margin: 0 auto; padding-bottom: 64px;">
+    <p style="margin: 0 0 32px; font-size: var(--t-foot, 13.5px); line-height: 1.7; color: #6E6E78;">Suonable non fornisce musica: ogni file nel tuo account è lì perché l'hai caricato tu, e sei responsabile di averne i diritti. Le tracce sono per uso personale — imparare la tua parte, provare e suonare — non per ridistribuirle, pubblicarle, venderle o trasmetterle. Il tuo audio non addestra nessun modello, e Suonable è in beta.</p>
     <div class="footer-bar">
       <div class="footer-brand">
         <img src="/suonable-mark-flat.svg" alt="Suonable" width="25" height="28" style="display: block; width: 25px; height: 28px;">
         <a href="https://app.suonable.com/" target="_blank" rel="noopener">APP.SUONABLE.COM</a>
       </div>
       <div class="footer-links">
+        <a href="/it/legal/">LEGALE</a>
         <a href="mailto:hello@suonable.com">CONTATTO</a>
       </div>
       <div class="footer-mail"><a href="mailto:hello@suonable.com">HELLO@SUONABLE.COM</a></div>
