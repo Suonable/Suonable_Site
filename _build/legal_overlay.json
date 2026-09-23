@@ -4,7 +4,8 @@
     "They survive re-running fetch_legal.py, and they are the list of what still has to be",
     "changed inside the app so that both say the same thing.",
     "Indexes count sections and paragraphs as the app orders them; 'was' is checked on build",
-    "and a warning is printed when the app's own wording has moved on."
+    "and a warning is printed when the app's own wording has moved on.",
+    "The corrections make this a new version of the documents: the site publishes beta-3, the app still shows beta-2. When the app adopts this text it should call itself beta-3 and ask users to accept it again, as the terms promise."
   ],
   "operator": {
     "abuse": "copyright@suonable.com"
@@ -168,5 +169,7 @@
         "es": "Suonable no te concede ningún derecho sobre las canciones en sí. Tocarlas en público requiere una licencia de la sociedad que recauda por esas obras donde estés, y corre por tu cuenta."
       }
     }
-  ]
+  ],
+  "version": "beta-3",
+  "updated": "2026-09-23"
 }

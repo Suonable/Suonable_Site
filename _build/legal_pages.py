@@ -207,6 +207,10 @@ def apply_overlay(data):
         return
     overlay = json.load(open(path, encoding="utf-8"))
     data["operator"].update(overlay.get("operator", {}))
+    # corrections the app does not carry yet make this a later version of the documents
+    for field in ("version", "updated"):
+        if field in overlay:
+            data[field] = overlay[field]
 
     for swap in overlay.get("swaps", []):
         hits = 0
