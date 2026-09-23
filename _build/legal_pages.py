@@ -100,7 +100,7 @@ def head(lang, prefix, doc, title, description):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=32">
+<link rel="stylesheet" href="/styles.css?v=33">
 <script src="/app.js?v=21" defer></script>
 </head>
 <body>
@@ -137,7 +137,6 @@ def document_page(lang, prefix, source, doc, data):
         body.append("<h2>%s</h2>" % esc(section["h"]))
         body.extend("<p>%s</p>" % text(p) for p in section["p"])
     return (head(lang, prefix, doc, d["title"], d["intro"]) + nav + """
-</div>
 
 <main class="legal">
   <div class="legal-inner">
@@ -153,8 +152,8 @@ def document_page(lang, prefix, source, doc, data):
   </div>
 </main>
 
-<div style="padding: 0 clamp(14px, 3vw, 40px);">
 %s
+
 </div>
 
 </body>
@@ -176,7 +175,6 @@ def index_page(lang, prefix, source, data):
         <span class="legal-card-go">%s →</span>
       </a>""" % (prefix, doc, esc(d["title"]), esc(d["intro"]), esc(ui["read"])))
     return (head(lang, prefix, "", ui["legal"], ui["tagline"]) + nav + """
-</div>
 
 <main class="legal">
   <div class="legal-inner">
@@ -190,8 +188,8 @@ def index_page(lang, prefix, source, data):
   </div>
 </main>
 
-<div style="padding: 0 clamp(14px, 3vw, 40px);">
 %s
+
 </div>
 
 </body>

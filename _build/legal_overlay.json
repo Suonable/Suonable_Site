@@ -5,10 +5,12 @@
     "changed inside the app so that both say the same thing.",
     "Indexes count sections and paragraphs as the app orders them; 'was' is checked on build",
     "and a warning is printed when the app's own wording has moved on.",
-    "The corrections make this a new version of the documents: the site publishes beta-3, the app still shows beta-2. When the app adopts this text it should call itself beta-3 and ask users to accept it again, as the terms promise."
+    "The corrections make this a new version of the documents: the site publishes beta-3, the app still shows beta-2. When the app adopts this text it should call itself beta-3 and ask users to accept it again, as the terms promise.",
+    "The operator block shows Viacolectiva's own address; inside the documents the data contact stays legal@suonable.com, which is what the app's text says."
   ],
   "operator": {
-    "abuse": "copyright@suonable.com"
+    "abuse": "copyright@suonable.com",
+    "contact": "contact@viacolectiva.com"
   },
   "swaps": [
     {
