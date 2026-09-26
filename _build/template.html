@@ -8,6 +8,7 @@
 <title>Suonable — Make Your Songs Playable</title>
 <meta name="description" content="Split any recording of your own into tracks by instrument and rehearse with them: isolate your part, play over it, and repeat until it comes out. Free open beta for web, Mac and Windows.">
 <!-- @alternates -->
+<!-- @jsonld -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Suonable">
 <meta property="og:title" content="Suonable — Make Your Songs Playable">
@@ -33,8 +34,8 @@
    the page fails to load), so only desktop mouse/trackpad screens get it; everyone else sees stills. */
 try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)").matches && !(navigator.maxTouchPoints > 0)) document.documentElement.classList.add("live-mockup"); } catch (e) {}
 </script>
-<link rel="preload" as="image" href="/mockup/devices.png" media="(min-width: 1024px) and (hover: hover) and (pointer: fine)">
-<script src="/app.js?v=21" defer></script>
+<link rel="preload" as="image" href="/mockup/devices.webp" media="(min-width: 1024px) and (hover: hover) and (pointer: fine)">
+<script src="/app.js?v=22" defer></script>
 </head>
 <body>
 
@@ -344,12 +345,12 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
             </div>
             <div class="screen-clip clip-phone">
               <div class="ov-phone" id="ovPhone">
-                <img class="phone-shot light" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-light.png" alt="" width="1179" height="2556">
-                <img class="phone-shot dark" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-dark.png" alt="" width="1179" height="2556">
+                <img class="phone-shot light" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-light.webp" alt="" width="1179" height="2556">
+                <img class="phone-shot dark" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-dark.webp" alt="" width="1179" height="2556">
               </div>
             </div>
           </div>
-          <img class="photo-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/devices.png" alt="" width="2400" height="1498">
+          <img class="photo-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/devices.webp" alt="" width="2400" height="1498">
         </div>
       </div>
     </div>
@@ -417,9 +418,6 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
           <span style="font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 14px; color: #F4F7FA;">Bar 25 <span style="color: #6E7A8A;">·</span> 1:55 <span style="color: #6E7A8A;">·</span> 4/4</span>
           <span style="display: flex; align-items: center; gap: 8px;">
             <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8;">8 BARS</span>
-            <span style="width: 28px; height: 28px; border-radius: 8px; border: 1px solid #2A333F; display: flex; align-items: center; justify-content: center; color: #8A97A8; font-size: 13px;">−</span>
-            <span style="width: 28px; height: 28px; border-radius: 8px; border: 1px solid #2A333F; display: flex; align-items: center; justify-content: center; color: #8A97A8; font-size: 13px;">+</span>
-            <span style="border: 1px solid #2A333F; border-radius: 99px; padding: 7px 15px; font-size: 13px; font-weight: 600; color: #F4F7FA;">Edit</span>
           </span>
         </div>
 
@@ -826,6 +824,8 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
       </div>
     </div>
   </section>
+
+<!-- @faq -->
 
   <section id="beta" style="max-width: var(--page, 1160px); margin: 0 auto clamp(40px, 6vh, 72px);">
     <div style="background: #FFFFFF; border: 1px solid #E8E8E4; border-radius: 22px; padding: clamp(28px, 4.4vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 4vw, 56px);">

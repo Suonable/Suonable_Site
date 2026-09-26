@@ -144,6 +144,85 @@ def alternates(path):
     return "\n".join(lines)
 
 
+SEO_TITLES = {
+    "en": ("Suonable — Split any song into separate instrument tracks",
+           "Upload a recording of your own and get seven tracks: drums, bass, guitar, piano, other, "
+           "vocals and backing vocals. Mute the voice to rehearse, isolate your part, follow the chords "
+           "it finds for you. Free open beta for web, Mac and Windows."),
+    "it": ("Suonable — Separa una canzone in tracce per strumento",
+           "Carichi una tua registrazione e torna in sette tracce: batteria, basso, chitarra, piano, "
+           "altro, voce e cori. Togli la voce per provare, isola la tua parte, segui gli accordi che "
+           "trova da solo. Beta aperta e gratuita per web, Mac e Windows."),
+    "es": ("Suonable — Separa una canción en pistas por instrumento",
+           "Subes una grabación tuya y vuelve en siete pistas: batería, bajo, guitarra, piano, otros, "
+           "voz y coros. Quita la voz para ensayar, aísla tu parte, sigue los acordes que detecta solo. "
+           "Beta abierta y gratuita para web, Mac y Windows."),
+}
+
+
+def faq_data():
+    return json.loads((BUILD / "faq.json").read_text(encoding="utf-8"))
+
+
+def faq_section(lang):
+    """The questions people actually type into a search box, answered."""
+    data = faq_data()
+    eyebrow, heading = data["headings"][lang]
+    items = []
+    for question, answer in data["faq"][lang]:
+        items.append(
+            '        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">\n'
+            '          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" '
+            'style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; '
+            'display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">'
+            '%s<span class="accordion-caret">▾</span></h3>\n'
+            '          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); '
+            'line-height: 1.65; color: #4A4A52;">%s</p>\n'
+            '        </div>' % (html.escape(question, quote=False), html.escape(answer, quote=False)))
+    return ('  <section id="faq" style="max-width: var(--page, 1160px); margin: 0 auto; '
+            'padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">\n'
+            '    <div style="font-family: \'JetBrains Mono\', monospace; font-size: var(--t-eyebrow, 11px); '
+            'font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; '
+            'padding-bottom: 22px;">%s</div>\n'
+            '    <h2 data-reveal="1" style="margin: 0 0 32px; font-size: clamp(30px, 4.4vw, 60px); '
+            'font-weight: 800; letter-spacing: -0.045em; line-height: 1.05; max-width: 22ch;">%s</h2>\n'
+            '    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); '
+            'gap: 0 clamp(32px, 4vw, 72px);">\n%s\n    </div>\n  </section>'
+            % (html.escape(eyebrow, quote=False), html.escape(heading, quote=False), "\n".join(items)))
+
+
+def structured_data(lang, path):
+    """Who we are, what the product is, and the questions — for search engines."""
+    url = SITE + path
+    title, description = SEO_TITLES[lang]
+    graph = [
+        {"@type": "Organization", "@id": SITE + "/#organization", "name": "Suonable",
+         "url": SITE, "legalName": "Viacolectiva S.R.L.", "taxID": "20606672081",
+         "logo": SITE + "/suonable-mark.png",
+         "address": {"@type": "PostalAddress", "streetAddress": "Av. San Luis 2754, San Borja",
+                     "addressLocality": "Lima", "addressCountry": "PE"},
+         "contactPoint": {"@type": "ContactPoint", "email": "hello@suonable.com",
+                          "contactType": "customer support"}},
+        {"@type": "WebSite", "@id": url + "#website", "url": url, "name": "Suonable",
+         "inLanguage": lang, "description": description,
+         "publisher": {"@id": SITE + "/#organization"}},
+        {"@type": "SoftwareApplication", "@id": SITE + "/#app", "name": "Suonable",
+         "url": "https://app.suonable.com/", "applicationCategory": "MultimediaApplication",
+         "applicationSubCategory": "Music practice", "operatingSystem": "Web, macOS, Windows",
+         "inLanguage": ["en", "it", "es"], "description": description,
+         "publisher": {"@id": SITE + "/#organization"},
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"}},
+        {"@type": "FAQPage", "@id": url + "#faq", "inLanguage": lang,
+         "mainEntity": [{"@type": "Question", "name": q,
+                         "acceptedAnswer": {"@type": "Answer", "text": a}}
+                        for q, a in faq_data()["faq"][lang]]},
+    ]
+    payload = json.dumps({"@context": "https://schema.org", "@graph": graph},
+                         ensure_ascii=False, indent=None, separators=(",", ":"))
+    return '<script type="application/ld+json">%s</script>' % payload
+
+
 def build_page(template, lang, path, dictionary):
     page = template
     page = page.replace(
@@ -162,6 +241,15 @@ def build_page(template, lang, path, dictionary):
         head_end = page.index("</head>")
         page = translate_head(page[:head_end], lang, dictionary, missing) + page[head_end:]
         page = translate_body(page, lang, dictionary, untranslated)
+
+    title, description = SEO_TITLES[lang]
+    page = re.sub(r"<title>.*?</title>", "<title>%s</title>" % html.escape(title), page, count=1, flags=re.S)
+    page = re.sub(r'(<meta name="description" content=")[^"]*(">)',
+                  lambda m: m.group(1) + html.escape(description, quote=True) + m.group(2), page, count=1)
+    page = re.sub(r'(<meta property="og:title" content=")[^"]*(">)',
+                  lambda m: m.group(1) + html.escape(title, quote=True) + m.group(2), page, count=1)
+    page = page.replace("<!-- @faq -->", faq_section(lang), 1)
+    page = page.replace("<!-- @jsonld -->", structured_data(lang, path), 1)
     return page, untranslated, missing
 
 
@@ -179,8 +267,8 @@ def sitemap():
 
 def main():
     template = (BUILD / "template.html").read_text(encoding="utf-8")
-    for marker in ("<!-- @alternates -->", 'data-home', 'data-legal',
-                   '<meta name="robots" content="noindex">'):
+    for marker in ("<!-- @alternates -->", 'data-home', 'data-legal', "<!-- @faq -->",
+                   "<!-- @jsonld -->", '<meta name="robots" content="noindex">'):
         if marker not in template:
             sys.exit(f"template is missing {marker!r}")
     dictionary = load_dict()

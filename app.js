@@ -215,17 +215,34 @@
     var panel = document.querySelector(".shapes-panel");
     if (!panel) return;
     var pills = Array.prototype.slice.call(panel.querySelectorAll("[data-shape-instrument]"));
+
+    function show(pill) {
+      // both instruments keep animating, so the one you switch to is already on the right chord
+      panel.setAttribute("data-instrument", pill.getAttribute("data-shape-instrument"));
+      pills.forEach(function (other) {
+        var on = other === pill;
+        other.classList.toggle("shape-pill-on", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    }
+
+    var rotate = null;
     pills.forEach(function (pill) {
       pill.addEventListener("click", function () {
-        // both instruments keep animating, so the one you switch to is already on the right chord
-        panel.setAttribute("data-instrument", pill.getAttribute("data-shape-instrument"));
-        pills.forEach(function (other) {
-          var on = other === pill;
-          other.classList.toggle("shape-pill-on", on);
-          other.setAttribute("aria-pressed", on ? "true" : "false");
-        });
+        clearInterval(rotate);          // you picked one: stop changing it under you
+        show(pill);
       });
     });
+
+    // like the hero mockup flipping themes, the panel alternates instruments on its own
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduceMotion && pills.length > 1) {
+      var at = 0;
+      rotate = setInterval(function () {
+        at = (at + 1) % pills.length;
+        show(pills[at]);
+      }, 5500);
+    }
   }
 
   /* ---------- scroll reveal ---------- */

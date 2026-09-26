@@ -4,17 +4,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Suonable — Make Your Songs Playable</title>
-<meta name="description" content="Split any recording of your own into tracks by instrument and rehearse with them: isolate your part, play over it, and repeat until it comes out. Free open beta for web, Mac and Windows.">
+<title>Suonable — Split any song into separate instrument tracks</title>
+<meta name="description" content="Upload a recording of your own and get seven tracks: drums, bass, guitar, piano, other, vocals and backing vocals. Mute the voice to rehearse, isolate your part, follow the chords it finds for you. Free open beta for web, Mac and Windows.">
 <link rel="canonical" href="https://suonable.com/">
 <link rel="alternate" hreflang="en" href="https://suonable.com/">
 <link rel="alternate" hreflang="it" href="https://suonable.com/it/">
 <link rel="alternate" hreflang="es" href="https://suonable.com/es/">
 <link rel="alternate" hreflang="x-default" href="https://suonable.com/">
 <meta property="og:url" content="https://suonable.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://suonable.com/#organization","name":"Suonable","url":"https://suonable.com","legalName":"Viacolectiva S.R.L.","taxID":"20606672081","logo":"https://suonable.com/suonable-mark.png","address":{"@type":"PostalAddress","streetAddress":"Av. San Luis 2754, San Borja","addressLocality":"Lima","addressCountry":"PE"},"contactPoint":{"@type":"ContactPoint","email":"hello@suonable.com","contactType":"customer support"}},{"@type":"WebSite","@id":"https://suonable.com/#website","url":"https://suonable.com/","name":"Suonable","inLanguage":"en","description":"Upload a recording of your own and get seven tracks: drums, bass, guitar, piano, other, vocals and backing vocals. Mute the voice to rehearse, isolate your part, follow the chords it finds for you. Free open beta for web, Mac and Windows.","publisher":{"@id":"https://suonable.com/#organization"}},{"@type":"SoftwareApplication","@id":"https://suonable.com/#app","name":"Suonable","url":"https://app.suonable.com/","applicationCategory":"MultimediaApplication","applicationSubCategory":"Music practice","operatingSystem":"Web, macOS, Windows","inLanguage":["en","it","es"],"description":"Upload a recording of your own and get seven tracks: drums, bass, guitar, piano, other, vocals and backing vocals. Mute the voice to rehearse, isolate your part, follow the chords it finds for you. Free open beta for web, Mac and Windows.","publisher":{"@id":"https://suonable.com/#organization"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}},{"@type":"FAQPage","@id":"https://suonable.com/#faq","inLanguage":"en","mainEntity":[{"@type":"Question","name":"How do I split a song into separate tracks?","acceptedAnswer":{"@type":"Answer","text":"Upload an MP3 or a WAV of a recording you hold the rights to use. Suonable separates it into seven tracks — drums, bass, guitar, piano, other, vocals and backing vocals — each with its own volume, mute and solo. It usually takes about three minutes."}},{"@type":"Question","name":"Can I take the vocals out of a song?","acceptedAnswer":{"@type":"Answer","text":"Yes, on a file of your own: mute the vocal track and play over the rest, or solo any track to hear only the part you are learning. The tracks live in your account for rehearsing and playing — not for publishing, selling or streaming them."}},{"@type":"Question","name":"Do I need the original stems?","acceptedAnswer":{"@type":"Answer","text":"No. Suonable works from the finished recording. If you do have official stems, or a session exported from Ableton or Logic, you can drop the ZIP in instead and use them directly."}},{"@type":"Question","name":"Does it find the chords and the tempo?","acceptedAnswer":{"@type":"Answer","text":"It does. Tempo, key, bar lines and chords arrive already detected, with a click built from the song's own tempo map and a chord sheet that transposes with it. It is a starting point, not a verdict: every one of them is editable by hand."}},{"@type":"Question","name":"How much does it cost?","acceptedAnswer":{"@type":"Answer","text":"Suonable is in open beta and you can use it without paying, on the web and as an app for Mac and Windows. There is no catalogue to buy from either: the music is the one you bring."}},{"@type":"Question","name":"Is my music private? Does it train AI models?","acceptedAnswer":{"@type":"Answer","text":"It is private, and it does not. There is no catalogue, no feed and no public links: the songs you upload are reachable only from your own account, and no other user can reach them. Your audio is never used to train or tune any model."}}]}]}</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Suonable">
-<meta property="og:title" content="Suonable — Make Your Songs Playable">
+<meta property="og:title" content="Suonable — Split any song into separate instrument tracks">
 <meta property="og:description" content="Split any recording of your own into tracks by instrument and rehearse with them: isolate your part, play over it, and repeat until it comes out.">
 <meta property="og:image" content="https://suonable.com/og-image.png?v=2">
 <meta property="og:image:width" content="1200">
@@ -37,8 +38,8 @@
    the page fails to load), so only desktop mouse/trackpad screens get it; everyone else sees stills. */
 try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)").matches && !(navigator.maxTouchPoints > 0)) document.documentElement.classList.add("live-mockup"); } catch (e) {}
 </script>
-<link rel="preload" as="image" href="/mockup/devices.png" media="(min-width: 1024px) and (hover: hover) and (pointer: fine)">
-<script src="/app.js?v=21" defer></script>
+<link rel="preload" as="image" href="/mockup/devices.webp" media="(min-width: 1024px) and (hover: hover) and (pointer: fine)">
+<script src="/app.js?v=22" defer></script>
 </head>
 <body>
 
@@ -348,12 +349,12 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
             </div>
             <div class="screen-clip clip-phone">
               <div class="ov-phone" id="ovPhone">
-                <img class="phone-shot light" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-light.png" alt="" width="1179" height="2556">
-                <img class="phone-shot dark" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-dark.png" alt="" width="1179" height="2556">
+                <img class="phone-shot light" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-light.webp" alt="" width="1179" height="2556">
+                <img class="phone-shot dark" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/songs-dark.webp" alt="" width="1179" height="2556">
               </div>
             </div>
           </div>
-          <img class="photo-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/devices.png" alt="" width="2400" height="1498">
+          <img class="photo-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/mockup/devices.webp" alt="" width="2400" height="1498">
         </div>
       </div>
     </div>
@@ -421,9 +422,6 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
           <span style="font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 14px; color: #F4F7FA;">Bar 25 <span style="color: #6E7A8A;">·</span> 1:55 <span style="color: #6E7A8A;">·</span> 4/4</span>
           <span style="display: flex; align-items: center; gap: 8px;">
             <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; color: #8A97A8;">8 BARS</span>
-            <span style="width: 28px; height: 28px; border-radius: 8px; border: 1px solid #2A333F; display: flex; align-items: center; justify-content: center; color: #8A97A8; font-size: 13px;">−</span>
-            <span style="width: 28px; height: 28px; border-radius: 8px; border: 1px solid #2A333F; display: flex; align-items: center; justify-content: center; color: #8A97A8; font-size: 13px;">+</span>
-            <span style="border: 1px solid #2A333F; border-radius: 99px; padding: 7px 15px; font-size: 13px; font-weight: 600; color: #F4F7FA;">Edit</span>
           </span>
         </div>
 
@@ -828,6 +826,37 @@ try { if (matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)
           <p class="accordion-panel" style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8;">You bring your own music: upload an MP3 to have it split into tracks, or a ZIP of your own multitrack stems to play them as they are. You're responsible for having the right to use it — ZIP only for imports, RAR isn't supported.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="faq" style="max-width: var(--page, 1160px); margin: 0 auto; padding-bottom: var(--space-section, clamp(112px, 19vh, 248px));">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: var(--t-eyebrow, 11px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1055AD; padding-bottom: 22px;">Questions people ask</div>
+    <h2 data-reveal="1" style="margin: 0 0 32px; font-size: clamp(30px, 4.4vw, 60px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.05; max-width: 22ch;">Common questions</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 clamp(32px, 4vw, 72px);">
+        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">How do I split a song into separate tracks?<span class="accordion-caret">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.65; color: #4A4A52;">Upload an MP3 or a WAV of a recording you hold the rights to use. Suonable separates it into seven tracks — drums, bass, guitar, piano, other, vocals and backing vocals — each with its own volume, mute and solo. It usually takes about three minutes.</p>
+        </div>
+        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Can I take the vocals out of a song?<span class="accordion-caret">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.65; color: #4A4A52;">Yes, on a file of your own: mute the vocal track and play over the rest, or solo any track to hear only the part you are learning. The tracks live in your account for rehearsing and playing — not for publishing, selling or streaming them.</p>
+        </div>
+        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Do I need the original stems?<span class="accordion-caret">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.65; color: #4A4A52;">No. Suonable works from the finished recording. If you do have official stems, or a session exported from Ableton or Logic, you can drop the ZIP in instead and use them directly.</p>
+        </div>
+        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Does it find the chords and the tempo?<span class="accordion-caret">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.65; color: #4A4A52;">It does. Tempo, key, bar lines and chords arrive already detected, with a click built from the song's own tempo map and a chord sheet that transposes with it. It is a starting point, not a verdict: every one of them is editable by hand.</p>
+        </div>
+        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">How much does it cost?<span class="accordion-caret">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.65; color: #4A4A52;">Suonable is in open beta and you can use it without paying, on the web and as an app for Mac and Windows. There is no catalogue to buy from either: the music is the one you bring.</p>
+        </div>
+        <div data-reveal="1" class="accordion" style="border-top: 1px solid #E8E8E4; padding: 26px 0 30px;">
+          <h3 class="accordion-trigger" role="button" tabindex="0" aria-expanded="false" style="margin: 0 0 10px; font-size: var(--t-h3, 19px); font-weight: 800; letter-spacing: -0.025em; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">Is my music private? Does it train AI models?<span class="accordion-caret">▾</span></h3>
+          <p class="accordion-panel" style="margin: 0; font-size: var(--t-body, 15px); line-height: 1.65; color: #4A4A52;">It is private, and it does not. There is no catalogue, no feed and no public links: the songs you upload are reachable only from your own account, and no other user can reach them. Your audio is never used to train or tune any model.</p>
+        </div>
     </div>
   </section>
 

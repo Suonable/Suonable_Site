@@ -1,0 +1,96 @@
+{
+  "faq": {
+    "en": [
+      [
+        "How do I split a song into separate tracks?",
+        "Upload an MP3 or a WAV of a recording you hold the rights to use. Suonable separates it into seven tracks — drums, bass, guitar, piano, other, vocals and backing vocals — each with its own volume, mute and solo. It usually takes about three minutes."
+      ],
+      [
+        "Can I take the vocals out of a song?",
+        "Yes, on a file of your own: mute the vocal track and play over the rest, or solo any track to hear only the part you are learning. The tracks live in your account for rehearsing and playing — not for publishing, selling or streaming them."
+      ],
+      [
+        "Do I need the original stems?",
+        "No. Suonable works from the finished recording. If you do have official stems, or a session exported from Ableton or Logic, you can drop the ZIP in instead and use them directly."
+      ],
+      [
+        "Does it find the chords and the tempo?",
+        "It does. Tempo, key, bar lines and chords arrive already detected, with a click built from the song's own tempo map and a chord sheet that transposes with it. It is a starting point, not a verdict: every one of them is editable by hand."
+      ],
+      [
+        "How much does it cost?",
+        "Suonable is in open beta and you can use it without paying, on the web and as an app for Mac and Windows. There is no catalogue to buy from either: the music is the one you bring."
+      ],
+      [
+        "Is my music private? Does it train AI models?",
+        "It is private, and it does not. There is no catalogue, no feed and no public links: the songs you upload are reachable only from your own account, and no other user can reach them. Your audio is never used to train or tune any model."
+      ]
+    ],
+    "it": [
+      [
+        "Come separo una canzone in tracce singole?",
+        "Carichi un MP3 o un WAV di una registrazione di cui hai i diritti. Suonable la separa in sette tracce — batteria, basso, chitarra, piano, altro, voce e cori — ognuna con volume, mute e solo. Di solito ci vogliono circa tre minuti."
+      ],
+      [
+        "Posso togliere la voce da una canzone?",
+        "Sì, su un file tuo: silenzi la traccia della voce e suoni sopra il resto, oppure metti in solo la traccia della parte che stai imparando. Le tracce restano nel tuo account per provare e suonare — non per pubblicarle, venderle o metterle in streaming."
+      ],
+      [
+        "Servono le tracce originali?",
+        "No. Suonable parte dalla registrazione finita. Se però hai gli stem ufficiali, o una sessione esportata da Ableton o Logic, puoi caricare direttamente lo ZIP e usare quelli."
+      ],
+      [
+        "Trova anche gli accordi e il tempo?",
+        "Sì. Tempo, tonalità, battute e accordi arrivano già rilevati, con un click costruito sulla mappa del tempo del brano e un foglio accordi che traspone insieme alla canzone. È un punto di partenza, non un verdetto: si corregge tutto a mano."
+      ],
+      [
+        "Quanto costa?",
+        "Suonable è in beta aperta e puoi usarlo senza pagare, sul web e come app per Mac e Windows. E non c'è nemmeno un catalogo da comprare: la musica è quella che porti tu."
+      ],
+      [
+        "La mia musica è privata? Serve ad addestrare modelli di IA?",
+        "È privata, e no. Non c'è catalogo, né feed, né link pubblici: le canzoni che carichi si raggiungono solo dal tuo account e nessun altro utente può arrivarci. Il tuo audio non viene mai usato per addestrare o affinare modelli."
+      ]
+    ],
+    "es": [
+      [
+        "¿Cómo separo una canción en pistas por instrumento?",
+        "Subes un MP3 o un WAV de una grabación sobre la que tengas los derechos. Suonable la separa en siete pistas — batería, bajo, guitarra, piano, otros, voz y coros — cada una con su volumen, mute y solo. Suele tardar unos tres minutos."
+      ],
+      [
+        "¿Puedo quitar la voz de una canción?",
+        "Sí, sobre un archivo tuyo: silencias la pista de voz y tocas sobre el resto, o pones en solo la pista de la parte que estás aprendiendo. Las pistas se quedan en tu cuenta para ensayar y tocar — no para publicarlas, venderlas ni emitirlas."
+      ],
+      [
+        "¿Necesito las pistas originales?",
+        "No. Suonable parte de la grabación terminada. Si tienes los stems oficiales, o una sesión exportada de Ableton o Logic, puedes subir el ZIP y usarlos directamente."
+      ],
+      [
+        "¿Detecta los acordes y el tempo?",
+        "Sí. Tempo, tonalidad, compases y acordes llegan ya detectados, con un clic construido sobre el mapa de tempo de la propia canción y una hoja de acordes que transpone con ella. Es un punto de partida, no un veredicto: todo se corrige a mano."
+      ],
+      [
+        "¿Cuánto cuesta?",
+        "Suonable está en beta abierta y puedes usarlo sin pagar, en la web y como app para Mac y Windows. Tampoco hay catálogo que comprar: la música es la que pones tú."
+      ],
+      [
+        "¿Mi música es privada? ¿Entrena modelos de inteligencia artificial?",
+        "Es privada, y no. No hay catálogo, ni muro, ni enlaces públicos: las canciones que subes solo se alcanzan desde tu propia cuenta y ningún otro usuario puede llegar a ellas. Tu audio nunca se usa para entrenar ni afinar ningún modelo."
+      ]
+    ]
+  },
+  "headings": {
+    "en": [
+      "Questions people ask",
+      "Common questions"
+    ],
+    "it": [
+      "Le domande che ci fanno",
+      "Domande frequenti"
+    ],
+    "es": [
+      "Lo que nos preguntan",
+      "Preguntas frecuentes"
+    ]
+  }
+}
