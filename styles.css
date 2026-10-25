@@ -383,6 +383,52 @@ img { max-width: 100%; }
   .accordion.open .accordion-caret { transform: rotate(180deg); }
 }
 
+/* ---------- "what it doesn't do": bento, one picture per limit ---------- */
+.sg { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 14px; }
+.sg-card { background: #101823; border: 1px solid #2A333F; border-radius: 18px; padding: clamp(28px, 3.2vw, 42px); min-width: 0; }
+.sg-card h3 { margin: 0 0 14px; font-size: var(--t-h3, 21px); font-weight: 800; letter-spacing: -0.025em; color: #F4F7FA; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.sg-card p { margin: 0; font-size: 16px; line-height: 1.65; color: #8A97A8; }
+.sg-big { grid-row: 1 / 3; display: flex; flex-direction: column; }
+.sg-wide { grid-column: 2 / 4; }
+.sg-stems { display: flex; flex-direction: column; gap: 12px; padding-top: 32px; }
+.sg-stem { display: grid; grid-template-columns: 108px 1fr; gap: 12px; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #8A97A8; }
+.sg-stem svg { display: block; width: 100%; height: 32px; }
+.sg-num { font-size: clamp(72px, 7vw, 96px); font-weight: 800; letter-spacing: -0.05em; line-height: 1; margin: 12px 0 14px; color: #F4F7FA; }
+.sg-num small { font-size: 0.3em; letter-spacing: -0.02em; color: #8A97A8; margin-left: 6px; }
+.sg-bar { height: 6px; border-radius: 99px; background: #1D2733; margin-top: 22px; overflow: hidden; }
+.sg-bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #1055AD, #4C8CE0); transform-origin: left; animation: sg-fill 6s ease-in-out infinite; }
+@keyframes sg-fill { 0% { transform: scaleX(0); } 50%, 85% { transform: scaleX(1); } 100% { transform: scaleX(1); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .sg-bar i { animation: none; } }
+.sg-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.sg-chips span { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 12px; border-radius: 99px; border: 1px solid rgba(253, 165, 27, 0.4); color: #FFC56B; background: rgba(253, 165, 27, 0.07); }
+.sg-chips span.ok { border-color: rgba(45, 193, 40, 0.45); color: #7FE27B; background: rgba(45, 193, 40, 0.08); }
+.sg-files { display: flex; gap: 14px; }
+.sg-files div { position: relative; width: 104px; height: 128px; border-radius: 12px; border: 1px solid #2A333F; background: #0C121B; display: flex; flex-direction: column; justify-content: flex-end; padding: 14px; overflow: hidden; }
+.sg-files div::before { content: ""; position: absolute; top: 0; right: 0; width: 26px; height: 26px; background: linear-gradient(225deg, #0C0F14 50%, #2A333F 50%); border-bottom-left-radius: 6px; }
+.sg-files b { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #F4F7FA; }
+.sg-files em { font-family: 'JetBrains Mono', monospace; font-style: normal; font-size: 11px; color: #8A97A8; margin-top: 4px; }
+.sg-files .ok { border-color: rgba(16, 85, 173, 0.75); }
+.sg-files .no { opacity: 0.45; }
+.sg-files .no::after { content: ""; position: absolute; left: 10px; right: 10px; top: 50%; height: 2px; background: #FD6106; transform: rotate(-28deg); }
+
+@media (min-width: 760px) {
+  .sg-big .accordion-panel { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+  .sg-wide .accordion-panel { display: grid; grid-template-columns: 1fr auto; gap: clamp(24px, 3vw, 40px); align-items: end; }
+}
+/* tablet: the big card goes across the top, the rest pair up below */
+@media (max-width: 1023px) {
+  .sg { grid-template-columns: 1fr 1fr; }
+  .sg-big { grid-row: auto; grid-column: 1 / -1; }
+  .sg-wide { grid-column: 1 / -1; }
+}
+@media (max-width: 759px) {
+  .sg { grid-template-columns: 1fr; gap: 10px; }
+  .sg-card h3 { margin: 0; }
+  .accordion.open.sg-card h3 { margin-bottom: 14px; }
+  .sg-files { margin-top: 22px; }
+  .sg-files div { width: auto; flex: 1; height: 104px; }
+}
+
 /* ---------- how-it-works steps grid ---------- */
 .steps-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
 /* the privacy point runs the full width under the four steps, title beside the text */

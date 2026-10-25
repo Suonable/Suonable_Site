@@ -611,6 +611,38 @@
     "You bring your own music, and you're responsible for having the right to use it. ZIP only for imports — RAR isn't supported.": {
       "es": "Tú traes tu música, y eres responsable de tener derecho a usarla. Solo ZIP para importar — RAR no está soportado.",
       "it": "La musica la porti tu, e sei responsabile di avere il diritto di usarla. Solo ZIP per le importazioni — RAR non è supportato."
+    },
+    "min": {
+      "es": "min",
+      "it": "min"
+    },
+    "Band music ✓": {
+      "es": "Música de banda ✓",
+      "it": "Musica band ✓"
+    },
+    "Orchestra": {
+      "es": "Orquesta",
+      "it": "Orchestra"
+    },
+    "Dense electronic": {
+      "es": "Electrónica densa",
+      "it": "Elettronica densa"
+    },
+    "Poor recordings": {
+      "es": "Grabaciones pobres",
+      "it": "Registrazioni scadenti"
+    },
+    "to split": {
+      "es": "para separar",
+      "it": "da separare"
+    },
+    "your stems": {
+      "es": "tus pistas",
+      "it": "le tue tracce"
+    },
+    "not supported": {
+      "es": "no admitido",
+      "it": "non supportato"
     }
   },
   "beta": {
